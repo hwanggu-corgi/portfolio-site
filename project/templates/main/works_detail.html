@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block body_content %}
+    <div class="content content-works_detail">
+        <header class="header--secondary p-6">
+            <h2>Works</h2>
+        </header>
+        <section class="jumbotron">
+            <div>
+                <h2>{{ project.title }}</h2>
+                <p>
+                    {{ project.summary }}
+                </p>
+                <p>
+                    {{ project.date_created|date:'F jS, Y'}}
+                </p>
+                <div>
+                    {% if project.url_demo %}
+                        <a href="{{ project.url_demo }}" class="btn btn--primary small">See Demo</a>
+                    {% endif %}
+                    {% if project.url_source_code %}
+                        <a href="{{ project.url_source_code }}" class="btn btn--primary-outline small">Source Code</a>
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+        <div class="ml-4 mr-4">
+            <article>
+                <section class="mb-8 mt-8">
+                    <h3>Technologies Used</h3>
+                    {{ project.tools_used|safe }}
+                </section>
+
+                {% if project.result %}
+                    <section class="images text-center mb-8">
+                        {{ project.result|safe }}
+                    </section>
+                {% endif %}
+
+                <section class="text-center mb-8">
+                    <div>
+                        {% if project.url_demo %}
+                            <a href="{{ project.url_demo }}" class="btn btn--primary small">See Demo</a>
+                        {% endif %}
+                        {% if project.url_source_code %}
+                            <a href="{{ project.url_source_code }}" class="btn btn--primary-outline small">Source Code</a>
+                        {% endif %}
+                    </div>
+                </section>
+            </article>
+        </div>
+    </div>
+{% endblock %}

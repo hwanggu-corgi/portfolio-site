@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn } from '@fortawesome/fre';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import Logo from '../img/moe.jpeg';

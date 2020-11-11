@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
 
+import { AppConsumer } from './Context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -9,7 +9,7 @@ import Logo from '../img/moe.jpeg';
 class SecondaryHeader extends Component {
 
     toggleMenu = () => {
-        this.setState({clicked: true});
+        this.props.appContext.handlers.handleToggleMenu();
     }
 
     render() {
@@ -25,4 +25,14 @@ class SecondaryHeader extends Component {
     }
 };
 
-export default withRouter(SecondaryHeader);
+export default React.forwardRef((props, ref) => (
+    <AppConsumer>
+        { appContext =>
+            <SecondaryHeader
+                {...props}
+                appContext={appContext}
+                ref={ref}
+            />
+        }
+    </AppConsumer>
+));

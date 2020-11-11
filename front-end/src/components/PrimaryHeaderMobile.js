@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-
 import { NavLink, withRouter } from 'react-router-dom';
-import { AppConsumer } from '../components/Context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
+import { AppConsumer } from './Context';
 
 import Logo from '../img/moe.jpeg';
 
@@ -13,7 +13,7 @@ class PrimaryHeaderMobile extends Component {
     render() {
 
         let headerPrimaryMobile = this.props.appContext.clicked ? "header--primary-mobile opened" : "header--primary-mobile";
-
+        console.log(headerPrimaryMobile);
         return (
             <header className={headerPrimaryMobile}>
                 <nav>

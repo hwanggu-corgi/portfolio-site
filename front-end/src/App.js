@@ -18,8 +18,19 @@ import './App.scss';
 class App extends Component {
 
     state = {
-        clicked: false
+        toggled: false,
+        handlers: {
+            handleToggleMenu: this.handleToggleMenu
+        }
     };
+
+    handleToggleMenu = () => {
+        this.setState(prev => {
+            return {
+                toggled: !prev.toggled
+            }
+        });
+    }
 
     render() {
         return (

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import NoteImageObject from '../components/NoteImageObject';
-
 class HomeScreen extends Component {
 
     render() {

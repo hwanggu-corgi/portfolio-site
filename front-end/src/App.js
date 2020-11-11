@@ -9,6 +9,7 @@ import {
 import { AppProvider } from './components/Context';
 
 import PrimaryHeader from './components/PrimaryHeader';
+import SecondaryHeader from './components/SecondaryHeader';
 import PrimaryHeaderMobile from './components/PrimaryHeaderMobile';
 
 import HomeScreen from './screens/HomeScreen';
@@ -25,6 +26,7 @@ class App extends Component {
             <AppProvider value={{...this.state}}>
                 <BrowserRouter basename={"portfolio-site"}>
                     <div className="App">
+                        <SecondaryHeader/>
                         <main role="main">
                             <PrimaryHeader/>
                             <PrimaryHeaderMobile/>

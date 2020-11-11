@@ -9,28 +9,21 @@ import Logo from '../img/moe.jpeg';
 
 class SecondaryHeader extends Component {
 
+    state = {
+        clicked: false
+    };
+
+
     toggleMenu = () => {
-        let mobileMenu = (document.getElementsByClassName('header--primary-mobile'))[0];
-        let screenOverlay = (document.getElementsByClassName('screen-overlay'))[0];
-
-        // if clicked, then check for class 'opened'
-        if (mobileMenu && mobileMenu.classList.contains('opened')) {
-            mobileMenu.classList.remove('opened');
-            screenOverlay.classList.remove('opened');
-
-            return;
-        }
-        // if open, then remove 'opened'
-        // if not open, add 'opened'
-        mobileMenu.classList.add('opened');
-        screenOverlay.classList.add('opened');
+        this.setState({clicked: true});
     }
 
     render() {
+        let className = this.state.clicked ? "header--mobile opened" : "header--mobile";
         return (
             <header class="header--mobile">
                 <nav>
-                    <div onClick={this.toggleMenu}><i class="fas fa-bars"></i></div>
+                    <div onClick={this.toggleMenu}><i className={className}></i></div>
                     <div><strong>Hyungmo Gu</strong></div>
                     <div></div>
                 </nav>
@@ -39,4 +32,4 @@ class SecondaryHeader extends Component {
     }
 };
 
-export default withRouter(PrimaryHeader);
+export default withRouter(SecondaryHeader);

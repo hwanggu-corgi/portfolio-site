@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { NavLink, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn } from '@fortawesome/fre';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import Logo from '../img/moe.jpeg';
 
@@ -19,11 +18,10 @@ class SecondaryHeader extends Component {
     }
 
     render() {
-        let className = this.state.clicked ? "header--mobile opened" : "header--mobile";
         return (
-            <header class="header--mobile">
+            <header className="header--mobile">
                 <nav>
-                    <div onClick={this.toggleMenu}><i className={className}></i></div>
+                    <div onClick={this.toggleMenu}><FontAwesomeIcon icon={faBars}/></div>
                     <div><strong>Hyungmo Gu</strong></div>
                     <div></div>
                 </nav>

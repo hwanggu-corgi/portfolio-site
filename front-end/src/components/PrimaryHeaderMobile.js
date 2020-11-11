@@ -1,51 +1,41 @@
 import React, { Component } from 'react';
 
 import { NavLink, withRouter } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faCheck, faTrashAlt, faPlus } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
+import Logo from '../img/moe.jpeg';
 
 class PrimaryHeaderMobile extends Component {
 
     render() {
         return (
-        <header className="primaryHeaderMobile">
-            <section className="primaryHeaderMobile--header">
-                <button className="button button--menu" onClick={this.handleToggleMobileMenu}>
-                    <FontAwesomeIcon icon={faBars}/>
-                </button>
-                <section className="primaryHeaderMobile--title">
-                    <NavLink onClick={this.handleCloseMenu}  exact to="/home"><strong>Note Sharing Application</strong></NavLink>
-                </section>
-            </section>
-            <nav ref={this.navRef} className="primaryHeaderMobile--navigation">
-                <section>
-                    <button onClick={this.handleAddNewTopic} className="button button--add">
-                        <FontAwesomeIcon icon={faPlus}/>
-                    </button>
-                </section>
-                <ul>
-                    <li><NavLink onClick={this.handleCloseMenu} to="/notes/physics">Physics</NavLink></li>
-                    <li><NavLink onClick={this.handleCloseMenu} to="/notes/social_studies">Social Studies</NavLink></li>
-                    <li><NavLink onClick={this.handleCloseMenu} to="/notes/biology">Biology</NavLink></li>
-                    <li><NavLink onClick={this.handleCloseMenu} to="/notes/english">English</NavLink></li>
-                    {
-                        this.state.addNew ?
-                        <li>
-                            <form className="form--header">
-                                <input type="text" placeholder="Name"/>
-                                <button className="button button--check" type="submit">
-                                    <FontAwesomeIcon icon={faCheck}/>
-                                </button>
-                                <button className="button button--cancel">
-                                    <FontAwesomeIcon icon={faTrashAlt}/>
-                                </button>
-                            </form>
-                        </li>
-
-                        : ''
-                    }
-                </ul>
+            <header className="header--primary-mobile">
+            <nav>
+                <div onclick="toggleMenu()"><i className="fas fa-times"></i></div>
             </nav>
+            <section>
+                <img className="logo" src={Logo} alt="Hyungmo Gu"/>
+                <nav className="menu menu--primary mb-4">
+                    <h3 className="mb-9"><NavLink to="/">Hyungmo Gu</NavLink></h3>
+                    <ul>
+                        <li className="mb-2"><NavLink to="/">Home</NavLink></li>
+                        <li className="mb-2"><NavLink to="/about">About</NavLink></li>
+                        <li className="mb-2"><NavLink to="/skills">Skills</NavLink></li>
+                        <li className="mb-2"><NavLink to="/works">Works</NavLink></li>
+                        <li className="mb-2"><NavLink to="/contact">Contact</NavLink></li>
+                    </ul>
+                </nav>
+                <nav className="menu menu--social mb-4">
+                    <ul>
+                        <li><a className="icon" href="https://www.linkedin.com/in/hyungmo-gu/"><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
+                        <li><a className="icon" href="https://github.com/hyungmogu"><FontAwesomeIcon icon={faGithub}/></a></li>
+                    </ul>
+                    <div>Hyungmo Gu</div>
+                    <div className="small">Thank you for visiting!</div>
+                </nav>
+            </section>
         </header>
         );
     }

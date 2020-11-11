@@ -19,10 +19,8 @@ class App extends Component {
 
     state = {
         toggled: false,
-        handlers: {
-            handleToggleMenu: this.handleToggleMenu
-        }
     };
+
 
     handleToggleMenu = () => {
         this.setState(prev => {
@@ -32,9 +30,13 @@ class App extends Component {
         });
     }
 
+    handlers = {
+        handleToggleMenu: this.handleToggleMenu
+    }
+
     render() {
         return (
-            <AppProvider value={{...this.state}}>
+            <AppProvider value={{state: this.state, handlers: this.handlers}}>
                 <BrowserRouter basename={"portfolio-site"}>
                     <div className="App">
                         <SecondaryHeader/>

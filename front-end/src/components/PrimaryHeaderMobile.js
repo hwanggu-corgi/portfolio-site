@@ -3,6 +3,7 @@ import { NavLink, withRouter } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import { AppConsumer } from './Context';
 
@@ -10,14 +11,18 @@ import Logo from '../img/moe.jpeg';
 
 class PrimaryHeaderMobile extends Component {
 
+    toggleMenu = () => {
+        this.props.appContext.handlers.handleToggleMenu();
+    }
+
     render() {
 
-        let headerPrimaryMobile = this.props.appContext.clicked ? "header--primary-mobile opened" : "header--primary-mobile";
-        console.log(headerPrimaryMobile);
+        let headerPrimaryMobile = this.props.appContext.state.toggled ? "header--primary-mobile opened" : "header--primary-mobile";
+
         return (
             <header className={headerPrimaryMobile}>
                 <nav>
-                    <div onclick="toggleMenu()"><i className="fas fa-times"></i></div>
+                    <div onClick={this.toggleMenu}><FontAwesomeIcon icon={faTimes} /></div>
                 </nav>
                 <section>
                     <img className="logo" src={Logo} alt="Hyungmo Gu"/>

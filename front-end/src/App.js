@@ -26,13 +26,15 @@ class App extends Component {
                 <BrowserRouter basename={"portfolio-site"}>
                     <div className="App">
                         {/* <PrimaryHeaderMobile/> */}
-                        <PrimaryHeader/>
-                        <Switch>
-                            {/* <Route path="/about" component={AboutScreen}/>
-                            <Route path="/works" component={WorksScreen}/> */}
-                            <Route exact path="/" component={HomeScreen}/>
-                            {/* <Route component={NotFoundScreen}/> */}
-                        </Switch>
+                        <main role="main">
+                            <PrimaryHeader/>
+                            <Switch>
+                                {/* <Route path="/about" component={AboutScreen}/>
+                                <Route path="/works" component={WorksScreen}/> */}
+                                <Route exact path="/" component={HomeScreen}/>
+                                {/* <Route component={NotFoundScreen}/> */}
+                            </Switch>
+                        </main>
                     </div>
                 </BrowserRouter>
             </AppProvider>

@@ -9,7 +9,7 @@ class HomeScreen extends Component {
                 <article class="article--home">
                     <h1 class="title">Hello,</h1>
                     <h1>Welcome to the portfolio site of Hyungmo Gu</h1>
-                    <strong>A vancouver based software developer who loves to learn, create new app, and push codes to github with his love</strong>
+                    <strong>A Calgary based software developer who loves to learn, create new app, and push codes to github with his love</strong>
                 </article>
             </section>
         );

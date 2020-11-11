@@ -8,11 +8,6 @@ import Logo from '../img/moe.jpeg';
 
 class SecondaryHeader extends Component {
 
-    state = {
-        clicked: false
-    };
-
-
     toggleMenu = () => {
         this.setState({clicked: true});
     }

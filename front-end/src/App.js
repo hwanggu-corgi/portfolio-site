@@ -18,8 +18,8 @@ import './App.scss';
 class App extends Component {
 
     state = {
-
-    }
+        clicked: false
+    };
 
     render() {
         return (

@@ -6,43 +6,7 @@ import { faBars, faCheck, faTrashAlt, faPlus } from '@fortawesome/free-solid-svg
 
 class PrimaryHeaderMobile extends Component {
 
-    navRef = React.createRef();
-
-    state = {
-        addNew: false
-    };
-
-    handleAddNewTopic = () => {
-        this.setState( prev => {
-            return {
-                addNew: !prev.addNew
-            }
-        });
-    }
-
-    handleToggleMobileMenu = () => {
-        if (this.navRef.current.classList.contains('open')) {
-            this.navRef.current.classList.remove('open');
-            return;
-        }
-
-        this.navRef.current.classList.add('open');
-    }
-
-    handleCloseMenu = () => {
-        this.navRef.current.classList.remove('open');
-    }
-
     render() {
-        const {location} = this.props;
-
-        if (location.pathname.match(/\/login/) ||
-            location.pathname.match(/\/logout/) ||
-            location.pathname.match(/\/signup/)
-        ) {
-            return null;
-        }
-
         return (
         <header className="primaryHeaderMobile">
             <section className="primaryHeaderMobile--header">

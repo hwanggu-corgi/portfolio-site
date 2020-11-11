@@ -1,37 +1,22 @@
 import React, { Component } from 'react';
 
-import { AppConsumer } from '../components/Context';
 import NoteImageObject from '../components/NoteImageObject';
 
 class HomeScreen extends Component {
 
     render() {
-        let recentItems = this.props.appContext.recentItems;
-
         return (
-            <section className="screen screen--home">
-                <main className="main">
-                    <h3>Recently Added Notes</h3>
-                    <section className="items">
-                        {recentItems.map(({pk, ...props}) =>
-                            <NoteImageObject key={pk} {...props}/>
-                        )}
-                    </section>
-                </main>
+            <section className="content content-home">
+                <div class="background-img"></div>
+                <article class="article--home">
+                    <h1 class="title">Hello,</h1>
+                    <h1>Welcome to the portfolio site of Hyungmo Gu</h1>
+                    <strong>A vancouver based software developer who loves to learn, create new app, and push codes to github with his love</strong>
+                </article>
             </section>
         );
     }
 }
 
-export default React.forwardRef((props, ref) => (
-    <AppConsumer>
-        { appContext =>
-            <HomeScreen
-                {...props}
-                appContext={appContext}
-                ref={ref}
-            />
-        }
-    </AppConsumer>
-));
+export default HomeScreen;
 

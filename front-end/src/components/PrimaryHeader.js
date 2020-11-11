@@ -1,47 +1,10 @@
 import React, { Component } from 'react';
 
-import { matchPath } from 'react-router'
 import { NavLink, withRouter } from 'react-router-dom';
 
 class PrimaryHeader extends Component {
 
-    state = {
-        addNew: false
-    };
-
-    handleAddNewTopic = () => {
-        this.setState( prev => {
-            return {
-                addNew: !prev.addNew
-            }
-        });
-    }
-
     render() {
-        const {location} = this.props;
-
-        if (location.pathname.match(/\/login/) ||
-            location.pathname.match(/\/logout/) ||
-            location.pathname.match(/\/signup/)
-        ) {
-            return null;
-        }
-
-        let match = matchPath(this.props.history.location.pathname, {
-            path: '/notes/:note/:folder/:page/',
-            exact: true,
-            strict: false
-          });
-
-
-        if ((match) &&
-            (match.params) &&
-            (match.params.note) &&
-            (match.params.folder) &&
-            (match.params.page)) {
-                return null;
-        }
-
         return (
             <header className="header--primary-desktop">
                 <img className="logo" src="../../img/moe.jpeg"/>

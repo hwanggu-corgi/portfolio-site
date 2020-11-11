@@ -30,7 +30,7 @@ class App extends Component {
                         <Switch>
                             {/* <Route path="/about" component={AboutScreen}/>
                             <Route path="/works" component={WorksScreen}/> */}
-                            <Route path="/" component={HomeScreen}/>
+                            <Route exact path="/" component={HomeScreen}/>
                             {/* <Route component={NotFoundScreen}/> */}
                         </Switch>
                     </div>

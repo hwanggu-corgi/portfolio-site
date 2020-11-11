@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 
 import { matchPath } from 'react-router'
 import { NavLink, withRouter } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faCheck, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
-
 
 class PrimaryHeader extends Component {
 
@@ -47,20 +44,20 @@ class PrimaryHeader extends Component {
 
         return (
             <header className="header--primary-desktop">
-                <img className="logo" src="https://placehold.it/200x200">
+                <img className="logo" src="../../img/moe.jpeg"/>
                 <nav className="menu menu--primary mb-4">
                     <h3 className="mb-9"><a href="#">Hyungmo Gu</a></h3>
                     <ul>
-                        <li className="mb-2"><a href="index.html">Home</a></li>
-                        <li className="mb-2"><a href="about.html">About</a></li>
-                        <li className="mb-2"><a href="works.html">Works</a></li>
-                        <li className="mb-2"><a href="contacts.html">Contacts</a></li>
+                        <li className="mb-2"><NavLink to="/">Home</NavLink></li>
+                        <li className="mb-2"><NavLink to="/about">About</NavLink></li>
+                        <li className="mb-2"><NavLink to="/works">Works</NavLink></li>
+                        <li className="mb-2"><NavLink to="/contact">Contact</NavLink></li>
                     </ul>
                 </nav>
                 <nav className="menu menu--social mb-4">
                     <ul>
-                        <li><a className="icon" href="https://www.linkedin.com/in/hyungmo-gu/"><i className="fab fa-linkedin-in"></i></a></li>
-                        <li><a className="icon" href="https://github.com/hyungmogu"><i className="fab fa-github"></i></a></li>
+                        <li><NavLink className="icon" href="https://www.linkedin.com/in/hyungmo-gu/"><i className="fab fa-linkedin-in"></i></NavLink></li>
+                        <li><NavLink className="icon" href="https://github.com/hyungmogu"><i className="fab fa-github"></i></NavLink></li>
                     </ul>
                     <div>Hyungmo Gu</div>
                     <div className="small">Thank you for visiting!</div>

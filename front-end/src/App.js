@@ -8,10 +8,10 @@ import {
 
 import { AppProvider } from './components/Context';
 
-// import PrimaryHeader from './components/PrimaryHeader';
+import PrimaryHeader from './components/PrimaryHeader';
 // import PrimaryHeaderMobile from './components/PrimaryHeaderMobile';
 
-import HomeScreen from './screens/Home/HomeScreen';
+import HomeScreen from './screens/HomeScreen';
 import './App.scss';
 
 class App extends Component {
@@ -25,9 +25,8 @@ class App extends Component {
             <AppProvider value={{...this.state}}>
                 <BrowserRouter basename={"portfolio-site"}>
                     <div className="App">
-
-                        {/* <PrimaryHeaderMobile/>
-                        <PrimaryHeader/> */}
+                        {/* <PrimaryHeaderMobile/> */}
+                        <PrimaryHeader/>
                         <Switch>
                             {/* <Route path="/about" component={AboutScreen}/>
                             <Route path="/works" component={WorksScreen}/> */}

@@ -5,14 +5,17 @@ import { NavLink, withRouter } from 'react-router-dom';
 class WorkListItem extends Component {
 
     render() {
+        let image = this.props.imageURL;
+        let date = this.props.date;
+        let title = this.props.title;
         return (
-            <a class="thumbnail" href="works_detail.html">
-                <img src="http://placehold.it/200x200" alt="Work"/>
+            <NavLink class="thumbnail" href="works_detail.html">
+                <img src={image} alt="Work"/>
                 <div>
-                    <div class="small">August 21st, 2019</div>
-                    <h4>My girl is the best ♥</h4>
+                    <div class="small">{date}</div>
+                    <h4>{title}</h4>
                 </div>
-            </a>
+            </NavLink>
         );
     }
 };

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class AboutScreen extends Component {
+class WorksScreen extends Component {
 
     render() {
         return (
-            <section className="content content-about">
+            <section className="content content-works">
                 <header class="header--secondary p-6">
                     <h2>About</h2>
                 </header>
@@ -25,5 +25,5 @@ class AboutScreen extends Component {
     }
 }
 
-export default AboutScreen;
+export default WorksScreen;
 

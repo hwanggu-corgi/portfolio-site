@@ -40,6 +40,7 @@ class App extends Component {
         return (
             <AppProvider value={{state: this.state, handlers: this.handlers}}>
                 <BrowserRouter basename={"portfolio-site"}>
+                {/* <BrowserRouter> */}
                     <div className="App">
                         <SecondaryHeader/>
                         <main role="main">

@@ -10,7 +10,7 @@ class WorksScreen extends Component {
                 </header>
                 <div>
                     <article>
-                        <WorkListItem/>
+                        {/* <WorkListItem/> */}
                     </article>
                 </div>
             </section>

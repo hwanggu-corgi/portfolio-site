@@ -17,6 +17,7 @@ import AboutScreen from './screens/AboutScreen';
 import WorksScreen from './screens/WorksScreen';
 
 import './App.scss';
+import data from 'json!...data.json';
 
 class App extends Component {
 

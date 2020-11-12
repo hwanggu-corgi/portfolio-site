@@ -12,10 +12,10 @@ class WorksScreen extends Component {
                 </header>
                 <div>
                     <article>
-                        <WorkListItem/>
-                        <WorkListItem/>
-                        <WorkListItem/>
-                        <WorkListItem/>
+                        <WorkListItem id={1}/>
+                        <WorkListItem id={2}/>
+                        <WorkListItem id={3}/>
+                        <WorkListItem id={4}/>
                     </article>
                 </div>
             </section>

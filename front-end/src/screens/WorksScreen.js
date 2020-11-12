@@ -13,6 +13,9 @@ class WorksScreen extends Component {
                 <div>
                     <article>
                         <WorkListItem/>
+                        <WorkListItem/>
+                        <WorkListItem/>
+                        <WorkListItem/>
                     </article>
                 </div>
             </section>

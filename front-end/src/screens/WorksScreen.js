@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import WorkListItem from '../components/WorkListItem';
+
 class WorksScreen extends Component {
 
     render() {
@@ -10,7 +12,8 @@ class WorksScreen extends Component {
                 </header>
                 <div>
                     <article>
-                        {/* <WorkListItem/> */}
+                        hello
+                        <WorkListItem/>
                     </article>
                 </div>
             </section>

@@ -14,6 +14,8 @@ import PrimaryHeaderMobile from './components/PrimaryHeaderMobile';
 
 import HomeScreen from './screens/HomeScreen';
 import AboutScreen from './screens/AboutScreen';
+import WorksScreen from './screens/WorksScreen';
+
 import './App.scss';
 
 class App extends Component {
@@ -48,7 +50,7 @@ class App extends Component {
                             <PrimaryHeaderMobile/>
                             <Switch>
                                 <Route path="/about" component={AboutScreen}/>
-                                {/* <Route path="/works" component={WorksScreen}/> */}
+                                <Route path="/works" component={WorksScreen}/>
                                 <Route exact path="/" component={HomeScreen}/>
                                 {/* <Route component={NotFoundScreen}/> */}
                             </Switch>

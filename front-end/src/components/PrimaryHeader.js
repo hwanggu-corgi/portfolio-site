@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-import Logo from '../img/moe.jpeg';
+import Logo from '../media/moe.jpeg';
 
 class PrimaryHeader extends Component {
 

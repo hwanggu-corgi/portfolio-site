@@ -13,6 +13,7 @@ import SecondaryHeader from './components/SecondaryHeader';
 import PrimaryHeaderMobile from './components/PrimaryHeaderMobile';
 
 import HomeScreen from './screens/HomeScreen';
+import AboutScreen from './screens/AboutScreen';
 import './App.scss';
 
 class App extends Component {
@@ -35,6 +36,7 @@ class App extends Component {
     }
 
     render() {
+        let screenOverlay = this.state.toggled ? "screen-overlay opened" : "screen-overlay";
         return (
             <AppProvider value={{state: this.state, handlers: this.handlers}}>
                 <BrowserRouter basename={"portfolio-site"}>
@@ -44,12 +46,13 @@ class App extends Component {
                             <PrimaryHeader/>
                             <PrimaryHeaderMobile/>
                             <Switch>
-                                {/* <Route path="/about" component={AboutScreen}/>
-                                <Route path="/works" component={WorksScreen}/> */}
+                                <Route path="/about" component={AboutScreen}/>
+                                {/* <Route path="/works" component={WorksScreen}/> */}
                                 <Route exact path="/" component={HomeScreen}/>
                                 {/* <Route component={NotFoundScreen}/> */}
                             </Switch>
                         </main>
+                        <div class={screenOverlay}></div>
                     </div>
                 </BrowserRouter>
             </AppProvider>

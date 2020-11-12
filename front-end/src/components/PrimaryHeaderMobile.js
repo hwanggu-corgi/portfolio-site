@@ -7,7 +7,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import { AppConsumer } from './Context';
 
-import Logo from '../img/moe.jpeg';
+import Logo from '../media/moe.jpeg';
 
 class PrimaryHeaderMobile extends Component {
 

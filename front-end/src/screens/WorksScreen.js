@@ -12,7 +12,6 @@ class WorksScreen extends Component {
                 </header>
                 <div>
                     <article>
-                        hello
                         <WorkListItem/>
                     </article>
                 </div>

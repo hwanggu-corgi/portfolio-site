@@ -5,6 +5,8 @@ import WorkListItem from '../components/WorkListItem';
 class WorksScreen extends Component {
 
     render() {
+        let works = this.props.data.works;
+
         return (
             <section className="content content-works">
                 <header class="header--secondary p-6">
@@ -12,10 +14,9 @@ class WorksScreen extends Component {
                 </header>
                 <div>
                     <article>
-                        <WorkListItem id={1}/>
-                        <WorkListItem id={2}/>
-                        <WorkListItem id={3}/>
-                        <WorkListItem id={4}/>
+                        {works.map((value, index) => {
+                            return <WorkListItem key={index+1} work={value}/>
+                        })}
                     </article>
                 </div>
             </section>

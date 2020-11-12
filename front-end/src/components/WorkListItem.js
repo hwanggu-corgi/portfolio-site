@@ -5,9 +5,9 @@ import { NavLink, withRouter } from 'react-router-dom';
 class WorkListItem extends Component {
 
     render() {
-        let image = this.props.imageURL;
-        let date = this.props.date;
-        let title = this.props.title;
+        let image = this.props.work.headerImageURL;
+        let date = this.props.work.date;
+        let title = this.props.work.title;
         return (
             <NavLink class="thumbnail" href="works_detail.html">
                 <img src={image} alt="Work"/>

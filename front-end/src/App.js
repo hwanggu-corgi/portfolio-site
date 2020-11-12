@@ -17,7 +17,7 @@ import AboutScreen from './screens/AboutScreen';
 import WorksScreen from './screens/WorksScreen';
 
 import './App.scss';
-import data from 'json!...data.json';
+import { data } from './data.js';
 
 class App extends Component {
 
@@ -41,7 +41,7 @@ class App extends Component {
     render() {
         let screenOverlay = this.state.toggled ? "screen-overlay opened" : "screen-overlay";
         return (
-            <AppProvider value={{state: this.state, handlers: this.handlers}}>
+            <AppProvider value={{state: this.state, data: data, handlers: this.handlers}}>
                 <BrowserRouter basename={"portfolio-site"}>
                 {/* <BrowserRouter> */}
                     <div className="App">

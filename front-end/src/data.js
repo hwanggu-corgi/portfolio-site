@@ -44,6 +44,28 @@ export const data = {
         },
         {
             "id": 3,
+            "title": "hyungmogu.com",
+            "date": "December 9th, 2019",
+            "headerImage": "https://user-images.githubusercontent.com/72232928/99108310-7ea29c00-262a-11eb-9f7c-4f56f2e25c52.png",
+            "shortDescription": "Portfolio site housing works of Hyungmo's software development",
+            "demoURL": "https://https://hyungmogu.com/",
+            "sourceURL": "#",
+            "techUsed": [
+                {
+                    "name": "Frontend",
+                    "items": ["React.js", "SCSS", "HTML5"]
+                }
+            ],
+            "images": [
+                "https://user-images.githubusercontent.com/72232928/99108081-2bc8e480-262a-11eb-80b1-66377cd58543.png",
+                "https://user-images.githubusercontent.com/72232928/99108089-2e2b3e80-262a-11eb-841b-db23127ce945.png",
+                "https://user-images.githubusercontent.com/72232928/99108093-2ec3d500-262a-11eb-8a6b-b496328ebaaf.png",
+                "https://user-images.githubusercontent.com/72232928/99108095-2f5c6b80-262a-11eb-8089-20f5af953f93.png",
+                "https://user-images.githubusercontent.com/72232928/99108096-2ff50200-262a-11eb-8942-842a65d09973.png"
+            ]
+        },
+        {
+            "id": 4,
             "title": "Social Team Builder",
             "date": "August 11th, 2019",
             "headerImage": "https://user-images.githubusercontent.com/72232928/99108310-7ea29c00-262a-11eb-9f7c-4f56f2e25c52.png",

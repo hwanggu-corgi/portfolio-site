@@ -26,14 +26,14 @@ export const data = {
             "id": 2,
             "title": "Calculator",
             "date": "January 5th, 2020",
-            "headerImage": "https://user-images.githubusercontent.com/72232928/99029105-f46c2080-25b4-11eb-88fe-a6471bf07721.png",
+            "headerImage": "https://user-images.githubusercontent.com/72232928/99099040-329d2a80-261d-11eb-8488-f5d9537c9e92.png",
             "shortDescription": "Calculator web app built using React.js",
-            "demoURL": "https://expo.io/@guhyungm7/basic-photo-app",
-            "sourceURL": "https://github.com/hyungmogu/basic-photo-app#",
+            "demoURL": "https://hyungmogu.github.io/calculator-app/",
+            "sourceURL": "https://github.com/hyungmogu/calculator-app",
             "techUsed": [
                 {
                     "name": "Frontend",
-                    "items": ["SCSS", "React Native"]
+                    "items": ["SCSS", "React.js"]
                 }
             ],
             "images": [

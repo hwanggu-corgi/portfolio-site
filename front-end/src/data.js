@@ -163,10 +163,38 @@ export const data = {
             "id": 7,
             "title": "Improve a Django Project",
             "date": "July 30th, 2019",
-            "headerImage": "https://user-images.githubusercontent.com/72232928/99116809-ffb46000-2637-11eb-9693-500f61b5c165.png",
+            "headerImage": "https://user-images.githubusercontent.com/72232928/99121859-8bca8580-2640-11eb-81cb-ed80844417ec.png",
             "shortDescription": "Ninth project for Team Treehouse's Python Web Tech Degree",
-            "demoURL": "https://social-team-builder1.herokuapp.com/",
-            "sourceURL": "https://github.com/hyungmogu/social-team-builder",
+            "demoURL": "https://improve-a-django-project1.herokuapp.com/",
+            "sourceURL": "https://github.com/hyungmogu/improve-a-Django-project",
+            "techUsed": [
+                {
+                    "name": "Frontend",
+                     "items": ["CSS", "HTML 5", "Bootstrap"]
+                },
+                {
+                    "name": "Backend",
+                    "items": ["Django"]
+                },
+                {
+                    "name": "Database",
+                    "items": ["SQLite3"]
+                }
+            ],
+            "images": [
+                "https://user-images.githubusercontent.com/72232928/99119372-73f10280-263c-11eb-972d-a2b5e0641c4c.png",
+                "https://user-images.githubusercontent.com/72232928/99119382-75bac600-263c-11eb-8337-29efa3427b51.png",
+                "https://user-images.githubusercontent.com/72232928/99119385-76ebf300-263c-11eb-9eb8-d240791698b4.png"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Improve a Django Project",
+            "date": "July 30th, 2019",
+            "headerImage": "https://user-images.githubusercontent.com/72232928/99121859-8bca8580-2640-11eb-81cb-ed80844417ec.png",
+            "shortDescription": "Ninth project for Team Treehouse's Python Web Tech Degree",
+            "demoURL": "https://improve-a-django-project1.herokuapp.com/",
+            "sourceURL": "https://github.com/hyungmogu/improve-a-Django-project",
             "techUsed": [
                 {
                     "name": "Frontend",

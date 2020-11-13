@@ -9,7 +9,7 @@ export const data = {
             "techUsed": {
                 "backend": ["Backend1", "Backend2"],
                 "frontend": ["Frontend1"],
-                "frontend": ["Database1"]
+                "database": ["Database1"]
             }
         }
     ]

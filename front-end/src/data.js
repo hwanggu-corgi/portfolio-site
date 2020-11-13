@@ -53,7 +53,15 @@ export const data = {
             "techUsed": [
                 {
                     "name": "Frontend",
-                    "items": ["React.js", "SCSS", "HTML5"]
+                    "items": ["SCSS", "HTML5"]
+                },
+                {
+                    "name": "Backend",
+                    "items": ["Django"]
+                },
+                {
+                    "name": "Database",
+                    "items": ["SQLite3"]
                 }
             ],
             "images": [
@@ -68,6 +76,36 @@ export const data = {
         },
         {
             "id": 4,
+            "title": "Clone Chart",
+            "date": "August 31th, 2019",
+            "headerImage": "https://user-images.githubusercontent.com/72232928/99108310-7ea29c00-262a-11eb-9f7c-4f56f2e25c52.png",
+            "shortDescription": "A simplified replica of Github's clone chart",
+            "demoURL": "https://clone-chart.herokuapp.com/",
+            "sourceURL": "https://github.com/hyungmogu/clone-chart",
+            "techUsed": [
+                {
+                    "name": "Frontend",
+                    "items": ["Angular.js", "D3", "Javascript", "HTML5", "CSS3"]
+                },
+                {
+                    "name": "Backend",
+                    "items": ["Django"]
+                },
+                {
+                    "name": "Database",
+                    "items": ["SQLite3"]
+                }
+            ],
+            "images": [
+                "https://user-images.githubusercontent.com/72232928/99108081-2bc8e480-262a-11eb-80b1-66377cd58543.png",
+                "https://user-images.githubusercontent.com/72232928/99108089-2e2b3e80-262a-11eb-841b-db23127ce945.png",
+                "https://user-images.githubusercontent.com/72232928/99108093-2ec3d500-262a-11eb-8a6b-b496328ebaaf.png",
+                "https://user-images.githubusercontent.com/72232928/99108095-2f5c6b80-262a-11eb-8089-20f5af953f93.png",
+                "https://user-images.githubusercontent.com/72232928/99108096-2ff50200-262a-11eb-8942-842a65d09973.png"
+            ]
+        },
+        {
+            "id": 5,
             "title": "Social Team Builder",
             "date": "August 11th, 2019",
             "headerImage": "https://user-images.githubusercontent.com/72232928/99108310-7ea29c00-262a-11eb-9f7c-4f56f2e25c52.png",

@@ -219,7 +219,7 @@ export const data = {
             "id": 9,
             "title": "Work Log With a Database",
             "date": "June 2nd, 2019",
-            "headerImage": "https://user-images.githubusercontent.com/72232928/99125553-a48a6980-2647-11eb-9ab5-165d65bd6a70.png",
+            "headerImage": "https://user-images.githubusercontent.com/72232928/99126946-7e19fd80-264a-11eb-88ec-242d8897f052.png",
             "shortDescription": "The fourth project for Team Treehouse's Python Web Tech Degree",
             "demoURL": "#",
             "sourceURL": "https://github.com/hyungmogu/work-log-with-a-database",
@@ -238,9 +238,9 @@ export const data = {
                 }
             ],
             "images": [
-                "https://user-images.githubusercontent.com/72232928/99124807-372a0900-2646-11eb-9640-40929bfde591.png",
-                "https://user-images.githubusercontent.com/72232928/99124817-3a24f980-2646-11eb-8939-df3a6f79a1fc.png",
-                "https://user-images.githubusercontent.com/72232928/99124820-3beebd00-2646-11eb-869a-a3a4e7119f59.png"
+                "https://user-images.githubusercontent.com/72232928/99126628-e3b9ba00-2649-11eb-8249-30077fe3f16a.png",
+                "https://user-images.githubusercontent.com/72232928/99126633-e4eae700-2649-11eb-98d8-5f307e3b4911.png",
+                "https://user-images.githubusercontent.com/72232928/99126638-e5837d80-2649-11eb-94e0-18dc90dbf415.png"
             ]
         }
     ]

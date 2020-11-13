@@ -78,7 +78,7 @@ export const data = {
             "id": 4,
             "title": "Clone Chart",
             "date": "August 31th, 2019",
-            "headerImage": "https://user-images.githubusercontent.com/72232928/99108310-7ea29c00-262a-11eb-9f7c-4f56f2e25c52.png",
+            "headerImage": "https://user-images.githubusercontent.com/72232928/99112715-700bb300-2631-11eb-8d4b-a207746bbecc.png",
             "shortDescription": "A simplified replica of Github's clone chart",
             "demoURL": "https://clone-chart.herokuapp.com/",
             "sourceURL": "https://github.com/hyungmogu/clone-chart",
@@ -97,11 +97,8 @@ export const data = {
                 }
             ],
             "images": [
-                "https://user-images.githubusercontent.com/72232928/99108081-2bc8e480-262a-11eb-80b1-66377cd58543.png",
-                "https://user-images.githubusercontent.com/72232928/99108089-2e2b3e80-262a-11eb-841b-db23127ce945.png",
-                "https://user-images.githubusercontent.com/72232928/99108093-2ec3d500-262a-11eb-8a6b-b496328ebaaf.png",
-                "https://user-images.githubusercontent.com/72232928/99108095-2f5c6b80-262a-11eb-8089-20f5af953f93.png",
-                "https://user-images.githubusercontent.com/72232928/99108096-2ff50200-262a-11eb-8942-842a65d09973.png"
+                "https://user-images.githubusercontent.com/72232928/99112470-10150c80-2631-11eb-975c-f492cd1418e3.png",
+                "https://user-images.githubusercontent.com/72232928/99112479-11ded000-2631-11eb-81c3-fe27beda3377.png"
             ]
         },
         {

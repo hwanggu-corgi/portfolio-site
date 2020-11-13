@@ -44,8 +44,8 @@ class App extends Component {
         let screenOverlay = this.state.toggled ? "screen-overlay opened" : "screen-overlay";
         return (
             <AppProvider value={{state: this.state, data: data, handlers: this.handlers}}>
-                {/* <BrowserRouter basename={"portfolio-site"}> */}
-                <BrowserRouter>
+                <BrowserRouter basename={"portfolio-site"}>
+                {/* <BrowserRouter> */}
                     <div className="App">
                         <SecondaryHeader/>
                         <main role="main">
@@ -59,7 +59,7 @@ class App extends Component {
                                 <Route exact path="/" component={HomeScreen}/>
                             </Switch>
                         </main>
-                        <div class={screenOverlay}></div>
+                        <div className={screenOverlay}></div>
                     </div>
                 </BrowserRouter>
             </AppProvider>

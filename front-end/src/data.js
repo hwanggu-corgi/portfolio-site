@@ -45,11 +45,11 @@ export const data = {
         {
             "id": 3,
             "title": "Social Team Builder",
-            "date": "January 5th, 2020",
-            "headerImage": "https://user-images.githubusercontent.com/72232928/99099040-329d2a80-261d-11eb-8488-f5d9537c9e92.png",
+            "date": "August 11th, 2019",
+            "headerImage": "https://user-images.githubusercontent.com/72232928/99108310-7ea29c00-262a-11eb-9f7c-4f56f2e25c52.png",
             "shortDescription": "Twelveth and the final project for Team Treehouse's Python Web Tech Degree",
-            "demoURL": "https://hyungmogu.github.io/calculator-app/",
-            "sourceURL": "https://github.com/hyungmogu/calculator-app",
+            "demoURL": "https://social-team-builder1.herokuapp.com/",
+            "sourceURL": "https://github.com/hyungmogu/social-team-builder",
             "techUsed": [
                 {
                     "name": "Frontend",
@@ -65,9 +65,11 @@ export const data = {
                 }
             ],
             "images": [
-                "https://user-images.githubusercontent.com/72232928/99097699-552e4400-261b-11eb-91aa-2106219c8885.png",
-                "https://user-images.githubusercontent.com/72232928/99097707-565f7100-261b-11eb-9824-08436888305c.png",
-                "https://user-images.githubusercontent.com/72232928/99097710-56f80780-261b-11eb-9be2-96674842a62f.png"
+                "https://user-images.githubusercontent.com/72232928/99108081-2bc8e480-262a-11eb-80b1-66377cd58543.png",
+                "https://user-images.githubusercontent.com/72232928/99108089-2e2b3e80-262a-11eb-841b-db23127ce945.png",
+                "https://user-images.githubusercontent.com/72232928/99108093-2ec3d500-262a-11eb-8a6b-b496328ebaaf.png",
+                "https://user-images.githubusercontent.com/72232928/99108095-2f5c6b80-262a-11eb-8089-20f5af953f93.png",
+                "https://user-images.githubusercontent.com/72232928/99108096-2ff50200-262a-11eb-8942-842a65d09973.png"
             ]
         }
     ]

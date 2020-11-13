@@ -44,16 +44,24 @@ class WorkDetailScreen extends Component {
                         <section class="mb-8 mt-8">
                             <h3>Technologies Used</h3>
                             <ul>
-                                <li><strong>Backend</strong>: {work.techUsed.backend.join(", ")}</li>
-                                <li><strong>Frontend</strong>: {work.techUsed.frontend.join(", ")}</li>
-                                <li><strong>Database</strong>: {work.techUsed.database.join(", ")}</li>
+                                {
+                                    work.techUsed.map(element => {
+                                        return (
+                                            <li>
+                                                <strong>{element.name}</strong>: {element.items.join(", ")}
+                                            </li>
+                                        );
+                                    })
+                                }
                             </ul>
                         </section>
 
                         <section class="images text-center mb-8">
-                            <img src="https://hyungmogu-portfolio-site.s3-us-west-2.amazonaws.com/social-team-builder.png" class="img-fluid mb-3" alt="Responsive image" />
-                            <img src="https://hyungmogu-portfolio-site.s3-us-west-2.amazonaws.com/social-team-builder-1.png" class="img-fluid mb-3" alt="Responsive image" />
-                            <img src="https://hyungmogu-portfolio-site.s3-us-west-2.amazonaws.com/social-team-builder-2.png" class="img-fluid mb-3" alt="Responsive image" />
+                            {
+                                work.images.map(imageURL => {
+                                    return <img src={imageURL} class="img-fluid mb-3" alt="Responsive image" />
+                                })
+                            }
                         </section>
 
                         <section class="text-center mb-8">

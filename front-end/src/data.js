@@ -6,6 +6,8 @@ export const data = {
             "date": "August 15th, 2020",
             "headerImage": "https://user-images.githubusercontent.com/72232928/99029105-f46c2080-25b4-11eb-88fe-a6471bf07721.png",
             "shortDescription": "Portfolio short description goes here",
+            "demoURL": "#",
+            "sourceURL": "#",
             "techUsed": [
                 {
                     "name": "Backend",

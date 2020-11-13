@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 
+import { AppConsumer } from '../components/Context';
+
 import WorkListItem from '../components/WorkListItem';
 
 class WorksScreen extends Component {
 
     render() {
-        let works = this.props.data.works;
+
+        let works = this.props.appContext.data.works;
 
         return (
             <section className="content content-works">
@@ -24,5 +27,15 @@ class WorksScreen extends Component {
     }
 }
 
-export default WorksScreen;
+export default React.forwardRef((props, ref) => (
+    <AppConsumer>
+        { appContext =>
+            <WorksScreen
+                {...props}
+                appContext={appContext}
+                ref={ref}
+            />
+        }
+    </AppConsumer>
+));
 

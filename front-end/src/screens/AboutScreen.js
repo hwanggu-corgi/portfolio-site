@@ -17,7 +17,7 @@ class AboutScreen extends Component {
 
                         <p class="small"><i>To my love, whom provided nothing but warmth and support to make this website and my 6 years journey as software developer possible.</i></p>
 
-                        <a class="small dotted" target="_blank" href="https://github.com/hyungmogu/personal-dev-log/files/5527452/Hyungmo%2BGu.%2BResume%2B02122020.pdf">Resume</a>
+                        <a class="small dotted" rel="noreferrer" target="_blank" href="https://github.com/hyungmogu/personal-dev-log/files/5527452/Hyungmo%2BGu.%2BResume%2B02122020.pdf">Resume</a>
                     </article>
                 </div>
             </section>

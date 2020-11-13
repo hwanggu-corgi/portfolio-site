@@ -57,7 +57,6 @@ class App extends Component {
                                 <Route path="/works" component={WorksScreen}/>
                                 <Route path="/contact" component={ContactScreen}/>
                                 <Route exact path="/" component={HomeScreen}/>
-                                {/* <Route component={NotFoundScreen}/> */}
                             </Switch>
                         </main>
                         <div class={screenOverlay}></div>

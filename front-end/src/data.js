@@ -46,7 +46,7 @@ export const data = {
             "id": 3,
             "title": "hyungmogu.com",
             "date": "December 9th, 2019",
-            "headerImage": "https://user-images.githubusercontent.com/72232928/99108310-7ea29c00-262a-11eb-9f7c-4f56f2e25c52.png",
+            "headerImage": "https://user-images.githubusercontent.com/72232928/99110490-cd056a00-262d-11eb-99b8-e9284e79b39b.png",
             "shortDescription": "Portfolio site housing works of Hyungmo's software development",
             "demoURL": "https://https://hyungmogu.com/",
             "sourceURL": "#",
@@ -57,11 +57,13 @@ export const data = {
                 }
             ],
             "images": [
-                "https://user-images.githubusercontent.com/72232928/99108081-2bc8e480-262a-11eb-80b1-66377cd58543.png",
-                "https://user-images.githubusercontent.com/72232928/99108089-2e2b3e80-262a-11eb-841b-db23127ce945.png",
-                "https://user-images.githubusercontent.com/72232928/99108093-2ec3d500-262a-11eb-8a6b-b496328ebaaf.png",
-                "https://user-images.githubusercontent.com/72232928/99108095-2f5c6b80-262a-11eb-8089-20f5af953f93.png",
-                "https://user-images.githubusercontent.com/72232928/99108096-2ff50200-262a-11eb-8942-842a65d09973.png"
+                "https://user-images.githubusercontent.com/72232928/99109955-f83b8980-262c-11eb-947c-8585d392bf8d.png",
+                "https://user-images.githubusercontent.com/72232928/99109978-02f61e80-262d-11eb-8fbd-68eacd1eb6b6.png",
+                "https://user-images.githubusercontent.com/72232928/99109980-04274b80-262d-11eb-9da4-090cc85f4d46.png",
+                "https://user-images.githubusercontent.com/72232928/99109982-04bfe200-262d-11eb-8015-7a716116b56e.png",
+                "https://user-images.githubusercontent.com/72232928/99109988-05f10f00-262d-11eb-9b0c-1a8816382287.png",
+                "https://user-images.githubusercontent.com/72232928/99109994-07bad280-262d-11eb-8511-61ccc5f5e1f4.png",
+                "https://user-images.githubusercontent.com/72232928/99109996-09849600-262d-11eb-8f80-e0a889bc0c7e.png"
             ]
         },
         {

@@ -191,7 +191,7 @@ export const data = {
             "id": 8,
             "title": "Filtering and Searching the Mineral Catalog",
             "date": "June 2nd, 2019",
-            "headerImage": "https://user-images.githubusercontent.com/72232928/99121859-8bca8580-2640-11eb-81cb-ed80844417ec.png",
+            "headerImage": "https://user-images.githubusercontent.com/72232928/99125553-a48a6980-2647-11eb-9ab5-165d65bd6a70.png",
             "shortDescription": "Eighth project for Team Treehouse's Python Web Tech Degree",
             "demoURL": "https://filter-search-mineral-catalog1.herokuapp.com/",
             "sourceURL": "https://github.com/hyungmogu/filtering-and-searching-the-mineral-catalog",
@@ -207,6 +207,34 @@ export const data = {
                 {
                     "name": "Database",
                     "items": ["SQLite3"]
+                }
+            ],
+            "images": [
+                "https://user-images.githubusercontent.com/72232928/99124807-372a0900-2646-11eb-9640-40929bfde591.png",
+                "https://user-images.githubusercontent.com/72232928/99124817-3a24f980-2646-11eb-8939-df3a6f79a1fc.png",
+                "https://user-images.githubusercontent.com/72232928/99124820-3beebd00-2646-11eb-869a-a3a4e7119f59.png"
+            ]
+        },
+        {
+            "id": 9,
+            "title": "Work Log With a Database",
+            "date": "June 2nd, 2019",
+            "headerImage": "https://user-images.githubusercontent.com/72232928/99125553-a48a6980-2647-11eb-9ab5-165d65bd6a70.png",
+            "shortDescription": "The fourth project for Team Treehouse's Python Web Tech Degree",
+            "demoURL": "#",
+            "sourceURL": "https://github.com/hyungmogu/work-log-with-a-database",
+            "techUsed": [
+                {
+                    "name": "Programming Language",
+                     "items": ["Python"]
+                },
+                {
+                    "name": "Backend",
+                    "items": ["Django"]
+                },
+                {
+                    "name": "Libraries",
+                    "items": ["Peewee ORM(Python)", "Unittest (Python)"]
                 }
             ],
             "images": [

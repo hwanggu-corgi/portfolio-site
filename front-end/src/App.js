@@ -16,6 +16,7 @@ import HomeScreen from './screens/HomeScreen';
 import AboutScreen from './screens/AboutScreen';
 import WorksScreen from './screens/WorksScreen';
 import WorkDetailScreen from './screens/WorkDetailScreen';
+import ContactScreen from './screens/ContactScreen';
 
 import './App.scss';
 import { data } from './data.js';
@@ -54,6 +55,7 @@ class App extends Component {
                                 <Route path="/about" component={AboutScreen}/>
                                 <Route path="/works/:id" component={WorkDetailScreen}/>
                                 <Route path="/works" component={WorksScreen}/>
+                                <Route path="/contact" component={ContactScreen}/>
                                 <Route exact path="/" component={HomeScreen}/>
                                 {/* <Route component={NotFoundScreen}/> */}
                             </Switch>

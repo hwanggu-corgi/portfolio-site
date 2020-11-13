@@ -182,9 +182,9 @@ export const data = {
                 }
             ],
             "images": [
-                "https://user-images.githubusercontent.com/72232928/99116685-cda2fe00-2637-11eb-94af-e70d3a056dec.png",
-                "https://user-images.githubusercontent.com/72232928/99116349-36d64180-2637-11eb-9300-119ccc85f6d6.png",
-                "https://user-images.githubusercontent.com/72232928/99116355-38a00500-2637-11eb-9996-1c4ec31c6e22.png",
+                "https://user-images.githubusercontent.com/72232928/99119372-73f10280-263c-11eb-972d-a2b5e0641c4c.png",
+                "https://user-images.githubusercontent.com/72232928/99119382-75bac600-263c-11eb-8337-29efa3427b51.png",
+                "https://user-images.githubusercontent.com/72232928/99119385-76ebf300-263c-11eb-9eb8-d240791698b4.png"
             ]
         }
     ]

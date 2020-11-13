@@ -41,6 +41,34 @@ export const data = {
                 "https://user-images.githubusercontent.com/72232928/99097707-565f7100-261b-11eb-9824-08436888305c.png",
                 "https://user-images.githubusercontent.com/72232928/99097710-56f80780-261b-11eb-9be2-96674842a62f.png"
             ]
+        },
+        {
+            "id": 3,
+            "title": "Social Team Builder",
+            "date": "January 5th, 2020",
+            "headerImage": "https://user-images.githubusercontent.com/72232928/99099040-329d2a80-261d-11eb-8488-f5d9537c9e92.png",
+            "shortDescription": "Twelveth and the final project for Team Treehouse's Python Web Tech Degree",
+            "demoURL": "https://hyungmogu.github.io/calculator-app/",
+            "sourceURL": "https://github.com/hyungmogu/calculator-app",
+            "techUsed": [
+                {
+                    "name": "Frontend",
+                    "items": ["CSS", "HTML 5"]
+                },
+                {
+                    "name": "Backend",
+                    "items": ["Django"]
+                },
+                {
+                    "name": "Database",
+                    "items": ["SQLite3"]
+                }
+            ],
+            "images": [
+                "https://user-images.githubusercontent.com/72232928/99097699-552e4400-261b-11eb-91aa-2106219c8885.png",
+                "https://user-images.githubusercontent.com/72232928/99097707-565f7100-261b-11eb-9824-08436888305c.png",
+                "https://user-images.githubusercontent.com/72232928/99097710-56f80780-261b-11eb-9be2-96674842a62f.png"
+            ]
         }
     ]
 };

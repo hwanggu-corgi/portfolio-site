@@ -3,6 +3,11 @@ import React, { Component } from 'react';
 class WorkDetailScreen extends Component {
 
     render() {
+        let id = this.props.work.id;
+        let image = this.props.work.headerImg;
+        let date = this.props.work.date;
+        let title = this.props.work.title;
+
         return (
             <section className="content content-works_detail">
                 <header class="header--secondary p-6">

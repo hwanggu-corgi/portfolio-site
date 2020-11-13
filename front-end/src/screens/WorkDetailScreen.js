@@ -45,8 +45,8 @@ class WorkDetailScreen extends Component {
                             <h3>Technologies Used</h3>
                             <ul>
                                 <li><strong>Backend</strong>: {work.techUsed.backend.join(", ")}</li>
-                                <li><strong>Frontend</strong>: Frontend 1</li>
-                                <li><strong>Database</strong>: Database 1</li>
+                                <li><strong>Frontend</strong>: {work.techUsed.frontend.join(", ")}</li>
+                                <li><strong>Database</strong>: {work.techUsed.database.join(", ")}</li>
                             </ul>
                         </section>
 

@@ -2,14 +2,16 @@ import React, { Component } from 'react';
 
 class WorkDetailScreen extends Component {
 
+    getWork = (id, works) => {
+        return works.findIndex(element => element == (id - 1));
+    }
+
     render() {
-        let id = this.props.work.id;
-        let image = this.props.work.headerImg;
-        let date = this.props.work.date;
-        let title = this.props.work.title;
+        let id = this.props.match.params.id;
+        let work = this.getWork(id, this.props.appContext.data.works);
 
         return (
-            <section className="content content-works_detail">
+            <section className="content -contentworks_detail">
                 <header class="header--secondary p-6">
                     <h2>Works</h2>
                 </header>

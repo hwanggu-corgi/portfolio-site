@@ -105,7 +105,7 @@ export const data = {
             "id": 5,
             "title": "Social Team Builder",
             "date": "August 11th, 2019",
-            "headerImage": "https://user-images.githubusercontent.com/72232928/99108310-7ea29c00-262a-11eb-9f7c-4f56f2e25c52.png",
+            "headerImage": "https://user-images.githubusercontent.com/72232928/99116920-2ffbfe80-2638-11eb-8ac6-e6e66b362954.png",
             "shortDescription": "Twelveth and the final project for Team Treehouse's Python Web Tech Degree",
             "demoURL": "https://social-team-builder1.herokuapp.com/",
             "sourceURL": "https://github.com/hyungmogu/social-team-builder",
@@ -129,6 +129,62 @@ export const data = {
                 "https://user-images.githubusercontent.com/72232928/99108093-2ec3d500-262a-11eb-8a6b-b496328ebaaf.png",
                 "https://user-images.githubusercontent.com/72232928/99108095-2f5c6b80-262a-11eb-8089-20f5af953f93.png",
                 "https://user-images.githubusercontent.com/72232928/99108096-2ff50200-262a-11eb-8942-842a65d09973.png"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Pugh or Ugh API",
+            "date": "August 5th, 2019",
+            "headerImage": "https://user-images.githubusercontent.com/72232928/99116809-ffb46000-2637-11eb-9693-500f61b5c165.png",
+            "shortDescription": "Eleventh project for Team Treehouse's Python Web Tech Degree",
+            "demoURL": "https://social-team-builder1.herokuapp.com/",
+            "sourceURL": "https://github.com/hyungmogu/social-team-builder",
+            "techUsed": [
+                {
+                    "name": "Frontend",
+                     "items": ["CSS", "HTML 5", "Javascript"]
+                },
+                {
+                    "name": "Backend",
+                    "items": ["Django"]
+                },
+                {
+                    "name": "Database",
+                    "items": ["SQLite3"]
+                }
+            ],
+            "images": [
+                "https://user-images.githubusercontent.com/72232928/99116685-cda2fe00-2637-11eb-94af-e70d3a056dec.png",
+                "https://user-images.githubusercontent.com/72232928/99116349-36d64180-2637-11eb-9300-119ccc85f6d6.png",
+                "https://user-images.githubusercontent.com/72232928/99116355-38a00500-2637-11eb-9996-1c4ec31c6e22.png",
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Improve a Django Project",
+            "date": "July 30th, 2019",
+            "headerImage": "https://user-images.githubusercontent.com/72232928/99116809-ffb46000-2637-11eb-9693-500f61b5c165.png",
+            "shortDescription": "Ninth project for Team Treehouse's Python Web Tech Degree",
+            "demoURL": "https://social-team-builder1.herokuapp.com/",
+            "sourceURL": "https://github.com/hyungmogu/social-team-builder",
+            "techUsed": [
+                {
+                    "name": "Frontend",
+                     "items": ["CSS", "HTML 5", "Bootstrap"]
+                },
+                {
+                    "name": "Backend",
+                    "items": ["Django"]
+                },
+                {
+                    "name": "Database",
+                    "items": ["SQLite3"]
+                }
+            ],
+            "images": [
+                "https://user-images.githubusercontent.com/72232928/99116685-cda2fe00-2637-11eb-94af-e70d3a056dec.png",
+                "https://user-images.githubusercontent.com/72232928/99116349-36d64180-2637-11eb-9300-119ccc85f6d6.png",
+                "https://user-images.githubusercontent.com/72232928/99116355-38a00500-2637-11eb-9996-1c4ec31c6e22.png",
             ]
         }
     ]

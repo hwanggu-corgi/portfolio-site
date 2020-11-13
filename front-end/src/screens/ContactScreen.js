@@ -12,7 +12,7 @@ class AboutScreen extends Component {
                     <article class="p-6">
                         <h3>Hire Hyungmo!</h3>
                         <ul>
-                            <li>Email: <a href="ghyungmo@gmail.com">ghyungmo@gmail.com</a></li>
+                            <li>Email: <a href="mailto:ghyungmo@gmail.com">ghyungmo@gmail.com</a></li>
                             <li>Linked-In: <a href="https://www.linkedin.com/in/hyungmo-gu/">linkedin.com/in/hyungmo-gu/</a></li>
                             <li>Github: <a href="https://github.com/hyungmogu">github.com/hyungmogu</a></li>
                         </ul>

@@ -10,7 +10,7 @@ class WorkListItem extends Component {
         let date = this.props.work.date;
         let title = this.props.work.title;
         return (
-            <NavLink class="thumbnail" to={`/works/${id}`}>
+            <NavLink className="thumbnail" to={`/works/${id}`}>
                 <img src={image} alt="Work"/>
                 <div>
                     <div class="small">{date}</div>

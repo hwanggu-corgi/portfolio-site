@@ -6,7 +6,7 @@ class WorkListItem extends Component {
 
     render() {
         let id = this.props.work.id;
-        let image = this.props.work.headerImg;
+        let image = this.props.work.headerImage;
         let date = this.props.work.date;
         let title = this.props.work.title;
         return (

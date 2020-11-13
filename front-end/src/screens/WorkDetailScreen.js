@@ -5,7 +5,7 @@ class WorkDetailScreen extends Component {
 
     getWork = (id, works) => {
 
-        let res = works.find(element => element.id == (id - 1));
+        let res = works.find(element => element.id == id);
 
         if (res == -1) {
             console.error("getWork: element not found");
@@ -28,10 +28,10 @@ class WorkDetailScreen extends Component {
                     <div>
                         <h2>{work.title}</h2>
                         <p>
-                            Portfolio short description goes here
+                            {work.shortDescription}
                         </p>
                         <p>
-                            August 21st, 2019
+                            {work.date}
                         </p>
                         <div>
                             <a href="#" class="btn btn--primary small">See Demo</a>
@@ -44,7 +44,7 @@ class WorkDetailScreen extends Component {
                         <section class="mb-8 mt-8">
                             <h3>Technologies Used</h3>
                             <ul>
-                                <li><strong>Backend</strong>: Backend 1</li>
+                                <li><strong>Backend</strong>: {work.techUsed.backend.join(", ")}</li>
                                 <li><strong>Frontend</strong>: Frontend 1</li>
                                 <li><strong>Database</strong>: Database 1</li>
                             </ul>

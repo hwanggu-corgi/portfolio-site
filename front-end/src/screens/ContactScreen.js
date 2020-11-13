@@ -10,11 +10,11 @@ class AboutScreen extends Component {
                 </header>
                 <div class="ml-4 mr-4">
                     <article class="p-6">
-                        <h3>Hire Moe!</h3>
+                        <h3>Hire Hyungmo!</h3>
                         <ul>
                             <li>Email: Add email here</li>
-                            <li>Linked-In: linkedin.com/in/hyungmo-gu/</li>
-                            <li>Github: linkedin.com/in/hyungmo-gu/</li>
+                            <li>Linked-In: <a href="https://www.linkedin.com/in/hyungmo-gu/">linkedin.com/in/hyungmo-gu/</a></li>
+                            <li>Github: <a href="https://github.com/hyungmogu">github.com/hyungmogu</a></li>
                         </ul>
                     </article>
                 </div>

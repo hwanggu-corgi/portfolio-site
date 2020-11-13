@@ -1,14 +1,23 @@
 import React, { Component } from 'react';
 
+import { AppConsumer } from '../components/Context';
 class WorkDetailScreen extends Component {
 
     getWork = (id, works) => {
-        return works.findIndex(element => element == (id - 1));
+
+        let res = works.find(element => element.id == (id - 1));
+
+        if (res == -1) {
+            console.error("getWork: element not found");
+        }
+
+        return res;
     }
 
     render() {
         let id = this.props.match.params.id;
-        let work = this.getWork(id, this.props.appContext.data.works);
+        let work = this.getWork(this.props.match.params.id, this.props.appContext.data.works);
+        console.log(work);
 
         return (
             <section className="content -contentworks_detail">
@@ -17,7 +26,7 @@ class WorkDetailScreen extends Component {
                 </header>
                 <section class="jumbotron">
                     <div>
-                        <h2>I love you ♥</h2>
+                        <h2>{work.title}</h2>
                         <p>
                             Portfolio short description goes here
                         </p>
@@ -60,5 +69,14 @@ class WorkDetailScreen extends Component {
     }
 }
 
-export default WorkDetailScreen;
-
+export default React.forwardRef((props, ref) => (
+    <AppConsumer>
+        { appContext =>
+            <WorkDetailScreen
+                {...props}
+                appContext={appContext}
+                ref={ref}
+            />
+        }
+    </AppConsumer>
+));

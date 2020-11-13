@@ -188,17 +188,17 @@ export const data = {
             ]
         },
         {
-            "id": 7,
-            "title": "Improve a Django Project",
-            "date": "July 30th, 2019",
+            "id": 8,
+            "title": "Filtering and Searching the Mineral Catalog",
+            "date": "June 2nd, 2019",
             "headerImage": "https://user-images.githubusercontent.com/72232928/99121859-8bca8580-2640-11eb-81cb-ed80844417ec.png",
-            "shortDescription": "Ninth project for Team Treehouse's Python Web Tech Degree",
-            "demoURL": "https://improve-a-django-project1.herokuapp.com/",
-            "sourceURL": "https://github.com/hyungmogu/improve-a-Django-project",
+            "shortDescription": "Eighth project for Team Treehouse's Python Web Tech Degree",
+            "demoURL": "https://filter-search-mineral-catalog1.herokuapp.com/",
+            "sourceURL": "https://github.com/hyungmogu/filtering-and-searching-the-mineral-catalog",
             "techUsed": [
                 {
                     "name": "Frontend",
-                     "items": ["CSS", "HTML 5", "Bootstrap"]
+                     "items": ["CSS", "HTML 5"]
                 },
                 {
                     "name": "Backend",
@@ -210,9 +210,9 @@ export const data = {
                 }
             ],
             "images": [
-                "https://user-images.githubusercontent.com/72232928/99119372-73f10280-263c-11eb-972d-a2b5e0641c4c.png",
-                "https://user-images.githubusercontent.com/72232928/99119382-75bac600-263c-11eb-8337-29efa3427b51.png",
-                "https://user-images.githubusercontent.com/72232928/99119385-76ebf300-263c-11eb-9eb8-d240791698b4.png"
+                "https://user-images.githubusercontent.com/72232928/99124807-372a0900-2646-11eb-9640-40929bfde591.png",
+                "https://user-images.githubusercontent.com/72232928/99124817-3a24f980-2646-11eb-8939-df3a6f79a1fc.png",
+                "https://user-images.githubusercontent.com/72232928/99124820-3beebd00-2646-11eb-869a-a3a4e7119f59.png"
             ]
         }
     ]

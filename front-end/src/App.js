@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 import {
-  BrowserRouter,
+  HashRouter,
   Route,
   Switch
 } from 'react-router-dom';
@@ -45,7 +45,7 @@ class App extends Component {
         return (
             <AppProvider value={{state: this.state, data: data, handlers: this.handlers}}>
                 {/* <BrowserRouter basename={"portfolio-site"}> */}
-                <BrowserRouter>
+                <HashRouter>
                     <div className="App">
                         <SecondaryHeader/>
                         <main role="main">
@@ -61,7 +61,7 @@ class App extends Component {
                         </main>
                         <div className={screenOverlay}></div>
                     </div>
-                </BrowserRouter>
+                </HashRouter>
             </AppProvider>
         );
     }

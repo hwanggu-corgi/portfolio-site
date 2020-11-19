@@ -415,6 +415,28 @@ main {
     }
 }
 
+.title {
+    width: 6.5rem;
+}
+
+.typing > *{
+    overflow: hidden;
+    border-right-color: white;
+    border-right-style: solid;
+    display: inline-block;
+    animation: typingAnim 2s steps(6), cursorAnim .5s steps(2) infinite;
+}
+  @keyframes typingAnim{
+    from { width: 0 }
+    to {width: 100%}
+  }
+
+  @keyframes cursorAnim{
+    0% { border-right-width: 0;}
+    100% { border-right-width: 0.25rem;}
+  }
+
+
 // ----------
 // Modifiers
 // ----------

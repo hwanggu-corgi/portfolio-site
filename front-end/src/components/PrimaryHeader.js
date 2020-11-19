@@ -21,7 +21,7 @@ class PrimaryHeader extends Component {
                         {/* <li className="mb-2"><NavLink to="/skills">Skills</NavLink></li> */}
                         <li className="mb-2"><NavLink to="/works">Works</NavLink></li>
                         <li className="mb-2"><NavLink to="/contact">Contact</NavLink></li>
-                        <li className="mb-2"><a rel="noreferrer" target="_blank" href="https://github.com/hyungmogu/personal-dev-log/files/5527452/Hyungmo%2BGu.%2BResume%2B02122020.pdf">Resume</a></li>
+                        <li className="mb-2"><a rel="noreferrer" target="_blank" href="https://github.com/hyungmogu/personal-dev-log/files/5564811/Hyungmo.Gu.Software.Engineer.pdf">Resume</a></li>
                     </ul>
                 </nav>
                 <nav className="menu menu--social mb-4">

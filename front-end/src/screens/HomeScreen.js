@@ -4,6 +4,10 @@ class HomeScreen extends Component {
 
     handleTyping() {
         // Determine the width of inner container with newly added character
+
+        // Measure the size of inner container
+
+        //
     }
 
     render() {

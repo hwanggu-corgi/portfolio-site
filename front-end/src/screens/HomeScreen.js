@@ -6,7 +6,7 @@ class HomeScreen extends Component {
         text: ""
     };
 
-    handleTyping(string, time, containerClassName) {
+    handleTyping(string, time) {
         let timeInterval = time / string.length;
 
         // Calculate delay time per character
@@ -33,7 +33,7 @@ class HomeScreen extends Component {
     }
 
     componentDidMount() {
-        this.handleTyping("Hello,", 3, "typing");
+        this.handleTyping("Hello,", 3);
     }
 
     render() {

@@ -415,23 +415,17 @@ main {
     }
 }
 
-.typing > *{
-    overflow: hidden;
-    border-color: white;
-    animation: typingAnim 5s steps(50), cursorAnim .5s steps(2);
+.title {
+    width: 6.5rem;
 }
 
-.typing > *::after{
-    content: "";
-    position: absolute;
-    display: block;
-    width: 0.25rem;
-    height: 3rem;
-    background: #fff;
-    animation: typingSpeak .5s steps(2);
-    animation-iteration-count: 5;
-  }
-
+.typing > *{
+    overflow: hidden;
+    border-right-color: white;
+    border-right-style: solid;
+    display: inline-block;
+    animation: typingAnim 5s steps(20), cursorAnim .5s steps(2);
+}
   @keyframes typingAnim{
     from { width: 0 }
     to { width: 100% }

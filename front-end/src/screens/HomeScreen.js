@@ -6,23 +6,29 @@ class HomeScreen extends Component {
         text: ""
     };
 
-    handleTyping(string) {
+    handleTyping(string, time, containerClassName) {
+        let timeInterval = time / string.length;
+        let container = document.getElementsByClassName(containerClassName);
         // Calculate delay time per character
+        for (let i = 0; i < string.length; i++) {
+            let letter = string[i];
+            setTimeout(() => {
+                // Add character to inner container
+                this.setState(prevState => {
+                    return {
+                        text: prevState.text + letter
+                    }
+                })
 
-        string.map((letter, index) => {
-            // Add character to inner container
-            this.setState(prevState => {
-                return {
-                    text: prevState.text + letter
-                }
-            })
+                // Determine the width of inner container with newly added character
 
-            // Determine the width of inner container with newly added character
+                // Measure the size of inner container
 
-            // Measure the size of inner container
+                // Increase the outer container by the new width
 
-            // Increase the outer container by the new width
-        });
+
+            }, i * timeInterval);
+        }
     }
 
     render() {

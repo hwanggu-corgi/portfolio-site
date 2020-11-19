@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
+import Typed from 'typed.js';
 
 class HomeScreen extends Component {
+
+    componentDidMount() {
+        var options = {
+        strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+        typeSpeed: 40
+        };
+
+        var typed = new Typed('.element', options);
+    }
 
     render() {
         return (

@@ -415,24 +415,13 @@ main {
     }
 }
 
-.title {
-    animation: animated-cursor 600ms steps(29,end) infinite;
-}
-
-
-.typing {
+.typing > *{
     overflow: hidden;
-    animation: typingAnim 5s steps(50);
+    border-color: white;
+    animation: typingAnim 5s steps(50), cursorAnim .5s steps(2);
 }
 
 .typing > *::after{
-    display: block;
-    position: absolute;
-    top: 1em;
-    left: .35em;
-}
-
-.typing > *::before{
     content: "";
     position: absolute;
     display: block;
@@ -447,9 +436,9 @@ main {
     from { width: 0 }
     to { width: 100% }
   }
-  @keyframes typingSpeak{
-    0% { width: 0;}
-    100% { width: 0.25rem;}
+  @keyframes cursorAnim{
+    0% { border-right-width: 0;}
+    100% { border-right-width: 0.25rem;}
   }
 
 

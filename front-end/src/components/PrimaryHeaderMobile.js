@@ -27,7 +27,7 @@ class PrimaryHeaderMobile extends Component {
                 <section>
                     <img className="logo" src={Logo} alt="Hyungmo Gu"/>
                     <nav className="menu menu--primary mb-4">
-                        <h3 className="mb-9"><NavLink to="/">Hyungmo Gu</NavLink></h3>
+                        <h3 className="mb-9"><NavLink onClick={this.toggleMenu} to="/">Hyungmo Gu</NavLink></h3>
                         <ul>
                             <li className="mb-2"><NavLink onClick={this.toggleMenu} to="/">Home</NavLink></li>
                             <li className="mb-2"><NavLink onClick={this.toggleMenu} to="/about">About</NavLink></li>

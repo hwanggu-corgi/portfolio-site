@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink, withRouter } from 'react-router-dom';
 
 import { AppConsumer } from './Context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,7 +16,7 @@ class SecondaryHeader extends Component {
             <header className="header--mobile">
                 <nav>
                     <div onClick={this.toggleMenu}><FontAwesomeIcon icon={faBars}/></div>
-                    <div><strong>Hyungmo Gu</strong></div>
+                    <div className="menu"><strong><NavLink to="/">Hyungmo Gu</NavLink></strong></div>
                     <div></div>
                 </nav>
             </header>
@@ -23,10 +24,12 @@ class SecondaryHeader extends Component {
     }
 };
 
+let SecondaryHeaderWithRoute = withRouter(SecondaryHeader);
+
 export default React.forwardRef((props, ref) => (
     <AppConsumer>
         { appContext =>
-            <SecondaryHeader
+            <SecondaryHeaderWithRoute
                 {...props}
                 appContext={appContext}
                 ref={ref}

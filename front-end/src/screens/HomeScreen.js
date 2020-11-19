@@ -15,7 +15,7 @@ class HomeScreen extends Component {
         text: ""
     };
 
-    handleTyping(string, time, outerContainer, innerContainer) {
+    handleTyping(string, time, outerElement, innerElement) {
         let timeInterval = time / string.length;
 
         // Calculate delay time per character
@@ -32,8 +32,9 @@ class HomeScreen extends Component {
                 // Determine the width of inner container with newly added character
 
                 // Measure the size of inner container
+                let innerElementNewDimension = measureElement(innerElement);
 
-                // Increase the outer container by the new width
+                // Increase the width of outer element to the new width
 
 
             }, i * timeInterval);

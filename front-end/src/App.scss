@@ -426,7 +426,6 @@ main {
 }
 
 .typing > *::after{
-    content: ". .";
     display: block;
     position: absolute;
     top: 1em;
@@ -437,11 +436,8 @@ main {
     content: "";
     position: absolute;
     display: block;
-    top: 2.1em;
-    left: .25em;
-    width: 1em;
-    height: .1em;
-    border-radius: 100%;
+    width: 0.25rem;
+    height: 3rem;
     background: #fff;
     animation: typingSpeak .5s steps(2);
     animation-iteration-count: 5;

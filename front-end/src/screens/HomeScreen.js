@@ -16,12 +16,13 @@ class HomeScreen extends Component {
     };
 
     handleTyping(string, time, outerElement, innerElement) {
-        let timeInterval = time / string.length;
+        let timeInterval = (time / string.length) * 1000; // from ms to seconds
 
         // Calculate delay time per character
         for (let i = 0; i < string.length; i++) {
             let letter = string[i];
             setTimeout(() => {
+                console.log("I am here");
                 // Add character to inner container
                 this.setState(prevState => {
                     return {
@@ -30,12 +31,10 @@ class HomeScreen extends Component {
                 })
 
                 // Determine the width of inner container with newly added character
-
-                // Measure the size of inner container
-                let innerElementNewDimension = measureElement(innerElement);
+                let innerElementNewWidth = measureElement(innerElement).width;
 
                 // Increase the width of outer element to the new width
-
+                this.outerContainer.style.width = `${innerElementNewWidth}px`;
 
             }, i * timeInterval);
         }

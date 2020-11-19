@@ -59,7 +59,7 @@ class App extends Component {
                                 <Route exact path="/" component={HomeScreen}/>
                             </Switch>
                         </main>
-                        <div className={screenOverlay}></div>
+                        <div onClick={this.handleToggleMenu} className={screenOverlay}></div>
                     </div>
                 </HashRouter>
             </AppProvider>

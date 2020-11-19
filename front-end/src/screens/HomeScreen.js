@@ -3,11 +3,13 @@ import React, { Component } from 'react';
 class HomeScreen extends Component {
 
     handleTyping() {
+        // Add character to inner container
+
         // Determine the width of inner container with newly added character
 
         // Measure the size of inner container
 
-        //
+        // Increase the outer container by the new width
     }
 
     render() {

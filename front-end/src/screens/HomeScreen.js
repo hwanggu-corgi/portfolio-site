@@ -22,7 +22,6 @@ class HomeScreen extends Component {
         for (let i = 0; i < string.length; i++) {
             let letter = string[i];
             setTimeout(() => {
-                console.log("I am here");
                 // Add character to inner container
                 this.setState(prevState => {
                     return {
@@ -34,7 +33,7 @@ class HomeScreen extends Component {
                 let innerElementNewWidth = measureElement(innerElement).width;
 
                 // Increase the width of outer element to the new width
-                this.outerContainer.style.width = `${innerElementNewWidth}px`;
+                outerElement.style.width = `${innerElementNewWidth}px`;
 
             }, i * timeInterval);
         }

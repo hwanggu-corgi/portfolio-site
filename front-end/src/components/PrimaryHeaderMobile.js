@@ -29,11 +29,11 @@ class PrimaryHeaderMobile extends Component {
                     <nav className="menu menu--primary mb-4">
                         <h3 className="mb-9"><NavLink to="/">Hyungmo Gu</NavLink></h3>
                         <ul>
-                            <li className="mb-2"><NavLink to="/">Home</NavLink></li>
-                            <li className="mb-2"><NavLink to="/about">About</NavLink></li>
+                            <li className="mb-2"><NavLink onClick={this.toggleMenu} to="/">Home</NavLink></li>
+                            <li className="mb-2"><NavLink onClick={this.toggleMenu} to="/about">About</NavLink></li>
                             {/* <li className="mb-2"><NavLink to="/skills">Skills</NavLink></li> */}
-                            <li className="mb-2"><NavLink to="/works">Works</NavLink></li>
-                            <li className="mb-2"><NavLink to="/contact">Contact</NavLink></li>
+                            <li className="mb-2"><NavLink onClick={this.toggleMenu} to="/works">Works</NavLink></li>
+                            <li className="mb-2"><NavLink onClick={this.toggleMenu} to="/contact">Contact</NavLink></li>
                             <li className="mb-2"><a rel="noreferrer" target="_blank" href={resume}>Resume</a></li>
                         </ul>
                     </nav>

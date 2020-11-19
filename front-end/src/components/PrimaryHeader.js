@@ -5,11 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
+import { AppConsumer } from './Context';
+
 import Logo from '../media/moe.jpeg';
 
 class PrimaryHeader extends Component {
-
     render() {
+        let resume = this.props.appContext.data.resume;
+
         return (
             <header className="header--primary-desktop">
                 <img className="logo" src={Logo} alt="Hyungmo Gu"/>
@@ -21,7 +24,7 @@ class PrimaryHeader extends Component {
                         {/* <li className="mb-2"><NavLink to="/skills">Skills</NavLink></li> */}
                         <li className="mb-2"><NavLink to="/works">Works</NavLink></li>
                         <li className="mb-2"><NavLink to="/contact">Contact</NavLink></li>
-                        <li className="mb-2"><a rel="noreferrer" target="_blank" href="https://github.com/hyungmogu/personal-dev-log/files/5564811/Hyungmo.Gu.Software.Engineer.pdf">Resume</a></li>
+                        <li className="mb-2"><a rel="noreferrer" target="_blank" href={resume}>Resume</a></li>
                     </ul>
                 </nav>
                 <nav className="menu menu--social mb-4">
@@ -37,4 +40,16 @@ class PrimaryHeader extends Component {
     }
 };
 
-export default withRouter(PrimaryHeader);
+let PrimaryHeaderWithRoute = withRouter(PrimaryHeader);
+
+export default React.forwardRef((props, ref) => (
+    <AppConsumer>
+        { appContext =>
+            <PrimaryHeaderWithRoute
+                {...props}
+                appContext={appContext}
+                ref={ref}
+            />
+        }
+    </AppConsumer>
+));

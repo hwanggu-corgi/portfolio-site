@@ -1,4 +1,5 @@
 export const data = {
+    "resume": "https://github.com/hyungmogu/personal-dev-log/files/5564899/Hyungmo.Gu.Software.Engineer.pdf",
     "works": [
         {
             "id": 1,

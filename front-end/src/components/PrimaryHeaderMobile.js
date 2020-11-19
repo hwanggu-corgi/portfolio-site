@@ -16,7 +16,7 @@ class PrimaryHeaderMobile extends Component {
     }
 
     render() {
-
+        let resume = this.props.appContext.data.resume;
         let headerPrimaryMobile = this.props.appContext.state.toggled ? "header--primary-mobile opened" : "header--primary-mobile";
 
         return (
@@ -34,7 +34,7 @@ class PrimaryHeaderMobile extends Component {
                             {/* <li className="mb-2"><NavLink to="/skills">Skills</NavLink></li> */}
                             <li className="mb-2"><NavLink to="/works">Works</NavLink></li>
                             <li className="mb-2"><NavLink to="/contact">Contact</NavLink></li>
-                            <li className="mb-2"><a rel="noreferrer" target="_blank" href="https://github.com/hyungmogu/personal-dev-log/files/5564811/Hyungmo.Gu.Software.Engineer.pdf">Resume</a></li>
+                            <li className="mb-2"><a rel="noreferrer" target="_blank" href={resume}>Resume</a></li>
                         </ul>
                     </nav>
                     <nav className="menu menu--social mb-4">

@@ -1,4 +1,13 @@
 import React, { Component } from 'react';
+import ReactDOM from "react-dom";
+
+const measureElement = element => {
+    const DOMNode = ReactDOM.findDOMNode(element);
+    return {
+      width: DOMNode.offsetWidth,
+      height: DOMNode.offsetHeight,
+    };
+  }
 
 class HomeScreen extends Component {
 
@@ -6,7 +15,7 @@ class HomeScreen extends Component {
         text: ""
     };
 
-    handleTyping(string, time) {
+    handleTyping(string, time, outerContainer, innerContainer) {
         let timeInterval = time / string.length;
 
         // Calculate delay time per character
@@ -21,7 +30,6 @@ class HomeScreen extends Component {
                 })
 
                 // Determine the width of inner container with newly added character
-                let innerContainer = outerContainer.childNodes[i];
 
                 // Measure the size of inner container
 
@@ -33,7 +41,7 @@ class HomeScreen extends Component {
     }
 
     componentDidMount() {
-        this.handleTyping("Hello,", 3);
+        this.handleTyping("Hello,", 3, this.outerContainer, this.innerContainer);
     }
 
     render() {
@@ -41,7 +49,9 @@ class HomeScreen extends Component {
             <section className="content content-home">
                 <div className="background-img"></div>
                 <article className="article--home">
-                    <h1 ref={r => this.outerContainer = r} className="title typing"><div>{this.state.text}</div></h1>
+                    <h1 ref={r => this.outerContainer = r} className="title typing">
+                        <div ref={r => this.innerContainer = r}>{this.state.text}</div>
+                    </h1>
                     <h1>
                         <div>Welcome to the</div>
                         <div>portfolio site of</div>

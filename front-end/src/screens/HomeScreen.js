@@ -2,14 +2,27 @@ import React, { Component } from 'react';
 
 class HomeScreen extends Component {
 
-    handleTyping() {
-        // Add character to inner container
+    state = {
+        text: ""
+    };
 
-        // Determine the width of inner container with newly added character
+    handleTyping(string) {
+        // Calculate delay time per character
 
-        // Measure the size of inner container
+        string.map((letter, index) => {
+            // Add character to inner container
+            this.setState(prevState => {
+                return {
+                    text: prevState.text + letter
+                }
+            })
 
-        // Increase the outer container by the new width
+            // Determine the width of inner container with newly added character
+
+            // Measure the size of inner container
+
+            // Increase the outer container by the new width
+        });
     }
 
     render() {
@@ -17,7 +30,7 @@ class HomeScreen extends Component {
             <section className="content content-home">
                 <div className="background-img"></div>
                 <article className="article--home">
-                    <h1 className="title typing"><div>Hello,</div></h1>
+                    <h1 className="title typing"><div>{this.state.text}</div></h1>
                     <h1>
                         <div>Welcome to the</div>
                         <div>portfolio site of</div>

@@ -8,7 +8,7 @@ class HomeScreen extends Component {
 
     handleTyping(string, time, containerClassName) {
         let timeInterval = time / string.length;
-        let container = document.getElementsByClassName(containerClassName);
+
         // Calculate delay time per character
         for (let i = 0; i < string.length; i++) {
             let letter = string[i];
@@ -21,6 +21,7 @@ class HomeScreen extends Component {
                 })
 
                 // Determine the width of inner container with newly added character
+                let innerContainer = outerContainer.childNodes[i];
 
                 // Measure the size of inner container
 
@@ -31,12 +32,16 @@ class HomeScreen extends Component {
         }
     }
 
+    componentDidMount() {
+        this.handleTyping("Hello,", 3, "typing");
+    }
+
     render() {
         return (
             <section className="content content-home">
                 <div className="background-img"></div>
                 <article className="article--home">
-                    <h1 className="title typing"><div>{this.state.text}</div></h1>
+                    <h1 ref={r => this.outerContainer = r} className="title typing"><div>{this.state.text}</div></h1>
                     <h1>
                         <div>Welcome to the</div>
                         <div>portfolio site of</div>

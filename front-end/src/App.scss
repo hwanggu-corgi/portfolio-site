@@ -420,7 +420,7 @@ main {
 }
 
 
-.typing > *{
+.typing {
     overflow: hidden;
     animation: typingAnim 5s steps(50);
 }
@@ -448,8 +448,8 @@ main {
     to { width: 100% }
   }
   @keyframes typingSpeak{
-    0% { width: 1em; height: .1em }
-    100% { width: 1em; height: .5em; }
+    0% { width: 0;}
+    100% { width: 0.25rem;}
   }
 
 

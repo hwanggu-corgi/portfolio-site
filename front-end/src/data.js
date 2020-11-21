@@ -6,7 +6,7 @@ export const data = {
             "title": "Photo Application",
             "date": "January 8th, 2020",
             "headerImage": "https://user-images.githubusercontent.com/72232928/99029105-f46c2080-25b4-11eb-88fe-a6471bf07721.png",
-            "shortDescription": "Basic photo & photo gallery app built using React native",
+            "shortDescription": "Basic photo and photo gallery app built using React Native",
             "demoURL": "https://expo.io/@guhyungm7/basic-photo-app",
             "sourceURL": "https://github.com/hyungmogu/basic-photo-app#",
             "techUsed": [
@@ -28,7 +28,7 @@ export const data = {
             "title": "Calculator",
             "date": "January 5th, 2020",
             "headerImage": "https://user-images.githubusercontent.com/72232928/99099040-329d2a80-261d-11eb-8488-f5d9537c9e92.png",
-            "shortDescription": "Calculator web app built using React.js",
+            "shortDescription": "Calculator app built using React.js",
             "demoURL": "https://hyungmogu.github.io/calculator-app/",
             "sourceURL": "https://github.com/hyungmogu/calculator-app",
             "techUsed": [
@@ -79,7 +79,7 @@ export const data = {
             "title": "Social Team Builder",
             "date": "August 11th, 2019",
             "headerImage": "https://user-images.githubusercontent.com/72232928/99116920-2ffbfe80-2638-11eb-8ac6-e6e66b362954.png",
-            "shortDescription": "Twelveth and the final project for Team Treehouse's Python Web Tech Degree",
+            "shortDescription": "Final project for Team Treehouse's Python Web Tech Degree",
             "demoURL": "https://social-team-builder1.herokuapp.com/",
             "sourceURL": "https://github.com/hyungmogu/social-team-builder",
             "techUsed": [
@@ -109,7 +109,7 @@ export const data = {
             "title": "Work Log With a Database",
             "date": "June 2nd, 2019",
             "headerImage": "https://user-images.githubusercontent.com/72232928/99126946-7e19fd80-264a-11eb-88ec-242d8897f052.png",
-            "shortDescription": "The fourth project for Team Treehouse's Python Web Tech Degree",
+            "shortDescription": "Fourth project for Team Treehouse's Python Web Tech Degree",
             "demoURL": "#",
             "sourceURL": "https://github.com/hyungmogu/work-log-with-a-database",
             "techUsed": [

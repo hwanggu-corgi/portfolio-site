@@ -76,33 +76,6 @@ export const data = {
         },
         {
             "id": 4,
-            "title": "Clone Chart",
-            "date": "August 31th, 2019",
-            "headerImage": "https://user-images.githubusercontent.com/72232928/99112715-700bb300-2631-11eb-8d4b-a207746bbecc.png",
-            "shortDescription": "A simplified replica of Github's clone chart",
-            "demoURL": "https://clone-chart.herokuapp.com/",
-            "sourceURL": "https://github.com/hyungmogu/clone-chart",
-            "techUsed": [
-                {
-                    "name": "Frontend",
-                    "items": ["Angular.js", "D3", "Javascript", "HTML5", "CSS3"]
-                },
-                {
-                    "name": "Backend",
-                    "items": ["Django"]
-                },
-                {
-                    "name": "Database",
-                    "items": ["SQLite3"]
-                }
-            ],
-            "images": [
-                "https://user-images.githubusercontent.com/72232928/99112470-10150c80-2631-11eb-975c-f492cd1418e3.png",
-                "https://user-images.githubusercontent.com/72232928/99112479-11ded000-2631-11eb-81c3-fe27beda3377.png"
-            ]
-        },
-        {
-            "id": 5,
             "title": "Social Team Builder",
             "date": "August 11th, 2019",
             "headerImage": "https://user-images.githubusercontent.com/72232928/99116920-2ffbfe80-2638-11eb-8ac6-e6e66b362954.png",
@@ -132,91 +105,7 @@ export const data = {
             ]
         },
         {
-            "id": 6,
-            "title": "Pugh or Ugh API",
-            "date": "August 5th, 2019",
-            "headerImage": "https://user-images.githubusercontent.com/72232928/99116809-ffb46000-2637-11eb-9693-500f61b5c165.png",
-            "shortDescription": "Eleventh project for Team Treehouse's Python Web Tech Degree",
-            "demoURL": "https://social-team-builder1.herokuapp.com/",
-            "sourceURL": "https://github.com/hyungmogu/social-team-builder",
-            "techUsed": [
-                {
-                    "name": "Frontend",
-                     "items": ["CSS", "HTML 5", "Javascript"]
-                },
-                {
-                    "name": "Backend",
-                    "items": ["Django"]
-                },
-                {
-                    "name": "Database",
-                    "items": ["SQLite3"]
-                }
-            ],
-            "images": [
-                "https://user-images.githubusercontent.com/72232928/99116685-cda2fe00-2637-11eb-94af-e70d3a056dec.png",
-                "https://user-images.githubusercontent.com/72232928/99116349-36d64180-2637-11eb-9300-119ccc85f6d6.png",
-                "https://user-images.githubusercontent.com/72232928/99116355-38a00500-2637-11eb-9996-1c4ec31c6e22.png",
-            ]
-        },
-        {
-            "id": 7,
-            "title": "Improve a Django Project",
-            "date": "July 30th, 2019",
-            "headerImage": "https://user-images.githubusercontent.com/72232928/99121859-8bca8580-2640-11eb-81cb-ed80844417ec.png",
-            "shortDescription": "Ninth project for Team Treehouse's Python Web Tech Degree",
-            "demoURL": "https://improve-a-django-project1.herokuapp.com/",
-            "sourceURL": "https://github.com/hyungmogu/improve-a-Django-project",
-            "techUsed": [
-                {
-                    "name": "Frontend",
-                     "items": ["CSS", "HTML 5", "Bootstrap"]
-                },
-                {
-                    "name": "Backend",
-                    "items": ["Django"]
-                },
-                {
-                    "name": "Database",
-                    "items": ["SQLite3"]
-                }
-            ],
-            "images": [
-                "https://user-images.githubusercontent.com/72232928/99119372-73f10280-263c-11eb-972d-a2b5e0641c4c.png",
-                "https://user-images.githubusercontent.com/72232928/99119382-75bac600-263c-11eb-8337-29efa3427b51.png",
-                "https://user-images.githubusercontent.com/72232928/99119385-76ebf300-263c-11eb-9eb8-d240791698b4.png"
-            ]
-        },
-        {
-            "id": 8,
-            "title": "Filtering and Searching the Mineral Catalog",
-            "date": "June 2nd, 2019",
-            "headerImage": "https://user-images.githubusercontent.com/72232928/99125553-a48a6980-2647-11eb-9ab5-165d65bd6a70.png",
-            "shortDescription": "Eighth project for Team Treehouse's Python Web Tech Degree",
-            "demoURL": "https://filter-search-mineral-catalog1.herokuapp.com/",
-            "sourceURL": "https://github.com/hyungmogu/filtering-and-searching-the-mineral-catalog",
-            "techUsed": [
-                {
-                    "name": "Frontend",
-                     "items": ["CSS", "HTML 5"]
-                },
-                {
-                    "name": "Backend",
-                    "items": ["Django"]
-                },
-                {
-                    "name": "Database",
-                    "items": ["SQLite3"]
-                }
-            ],
-            "images": [
-                "https://user-images.githubusercontent.com/72232928/99124807-372a0900-2646-11eb-9640-40929bfde591.png",
-                "https://user-images.githubusercontent.com/72232928/99124817-3a24f980-2646-11eb-8939-df3a6f79a1fc.png",
-                "https://user-images.githubusercontent.com/72232928/99124820-3beebd00-2646-11eb-869a-a3a4e7119f59.png"
-            ]
-        },
-        {
-            "id": 9,
+            "id": 5,
             "title": "Work Log With a Database",
             "date": "June 2nd, 2019",
             "headerImage": "https://user-images.githubusercontent.com/72232928/99126946-7e19fd80-264a-11eb-88ec-242d8897f052.png",

@@ -238,9 +238,7 @@ export const data = {
                 }
             ],
             "images": [
-                "https://user-images.githubusercontent.com/72232928/99126628-e3b9ba00-2649-11eb-8249-30077fe3f16a.png",
-                "https://user-images.githubusercontent.com/72232928/99126633-e4eae700-2649-11eb-98d8-5f307e3b4911.png",
-                "https://user-images.githubusercontent.com/72232928/99126638-e5837d80-2649-11eb-94e0-18dc90dbf415.png"
+                "https://user-images.githubusercontent.com/72232928/99126628-e3b9ba00-2649-11eb-8249-30077fe3f16a.png"
             ]
         }
     ]

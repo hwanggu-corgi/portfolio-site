@@ -34,7 +34,7 @@ class WorkDetailScreen extends Component {
                             {work.date}
                         </p>
                         <div>
-                            <a href={work.demoURL} class="btn btn--primary small">See Demo</a>
+                            {work.demoURL != "#" && <a href={work.demoURL} class="btn btn--primary small">See Demo</a>}
                             <a href={work.sourceURL} class="btn btn--primary-outline small">Source Code</a>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ class WorkDetailScreen extends Component {
 
                         <section class="text-center mb-8">
                             <div>
-                                <a href={work.demoURL} class="btn btn--primary small">See Demo</a>
+                            {work.demoURL != "#" && <a href={work.demoURL} class="btn btn--primary small">See Demo</a>}
                                 <a href={work.sourceURL} class="btn btn--primary-outline small">Source Code</a>
                             </div>
                         </section>

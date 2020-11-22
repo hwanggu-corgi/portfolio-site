@@ -134,18 +134,18 @@ export const data = {
             "id": 6,
             "title": "Web App Dashboard",
             "date": "January 15th, 2018",
-            "headerImage": "https://user-images.githubusercontent.com/72232928/99126946-7e19fd80-264a-11eb-88ec-242d8897f052.png",
-            "shortDescription": "9th project for Treehouse's Front-End Tech Degree. It takes a mockup, SVG icons, and javascript-driven chart to create an interactive user interface",
-            "demoURL": "#",
-            "sourceURL": "https://github.com/hyungmogu/work-log-with-a-database",
+            "headerImage": "https://user-images.githubusercontent.com/6856382/99919153-08571580-2d5f-11eb-87d7-8898c8562b13.png",
+            "shortDescription": "9th project for Treehouse's Front-End Tech Degree.",
+            "demoURL": "https://hyungmogu.github.io/web-app-dashboard/",
+            "sourceURL": "https://github.com/hyungmogu/web-app-dashboard",
             "techUsed": [
                 {
                     "name": "Frontend",
-                    "items": ["HTML5","Chart.js","SCSS","Gulp.js"]
+                    "items": ["HTML5","CSS3","SCSS","Gulp.js","Chart.js"]
                 }
             ],
             "images": [
-                "https://user-images.githubusercontent.com/72232928/99126628-e3b9ba00-2649-11eb-8249-30077fe3f16a.png"
+                "https://user-images.githubusercontent.com/6856382/99919154-08efac00-2d5f-11eb-9183-9371ddfbe4f1.png"
             ]
         }
     ]

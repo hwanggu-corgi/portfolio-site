@@ -1,5 +1,5 @@
 export const data = {
-    "resume": "https://github.com/hyungmogu/personal-dev-log/files/5617362/Hyungmo.Gu.Software.Developer.pdf",
+    "resume": "https://github.com/hyungmogu/portfolio-website-v2/files/5826497/Hyungmo.Gu.pdf",
     "works": [
         {
             "id": 1,

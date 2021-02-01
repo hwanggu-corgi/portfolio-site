@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { data } from '../../data';
+import { data } from './data';
 import { WorkExpItem, ProjectExpItem,
          EducationItem, ResumeHeader } from './lib';
 

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { data } from '../../data';
+import { data } from './data';
 
 
 const Article = styled.article`

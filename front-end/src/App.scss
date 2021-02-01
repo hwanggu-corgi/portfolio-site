@@ -257,6 +257,8 @@ main {
     background-color: white;
     height: #{$height-header--mobile};
     padding: #{$padding-header--mobile};
+    position: fixed;
+    width: 100%;
     nav {
         display: flex;
         justify-content: space-between;

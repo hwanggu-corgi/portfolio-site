@@ -18,6 +18,8 @@ export function PrintButton(props) {
     right: 0;
     bottom: 0;
     font-size: 1.5em;
+    text-decoration: none;
+    color: inherit;
 }
   `;
 

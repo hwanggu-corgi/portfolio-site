@@ -8,11 +8,11 @@ function Resume() {
   const Main = styled.section`
     font-family: Arial, Helvetica, sans-serif;
     max-width: 700px;
-    margin: 0 1em;
+    margin: 0 1em 2em 1em;
     padding: 3em 3em;
     background: white;
     @media only screen and (min-width: 730px) {
-      margin: 0 auto;
+      margin: 0 auto 2em auto;
     }
   `;
 

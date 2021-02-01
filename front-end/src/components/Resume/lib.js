@@ -101,7 +101,7 @@ export function WorkExpItem(props) {
 
 export function ResumeHeader(props) {
   const Header = styled.header`
-    @media only screen and (min-width: 730px) {
+    @media only screen and (min-width: 1000px) {
       text-align: center;
     }
   `;
@@ -110,7 +110,7 @@ export function ResumeHeader(props) {
     list-style: none;
     padding: 0;
 
-    @media only screen and (min-width: 730px) {
+    @media only screen and (min-width: 1000px) {
       display: flex;
     }
   `;
@@ -122,7 +122,7 @@ export function ResumeHeader(props) {
       border-right: none;
     }
 
-    @media only screen and (min-width: 730px) {
+    @media only screen and (min-width: 1000px) {
       flex-grow: 1;
       border-right: black solid 1px;
     }

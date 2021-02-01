@@ -34,7 +34,8 @@ class PrimaryHeaderMobile extends Component {
                             {/* <li className="mb-2"><NavLink to="/skills">Skills</NavLink></li> */}
                             <li className="mb-2"><NavLink onClick={this.toggleMenu} to="/works">Works</NavLink></li>
                             <li className="mb-2"><NavLink onClick={this.toggleMenu} to="/contact">Contact</NavLink></li>
-                            <li className="mb-2"><a rel="noreferrer" target="_blank" href={resume}>Resume</a></li>
+                            <li className="mb-2"><NavLink to="/resume">Resume</NavLink></li>
+                        {/* <li className="mb-2"><a rel="noreferrer" target="_blank" href={resume}>Resume</a></li> */}
                         </ul>
                     </nav>
                     <nav className="menu menu--social mb-4">

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Resume from '../components/Resume';
-import { printButton } from '../components/Buttons';
+import { PrintButton } from '../components/Buttons';
 
 
 class ResumeScreen extends Component {
@@ -11,7 +11,7 @@ class ResumeScreen extends Component {
                     <h2>Resume</h2>
                 </header>
                 <Resume/>
-                <printButton/>
+                <PrintButton/>
             </section>
         );
     }

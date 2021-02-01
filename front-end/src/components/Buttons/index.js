@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 export function PrintButton(props) {
   const A = styled.a`
@@ -12,11 +14,15 @@ export function PrintButton(props) {
     justify-content: center;
     align-items: center;
     box-shadow: 3px 5px 8px grey;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
   `;
 
   return (
     <A rel="noreferrer" target="_blank" href={props.resume}>
-        Print
+        <FontAwesomeIcon icon={faFilePdf} />
     </A>
   );
 }

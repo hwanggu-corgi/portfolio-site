@@ -7,8 +7,8 @@ export function PrintButton(props) {
     background-color: white;
     padding: 1em;
     margin: 1.25em;
-    width: 2.75em;
-    height: 2.75em;
+    width: 1em;
+    height: 1em;
     border-radius: 50%;
     display:flex;
     justify-content: center;
@@ -17,11 +17,12 @@ export function PrintButton(props) {
     position: fixed;
     right: 0;
     bottom: 0;
+    font-size: 1.5em;
 }
   `;
 
   return (
-    <A rel="noreferrer" target="_blank" href={props.resume}>
+    <A rel="noreferrer" target="_blank" href={props.href}>
         <FontAwesomeIcon icon={faFilePdf} />
     </A>
   );

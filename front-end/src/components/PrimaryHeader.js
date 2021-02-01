@@ -11,8 +11,6 @@ import Logo from '../media/moe.jpeg';
 
 class PrimaryHeader extends Component {
     render() {
-        let resume = this.props.appContext.data.resume;
-
         return (
             <header className="header--primary-desktop">
                 <img className="logo" src={Logo} alt="Hyungmo Gu"/>

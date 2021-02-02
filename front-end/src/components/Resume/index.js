@@ -11,7 +11,11 @@ function Resume() {
     margin: 0 1em 2em 1em;
     padding: 3em 3em;
     background: white;
-    @media only screen and (min-width: 730px) {
+
+    @media only screen and (min-width: 820px) {
+      margin: 0 auto;
+    }
+    @media only screen and (min-width: 930px) {
       margin: 0 auto 2em auto;
     }
   `;

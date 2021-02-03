@@ -40,7 +40,7 @@ export const data = {
         {
             "name": "hyungmogu.com",
             "url": "https://www.hyungmogu.com",
-            "date": "November 2020",
+            "date": "February 2021",
             "details": [
                 "Created a React and SASS based portfolio website from design to publishing",
                 "Engineered typewriter effect on homepage using CSS animations, React DOM and ES6 Javascript",
@@ -66,7 +66,7 @@ export const data = {
             "details": [
                 "Crafted the front-end of interactive dashboard app from mockup using HTML5, SASS and Chart.js",
                 "Leveraged BEM methodology to ensure naming consistency of over 500 lines of style codes",
-                "Utilized CSS animations on SVG icons to improve loading speed and user interactivity"
+                "Optimized browser speed by minifying files and utilizing svg sprites using Gulp.js"
             ]
         }
     ],

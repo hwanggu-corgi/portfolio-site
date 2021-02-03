@@ -1,4 +1,16 @@
 export const data = {
+    "contact": {
+        "web": {
+            "label": "hyungmogu.com",
+            "url": "https://www.hyungmogu.com"
+        },
+        "linkedIn": {
+            "label": "/in/hyungmo-gu/",
+            "url": "https://www.linkedin.com/in/hyungmo-gu/"
+        },
+        "email":"guhyungm7@gmail.com",
+        "tel": "1-825-365-1143"
+    },
     "resume": "https://github.com/hyungmogu/portfolio-website-v2/files/5826497/Hyungmo.Gu.pdf",
     "works": [
         {
@@ -45,7 +57,7 @@ export const data = {
         },
         {
             "id": 3,
-            "title": "hyungmogu.com",
+            "title": "hyungmogu.com Version 2",
             "date": "December 9th, 2019",
             "headerImage": "https://user-images.githubusercontent.com/72232928/99110490-cd056a00-262d-11eb-99b8-e9284e79b39b.png",
             "shortDescription": "Portfolio site housing works of Hyungmo's software development",

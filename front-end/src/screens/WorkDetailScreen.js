@@ -15,10 +15,10 @@ class WorkDetailScreen extends Component {
     }
 
     render() {
-        let work = this.getWork(this.props.match.params.id, this.props.appContext.data.works);
+        let work = this.getWork(parseInt(this.props.match.params.id), this.props.appContext.data.works);
 
         return (
-            <section className="content -contentworks_detail">
+            <section className="content contentworks_detail">
                 <header class="header--secondary p-6">
                     <h2>Works</h2>
                 </header>

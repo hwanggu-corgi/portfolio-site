@@ -18,7 +18,7 @@ export const data = {
     "resume": "https://github.com/hyungmogu/portfolio-website-v2/files/5826497/Hyungmo.Gu.pdf",
     "works": [
         {
-            "id": 3,
+            "id": 1,
             "title": "hyungmogu.com",
             "date": "February 3rd, 2021",
             "headerImage": "https://user-images.githubusercontent.com/72232928/99110490-cd056a00-262d-11eb-99b8-e9284e79b39b.png",
@@ -41,7 +41,7 @@ export const data = {
             ]
         },
         {
-            "id": 1,
+            "id": 2,
             "title": "Photo Application",
             "date": "January 8th, 2020",
             "headerImage": "https://user-images.githubusercontent.com/72232928/99029105-f46c2080-25b4-11eb-88fe-a6471bf07721.png",
@@ -63,7 +63,7 @@ export const data = {
             ]
         },
         {
-            "id": 2,
+            "id": 3,
             "title": "Calculator",
             "date": "January 5th, 2020",
             "headerImage": "https://user-images.githubusercontent.com/72232928/99099040-329d2a80-261d-11eb-8488-f5d9537c9e92.png",

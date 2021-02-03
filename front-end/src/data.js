@@ -35,7 +35,7 @@ export const data = {
                 "https://user-images.githubusercontent.com/6856382/106803602-b8be8f80-66a7-11eb-86a6-9cb80a2ab675.png",
                 "https://user-images.githubusercontent.com/6856382/106806560-75662000-66ab-11eb-8a2a-884bbfae88a9.png",
                 "https://user-images.githubusercontent.com/6856382/106806987-f45b5880-66ab-11eb-9f3f-a8ff62627c5a.png",
-                "https://user-images.githubusercontent.com/6856382/106802511-6761d080-66a6-11eb-8904-37808b7d8c3c.png",
+                "https://user-images.githubusercontent.com/6856382/106807380-6b90ec80-66ac-11eb-89ab-3595c68a97f5.png",
                 "https://user-images.githubusercontent.com/6856382/106802426-4c8f5c00-66a6-11eb-955f-3f9e20dbe619.png",
                 "https://user-images.githubusercontent.com/72232928/99109994-07bad280-262d-11eb-8511-61ccc5f5e1f4.png",
             ]

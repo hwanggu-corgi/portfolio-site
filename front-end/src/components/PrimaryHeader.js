@@ -19,11 +19,9 @@ class PrimaryHeader extends Component {
                     <ul>
                         <li className="mb-2"><NavLink to="/">Home</NavLink></li>
                         <li className="mb-2"><NavLink to="/about">About</NavLink></li>
-                        {/* <li className="mb-2"><NavLink to="/skills">Skills</NavLink></li> */}
                         <li className="mb-2"><NavLink to="/works">Works</NavLink></li>
                         <li className="mb-2"><NavLink to="/resume">Resume</NavLink></li>
                         <li className="mb-2"><NavLink to="/contact">Contact</NavLink></li>
-                        {/* <li className="mb-2"><a rel="noreferrer" target="_blank" href={resume}>Resume</a></li> */}
                     </ul>
                 </nav>
                 <nav className="menu menu--social mb-4">

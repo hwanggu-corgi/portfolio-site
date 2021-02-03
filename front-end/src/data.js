@@ -8,11 +8,38 @@ export const data = {
             "label": "/in/hyungmo-gu/",
             "url": "https://www.linkedin.com/in/hyungmo-gu/"
         },
+        "github": {
+            "label": "github.com/hyungmogu",
+            "url": "https://github.com/hyungmogu/"
+        },
         "email":"guhyungm7@gmail.com",
         "tel": "1-825-365-1143"
     },
     "resume": "https://github.com/hyungmogu/portfolio-website-v2/files/5826497/Hyungmo.Gu.pdf",
     "works": [
+        {
+            "id": 3,
+            "title": "hyungmogu.com",
+            "date": "February 3rd, 2021",
+            "headerImage": "https://user-images.githubusercontent.com/72232928/99110490-cd056a00-262d-11eb-99b8-e9284e79b39b.png",
+            "shortDescription": "Portfolio site housing works of Hyungmo's software development",
+            "demoURL": "https://https://hyungmogu.com/",
+            "sourceURL": "#",
+            "techUsed": [
+                {
+                    "name": "Frontend",
+                    "items": ["SCSS", "HTML5", "Styled Components", "ReactJS"]
+                }
+            ],
+            "images": [
+                "https://user-images.githubusercontent.com/72232928/99109955-f83b8980-262c-11eb-947c-8585d392bf8d.png",
+                "https://user-images.githubusercontent.com/72232928/99109978-02f61e80-262d-11eb-8fbd-68eacd1eb6b6.png",
+                "https://user-images.githubusercontent.com/72232928/99109980-04274b80-262d-11eb-9da4-090cc85f4d46.png",
+                "https://user-images.githubusercontent.com/72232928/99109982-04bfe200-262d-11eb-8015-7a716116b56e.png",
+                "https://user-images.githubusercontent.com/72232928/99109994-07bad280-262d-11eb-8511-61ccc5f5e1f4.png",
+                "https://user-images.githubusercontent.com/72232928/99109996-09849600-262d-11eb-8f80-e0a889bc0c7e.png"
+            ]
+        },
         {
             "id": 1,
             "title": "Photo Application",
@@ -46,44 +73,13 @@ export const data = {
             "techUsed": [
                 {
                     "name": "Frontend",
-                    "items": ["SCSS", "React.js"]
+                    "items": ["SCSS", "ReactJS"]
                 }
             ],
             "images": [
                 "https://user-images.githubusercontent.com/72232928/99097699-552e4400-261b-11eb-91aa-2106219c8885.png",
                 "https://user-images.githubusercontent.com/72232928/99097707-565f7100-261b-11eb-9824-08436888305c.png",
                 "https://user-images.githubusercontent.com/72232928/99097710-56f80780-261b-11eb-9be2-96674842a62f.png"
-            ]
-        },
-        {
-            "id": 3,
-            "title": "hyungmogu.com Version 2",
-            "date": "December 9th, 2019",
-            "headerImage": "https://user-images.githubusercontent.com/72232928/99110490-cd056a00-262d-11eb-99b8-e9284e79b39b.png",
-            "shortDescription": "Portfolio site housing works of Hyungmo's software development",
-            "demoURL": "https://https://hyungmogu.com/",
-            "sourceURL": "#",
-            "techUsed": [
-                {
-                    "name": "Frontend",
-                    "items": ["SCSS", "HTML5"]
-                },
-                {
-                    "name": "Backend",
-                    "items": ["Django"]
-                },
-                {
-                    "name": "Database",
-                    "items": ["SQLite3"]
-                }
-            ],
-            "images": [
-                "https://user-images.githubusercontent.com/72232928/99109955-f83b8980-262c-11eb-947c-8585d392bf8d.png",
-                "https://user-images.githubusercontent.com/72232928/99109978-02f61e80-262d-11eb-8fbd-68eacd1eb6b6.png",
-                "https://user-images.githubusercontent.com/72232928/99109980-04274b80-262d-11eb-9da4-090cc85f4d46.png",
-                "https://user-images.githubusercontent.com/72232928/99109982-04bfe200-262d-11eb-8015-7a716116b56e.png",
-                "https://user-images.githubusercontent.com/72232928/99109994-07bad280-262d-11eb-8511-61ccc5f5e1f4.png",
-                "https://user-images.githubusercontent.com/72232928/99109996-09849600-262d-11eb-8f80-e0a889bc0c7e.png"
             ]
         },
         {

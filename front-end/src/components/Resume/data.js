@@ -12,11 +12,11 @@ export const data = {
         "tel": "1-825-365-1143"
     },
     "highlights": [
-        "Emerging web developer with over 2 years of hands-on experience",
+        "Emerging front end engineer with over 2 years of hands-on experience",
         "Developed HTML templates from mockups that are both pixel-perfect and responsive",
-        "Strong skills in HTML5, CSS3 and ES6 JavaScript and comfort in React",
+        "Strong skills in HTML5, CSS3, ES6 JavaScript and ReactJS",
         "Strong ability to work independently and in collaboration with team members",
-        "Committed to refining front-end skills through Codecademy’s Learn Typescript Course"
+        "Passion for learning, and commitment to keep up with the latest technologies"
     ],
     "techSkills": [
         "Python", "HTML5", "CSS3", "SASS", "React", "ES6 JavaScript", "Typescript",
@@ -32,22 +32,11 @@ export const data = {
                 "Contributed to company’s growth by delivering over 300 AngularJS applications",
                 "Maintained company’s 2000 web based apps with tasks including fixing bugs and improving UI",
                 "Developed libraries of HTML, Bash and Python snippets to boost production speed and quality",
-                "Assisted with developing company’s SiteMax 3.5 mobile application using Ionic Framework, Angular, SASS and Postmans"
+                "Assisted with developing company’s SiteMax 3.5 mobile application using Ionic Framework, Angular 5, SASS and Postman"
             ]
         }
     ],
     "projectExp": [
-        {
-            "name": "Simple Publish",
-            "url": "https://github.com/hyungmogu/simple-publish",
-            "date": "January 2021",
-            "details": [
-                "Developed pixel perfect clone of GitHub’s create new repository page using React and SASS",
-                "Used React components to reduce repeating codes and improve app’s modularity",
-                "Utilized SASS for-loop to mock bootstrap’s grid system involving paddings and margins",
-                "Leveraged 7-1 SASS’s architecture to improve readability and maintainability of style codes"
-            ]
-        },
         {
             "name": "hyungmogu.com",
             "url": "https://www.hyungmogu.com",
@@ -57,6 +46,17 @@ export const data = {
                 "Engineered typewriter effect on homepage using CSS animations, React DOM and ES6 Javascript",
                 "Utilized media queries and flexbox properties for full responsiveness of the website ",
                 "Iterative design of template through prototypes using Adobe Illustrator and Bootstraps"
+            ]
+        },
+        {
+            "name": "Simple Publish",
+            "url": "https://github.com/hyungmogu/simple-publish",
+            "date": "January 2021",
+            "details": [
+                "Developed pixel perfect clone of GitHub’s create new repository page using React and SASS",
+                "Used React components to reduce repeating codes and improve app’s modularity",
+                "Utilized SASS for-loop to mock bootstrap’s grid system involving paddings and margins",
+                "Leveraged 7-1 SASS’s architecture to improve readability and maintainability of style codes"
             ]
         },
         {

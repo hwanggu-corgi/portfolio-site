@@ -15,7 +15,7 @@ export const data = {
         "email":"guhyungm7@gmail.com",
         "tel": "1-825-365-1143"
     },
-    "resume": "https://github.com/hyungmogu/portfolio-website-v2/files/5826497/Hyungmo.Gu.pdf",
+    "resume": "https://github.com/hyungmogu/hyungmogu.com-v2/files/5923236/Hyungmo.Gu.pdf",
     "works": [
         {
             "id": 1,
@@ -24,7 +24,7 @@ export const data = {
             "headerImage": "https://user-images.githubusercontent.com/72232928/99110490-cd056a00-262d-11eb-99b8-e9284e79b39b.png",
             "shortDescription": "Portfolio site housing works of Hyungmo's software development",
             "demoURL": "https://https://hyungmogu.com/",
-            "sourceURL": "#",
+            "sourceURL": "https://github.com/hyungmogu/hyungmogu.com-v2",
             "techUsed": [
                 {
                     "name": "Frontend",
@@ -47,7 +47,7 @@ export const data = {
             "headerImage": "https://user-images.githubusercontent.com/72232928/99029105-f46c2080-25b4-11eb-88fe-a6471bf07721.png",
             "shortDescription": "Basic photo and photo gallery app built using React Native",
             "demoURL": "https://expo.io/@guhyungm7/basic-photo-app",
-            "sourceURL": "https://github.com/hyungmogu/basic-photo-app#",
+            "sourceURL": "https://github.com/hyungmogu/basic-photo-app",
             "techUsed": [
                 {
                     "name": "Frontend",

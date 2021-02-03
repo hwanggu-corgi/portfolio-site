@@ -28,11 +28,11 @@ export const data = {
             "techUsed": [
                 {
                     "name": "Frontend",
-                    "items": ["SCSS", "HTML5", "Styled Components", "ReactJS"]
+                    "items": ["SASS", "HTML5", "Styled Components", "ReactJS"]
                 }
             ],
             "images": [
-                "https://user-images.githubusercontent.com/72232928/99109955-f83b8980-262c-11eb-947c-8585d392bf8d.png",
+                "https://user-images.githubusercontent.com/6856382/106782136-290be780-668d-11eb-911c-704e3b283869.png",
                 "https://user-images.githubusercontent.com/72232928/99109978-02f61e80-262d-11eb-8fbd-68eacd1eb6b6.png",
                 "https://user-images.githubusercontent.com/72232928/99109980-04274b80-262d-11eb-9da4-090cc85f4d46.png",
                 "https://user-images.githubusercontent.com/72232928/99109982-04bfe200-262d-11eb-8015-7a716116b56e.png",
@@ -73,7 +73,7 @@ export const data = {
             "techUsed": [
                 {
                     "name": "Frontend",
-                    "items": ["SCSS", "ReactJS"]
+                    "items": ["SASS", "ReactJS"]
                 }
             ],
             "images": [
@@ -149,7 +149,7 @@ export const data = {
             "techUsed": [
                 {
                     "name": "Frontend",
-                    "items": ["HTML5","CSS3","SCSS","Gulp.js","Chart.js"]
+                    "items": ["HTML5","CSS3","SASS","Gulp.js","Chart.js"]
                 }
             ],
             "images": [

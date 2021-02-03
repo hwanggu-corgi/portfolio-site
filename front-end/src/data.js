@@ -33,9 +33,9 @@ export const data = {
             ],
             "images": [
                 "https://user-images.githubusercontent.com/6856382/106782136-290be780-668d-11eb-911c-704e3b283869.png",
-                "https://user-images.githubusercontent.com/72232928/99109978-02f61e80-262d-11eb-8fbd-68eacd1eb6b6.png",
-                "https://user-images.githubusercontent.com/72232928/99109980-04274b80-262d-11eb-9da4-090cc85f4d46.png",
-                "https://user-images.githubusercontent.com/72232928/99109982-04bfe200-262d-11eb-8015-7a716116b56e.png",
+                "https://user-images.githubusercontent.com/6856382/106783115-442b2700-668e-11eb-9437-ddf64a11e361.png",
+                "https://user-images.githubusercontent.com/6856382/106783195-5c9b4180-668e-11eb-84c8-1547f0b7872a.png",
+                "https://user-images.githubusercontent.com/6856382/106783374-95d3b180-668e-11eb-9a6b-12292c6aba7d.png",
                 "https://user-images.githubusercontent.com/72232928/99109994-07bad280-262d-11eb-8511-61ccc5f5e1f4.png",
                 "https://user-images.githubusercontent.com/72232928/99109996-09849600-262d-11eb-8f80-e0a889bc0c7e.png"
             ]

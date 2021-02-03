@@ -32,7 +32,7 @@ export const data = {
                 }
             ],
             "images": [
-                "https://user-images.githubusercontent.com/6856382/106782136-290be780-668d-11eb-911c-704e3b283869.png",
+                "https://user-images.githubusercontent.com/6856382/106803602-b8be8f80-66a7-11eb-86a6-9cb80a2ab675.png",
                 "https://user-images.githubusercontent.com/6856382/106783115-442b2700-668e-11eb-9437-ddf64a11e361.png",
                 "https://user-images.githubusercontent.com/6856382/106783195-5c9b4180-668e-11eb-84c8-1547f0b7872a.png",
                 "https://user-images.githubusercontent.com/6856382/106802511-6761d080-66a6-11eb-8904-37808b7d8c3c.png",

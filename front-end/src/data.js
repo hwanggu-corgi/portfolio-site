@@ -21,7 +21,7 @@ export const data = {
             "id": 1,
             "title": "Social Proof Section",
             "date": "February 10th, 2021",
-            "headerImage": "https://user-images.githubusercontent.com/6856382/107605103-8f889b00-6c75-11eb-97e3-449f7af4e3ac.png",
+            "headerImage": "https://user-images.githubusercontent.com/6856382/107606349-24d95e80-6c79-11eb-85f9-70fe13b9b3ce.png",
             "shortDescription": "A short challenge from frontendmentor.io for the demonstration of Hyungmo's skill in creating a pixel-perfect template",
             "demoURL": "https://hyungmogu.github.io/social-proof-section/",
             "sourceURL": "https://github.com/hyungmogu/social-proof-section",

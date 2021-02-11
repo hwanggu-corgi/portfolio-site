@@ -19,6 +19,29 @@ export const data = {
     "works": [
         {
             "id": 1,
+            "title": "Social Proof Section",
+            "date": "February 10th, 2021",
+            "headerImage": "https://user-images.githubusercontent.com/6856382/107604576-e8573400-6c73-11eb-8ad8-ced96851f7b8.png",
+            "shortDescription": "A short challenge from frontendmentor.io for demonstration of Hyungmo's skill in creating pixel perfect template",
+            "demoURL": "https://hyungmogu.github.io/social-proof-section/",
+            "sourceURL": "https://github.com/hyungmogu/social-proof-section",
+            "techUsed": [
+                {
+                    "name": "Frontend",
+                    "items": ["HTML5", "CSS3"]
+                }
+            ],
+            "images": [
+                "https://user-images.githubusercontent.com/6856382/107604576-e8573400-6c73-11eb-8ad8-ced96851f7b8.png",
+                "https://user-images.githubusercontent.com/6856382/106806560-75662000-66ab-11eb-8a2a-884bbfae88a9.png",
+                "https://user-images.githubusercontent.com/6856382/106806987-f45b5880-66ab-11eb-9f3f-a8ff62627c5a.png",
+                "https://user-images.githubusercontent.com/6856382/106807380-6b90ec80-66ac-11eb-89ab-3595c68a97f5.png",
+                "https://user-images.githubusercontent.com/6856382/106802426-4c8f5c00-66a6-11eb-955f-3f9e20dbe619.png",
+                "https://user-images.githubusercontent.com/6856382/106809199-b9a6ef80-66ae-11eb-8d82-5e79f4ef720b.png",
+            ]
+        },
+        {
+            "id": 2,
             "title": "hyungmogu.com",
             "date": "February 3rd, 2021",
             "headerImage": "https://user-images.githubusercontent.com/72232928/99110490-cd056a00-262d-11eb-99b8-e9284e79b39b.png",
@@ -41,7 +64,7 @@ export const data = {
             ]
         },
         {
-            "id": 2,
+            "id": 3,
             "title": "Photo Application",
             "date": "January 8th, 2020",
             "headerImage": "https://user-images.githubusercontent.com/72232928/99029105-f46c2080-25b4-11eb-88fe-a6471bf07721.png",

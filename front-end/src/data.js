@@ -22,7 +22,7 @@ export const data = {
             "title": "Social Proof Section",
             "date": "February 10th, 2021",
             "headerImage": "https://user-images.githubusercontent.com/6856382/107605103-8f889b00-6c75-11eb-97e3-449f7af4e3ac.png",
-            "shortDescription": "A short challenge from frontendmentor.io for demonstration of Hyungmo's skill in creating pixel perfect template",
+            "shortDescription": "A short challenge from frontendmentor.io for the demonstration of Hyungmo's skill in creating a pixel-perfect template",
             "demoURL": "https://hyungmogu.github.io/social-proof-section/",
             "sourceURL": "https://github.com/hyungmogu/social-proof-section",
             "techUsed": [
@@ -32,8 +32,8 @@ export const data = {
                 }
             ],
             "images": [
-                "https://user-images.githubusercontent.com/6856382/107605188-cbbbfb80-6c75-11eb-83c5-262a9f3d36dd.png",
-                "https://user-images.githubusercontent.com/6856382/107605326-32d9b000-6c76-11eb-87ae-bdfcc8e031b9.png"
+                "https://user-images.githubusercontent.com/6856382/107606064-50a81480-6c78-11eb-94b4-fe027c1437ec.png",
+                "https://user-images.githubusercontent.com/6856382/107605824-a3350100-6c77-11eb-8150-2b18d3680249.png"
             ]
         },
         {

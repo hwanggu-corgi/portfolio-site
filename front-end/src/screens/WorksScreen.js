@@ -7,7 +7,6 @@ import WorkListItem from '../components/WorkListItem';
 class WorksScreen extends Component {
 
     render() {
-
         let works = this.props.appContext.data.resume.projectExp;
 
         return (
@@ -17,9 +16,7 @@ class WorksScreen extends Component {
                 </header>
                 <div>
                     <article>
-                        {works.map((value, index) => {
-                            return <WorkListItem key={index+1} work={value}/>
-                        })}
+                        {works.map((value, index) => <WorkListItem key={index+1} work={value}/>)}
                     </article>
                 </div>
             </section>

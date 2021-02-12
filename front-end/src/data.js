@@ -75,7 +75,7 @@ export const data = {
                 "techUsed": [
                     {
                         "name": "Frontend",
-                        "items": ["SASS", "HTML5", "Styled Components", "ReactJS"]
+                        "items": ["SASS", "HTML5", "ES6 JavaScript", "ReactJS", "Styled Components"]
                     }
                 ],
                 "highlights": [

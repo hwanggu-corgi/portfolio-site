@@ -16,7 +16,7 @@ export const data = {
         "tel": "1-825-365-1143"
     },
     "resume": {
-        "pdfUrl": "https://github.com/hyungmogu/hyungmogu.com-v2/files/5923236/Hyungmo.Gu.pdf",
+        "pdfURL": "https://github.com/hyungmogu/hyungmogu.com-v2/files/5923236/Hyungmo.Gu.pdf",
         "highlights": [
             "Emerging front end engineer with over 2 years of hands-on experience",
             "Developed HTML templates from mockups that are both pixel-perfect and responsive",
@@ -61,7 +61,8 @@ export const data = {
                 "images": [
                     "https://user-images.githubusercontent.com/6856382/107606064-50a81480-6c78-11eb-94b4-fe027c1437ec.png",
                     "https://user-images.githubusercontent.com/6856382/107605824-a3350100-6c77-11eb-8150-2b18d3680249.png"
-                ]
+                ],
+                "includeInResume": false
             },
             {
                 "id": 2,
@@ -90,7 +91,8 @@ export const data = {
                     "https://user-images.githubusercontent.com/6856382/106807380-6b90ec80-66ac-11eb-89ab-3595c68a97f5.png",
                     "https://user-images.githubusercontent.com/6856382/106802426-4c8f5c00-66a6-11eb-955f-3f9e20dbe619.png",
                     "https://user-images.githubusercontent.com/6856382/106809199-b9a6ef80-66ae-11eb-8d82-5e79f4ef720b.png",
-                ]
+                ],
+                "includeInResume": true
             },
             {
                 "id": 3,
@@ -113,7 +115,8 @@ export const data = {
                     "https://user-images.githubusercontent.com/72232928/99028879-54ae9280-25b4-11eb-992a-38b9da918b29.jpg",
                     "https://user-images.githubusercontent.com/72232928/99028882-56785600-25b4-11eb-9472-76ea22afe64e.jpg",
                     "https://user-images.githubusercontent.com/72232928/99028886-58421980-25b4-11eb-97e4-7a1bf65a433d.jpg"
-                ]
+                ],
+                "includeInResume": false
             },
             {
                 "id": 3,
@@ -134,7 +137,8 @@ export const data = {
                     "https://user-images.githubusercontent.com/72232928/99097699-552e4400-261b-11eb-91aa-2106219c8885.png",
                     "https://user-images.githubusercontent.com/72232928/99097707-565f7100-261b-11eb-9824-08436888305c.png",
                     "https://user-images.githubusercontent.com/72232928/99097710-56f80780-261b-11eb-9be2-96674842a62f.png"
-                ]
+                ],
+                "includeInResume": false
             },
             {
                 "id": 4,
@@ -170,7 +174,8 @@ export const data = {
                     "https://user-images.githubusercontent.com/72232928/99108093-2ec3d500-262a-11eb-8a6b-b496328ebaaf.png",
                     "https://user-images.githubusercontent.com/72232928/99108095-2f5c6b80-262a-11eb-8089-20f5af953f93.png",
                     "https://user-images.githubusercontent.com/72232928/99108096-2ff50200-262a-11eb-8942-842a65d09973.png"
-                ]
+                ],
+                "includeInResume": false
             },
             {
                 "id": 5,
@@ -197,7 +202,8 @@ export const data = {
                 "hightlights": [],
                 "images": [
                     "https://user-images.githubusercontent.com/72232928/99126628-e3b9ba00-2649-11eb-8249-30077fe3f16a.png"
-                ]
+                ],
+                "includeInResume": false
             },
             {
                 "id": 6,
@@ -222,7 +228,8 @@ export const data = {
                     "https://user-images.githubusercontent.com/6856382/99920909-11011900-2d6a-11eb-970e-5ba65efee036.png",
                     "https://user-images.githubusercontent.com/6856382/99920910-1199af80-2d6a-11eb-803c-ce2a3518bb5c.png",
                     "https://user-images.githubusercontent.com/6856382/99920907-0e9ebf00-2d6a-11eb-9d05-7041163ce1b1.png"
-                ]
+                ],
+                "includeInResume": true
             }
         ],
         "education": [

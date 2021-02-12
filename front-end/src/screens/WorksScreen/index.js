@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import { AppConsumer } from '../components/Context';
+import { AppConsumer } from '../../components/Context';
 
-import WorkListItem from '../components/WorkListItem';
+import WorkListItem from '../../components/WorkListItem';
 
 class WorksScreen extends Component {
 

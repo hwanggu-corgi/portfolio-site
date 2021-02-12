@@ -12,10 +12,17 @@ import {
     HomeScreen,
     AboutScreen,
     WorksScreen,
-    WorkDetailScreen,
+    // WorkDetailScreen,
     ContactScreen,
     ResumeScreen
 } from './screens'
+// import HomeScreen from './screens/HomeScreen';
+// import AboutScreen from './screens/AboutScreen';
+// import WorksScreen from './screens/WorksScreen';
+import WorkDetailScreen from './screens/WorkDetailScreen';
+// import ContactScreen from './screens/ContactScreen';
+// import ResumeScreen from './screens/ResumeScreen';
+
 import { AppProvider } from './components/Context';
 import { data } from './data.js';
 

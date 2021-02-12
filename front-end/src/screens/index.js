@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import ReactDOM from "react-dom";
 
 import { AppConsumer } from '../components/Context';
+import { PrintButton } from '../components/Buttons';
+import WorkListItem from '../components/WorkListItem';
+import Resume from '../components/Resume';
 
 class AboutScreen extends Component {
     render() {
@@ -15,9 +18,7 @@ class AboutScreen extends Component {
                     <article class="p-6">
                         <h3>Hyungmo Gu</h3>
                         <p> is a dedicated and energetic software developer with 2 years of industry experience living in Calgary, Canada.</p>
-
                         <p>Driven by his love to learn and create new applications, aside from the work hours, he can be found in Github pushing his latest works to repositories.</p>
-
                         <p class="small"><i>To my love, whom provided nothing but warmth and support to make this website and my 6 years journey as software developer possible.</i></p>
                     </article>
                 </div>
@@ -29,7 +30,6 @@ class AboutScreen extends Component {
 class ContactScreenBase extends Component {
 
     render() {
-        console.log(this.props);
         let email = this.props.appContext.data.contact.email;
         let linkedIn = this.props.appContext.data.contact.linkedIn;
         let github = this.props.appContext.data.contact.github;
@@ -66,10 +66,6 @@ const ContactScreen = React.forwardRef((props, ref) => (
     </AppConsumer>
 ));
 
-
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import ReactDOM from "react-dom";
 
 const measureElement = element => {
     const DOMNode = ReactDOM.findDOMNode(element);
@@ -148,17 +144,8 @@ class HomeScreen extends Component {
     }
 }
 
-export default HomeScreen;
 
-
-import React, { Component } from 'react';
-
-import { AppConsumer } from '../components/Context';
-import Resume from '../components/Resume';
-import { PrintButton } from '../components/Buttons';
-
-
-class ResumeScreen extends Component {
+class ResumeScreenBase extends Component {
     render() {
         const data = this.props.appContext.data;
         const pdfURL = this.props.appContext.data.resume.pdfURL;
@@ -174,11 +161,10 @@ class ResumeScreen extends Component {
     }
 }
 
-
-export default React.forwardRef((props, ref) => (
+const ResumeScreen =  React.forwardRef((props, ref) => (
     <AppConsumer>
         { appContext =>
-            <ResumeScreen
+            <ResumeScreenBase
                 {...props}
                 appContext={appContext}
                 ref={ref}
@@ -188,20 +174,12 @@ export default React.forwardRef((props, ref) => (
 ));
 
 
-
-import React, { Component } from 'react';
-
-import { AppConsumer } from '../components/Context';
-class WorkDetailScreen extends Component {
-
+class WorkDetailScreenBase extends Component {
     getWork = (id, works) => {
-
         let res = works.find(element => element.id === id);
-
         if (res === -1) {
             console.error("getWork: element not found");
         }
-
         return res;
     }
 
@@ -282,10 +260,10 @@ class WorkDetailScreen extends Component {
     }
 }
 
-export default React.forwardRef((props, ref) => (
+const WorkDetailScreen = React.forwardRef((props, ref) => (
     <AppConsumer>
         { appContext =>
-            <WorkDetailScreen
+            <WorkDetailScreenBase
                 {...props}
                 appContext={appContext}
                 ref={ref}
@@ -295,13 +273,7 @@ export default React.forwardRef((props, ref) => (
 ));
 
 
-import React, { Component } from 'react';
-
-import { AppConsumer } from '../components/Context';
-
-import WorkListItem from '../components/WorkListItem';
-
-class WorksScreen extends Component {
+class WorksScreenBase extends Component {
 
     render() {
         let works = this.props.appContext.data.resume.projectExp;
@@ -321,10 +293,10 @@ class WorksScreen extends Component {
     }
 }
 
-export default React.forwardRef((props, ref) => (
+const WorksScreen = React.forwardRef((props, ref) => (
     <AppConsumer>
         { appContext =>
-            <WorksScreen
+            <WorksScreenBase
                 {...props}
                 appContext={appContext}
                 ref={ref}

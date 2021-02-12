@@ -1,10 +1,7 @@
+import './App.scss';
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import {
-  HashRouter,
-  Route,
-  Switch
-} from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 
 import {
     PrimaryHeader,
@@ -12,17 +9,14 @@ import {
     PrimaryHeaderMobile
 } from './components/Navigation'
 import {
-    AppProvider
-} from './components/Context';
-import HomeScreen from './screens/HomeScreen';
-import AboutScreen from './screens/AboutScreen';
-import WorksScreen from './screens/WorksScreen';
-import WorkDetailScreen from './screens/WorkDetailScreen';
-import ContactScreen from './screens/ContactScreen';
-import ResumeScreen from './screens/ResumeScreen';
-
-
-import './App.scss';
+    HomeScreen,
+    AboutScreen,
+    WorksScreen,
+    WorkDetailScreen,
+    ContactScreen,
+    ResumeScreen
+} from './screens'
+import { AppProvider } from './components/Context';
 import { data } from './data.js';
 
 class App extends Component {

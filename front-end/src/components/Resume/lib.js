@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import { data } from './data';
-
 
 const Article = styled.article`
   margin-bottom: 1em;

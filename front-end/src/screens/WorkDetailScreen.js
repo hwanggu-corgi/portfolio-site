@@ -53,6 +53,22 @@ class WorkDetailScreen extends Component {
                                 }
                             </ul>
                         </section>
+                        {
+                            work.highlights && work.highlights.length > 0 && (
+                                <section class="mb-8 mt-8">
+                                    <h3>Highlights</h3>
+                                    <ul>
+                                        {
+                                            work.highlights.map(highlight => {
+                                                return (
+                                                    <li>{highlight}</li>
+                                                );
+                                            })
+                                        }
+                                    </ul>
+                                </section>
+                            )
+                        }
 
                         <section class="images text-center mb-8">
                             {

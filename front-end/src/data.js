@@ -82,7 +82,7 @@ export const data = {
                     "Created a React and SASS based portfolio website from design to publishing",
                     "Engineered typewriter effect on homepage using CSS animations, React DOM and ES6 Javascript",
                     "Utilized media queries and flexbox properties for full responsiveness of the website ",
-                    "Iterative design of template through prototypes using Adobe Illustrator and Bootstraps"
+                    "Built web version of this resume as a component by leveraging Styled Components"
                 ],
                 "images": [
                     "https://user-images.githubusercontent.com/6856382/106803602-b8be8f80-66a7-11eb-86a6-9cb80a2ab675.png",
@@ -199,7 +199,7 @@ export const data = {
                         "items": ["Peewee ORM(Python)", "Unittest (Python)"]
                     }
                 ],
-                "hightlights": [],
+                "highlights": [],
                 "images": [
                     "https://user-images.githubusercontent.com/72232928/99126628-e3b9ba00-2649-11eb-8249-30077fe3f16a.png"
                 ],

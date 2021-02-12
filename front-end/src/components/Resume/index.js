@@ -54,7 +54,7 @@ function Resume(props) {
         </section>
         <section className="project-experience">
             <H2><u>Project Experience</u></H2>
-            {projectExp.map(item => <ProjectExpItem {...item} />)}
+            {projectExp.map(item => item.includeInResume && <ProjectExpItem {...item} />)}
         </section>
         <section className="education">
             <H2><u>Education</u></H2>

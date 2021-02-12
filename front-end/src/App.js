@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-
 import {
   HashRouter,
   Route,
   Switch
 } from 'react-router-dom';
+import styled from 'styled-components';
 
 import { AppProvider } from './components/Context';
 
@@ -25,11 +25,9 @@ import './App.scss';
 import { data } from './data.js';
 
 class App extends Component {
-
     state = {
         toggled: false,
     };
-
 
     handleToggleMenu = () => {
         this.setState(prev => {
@@ -44,7 +42,18 @@ class App extends Component {
     }
 
     render() {
-        let screenOverlay = this.state.toggled ? "screen-overlay opened" : "screen-overlay";
+        const ScreenOverlayDiv = styled.div`
+            display: ${this.state.toggled ? "initial" : "none"};
+            background-color: black;
+            opacity: 0.5;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        `;
+
         return (
             <AppProvider value={{state: this.state, data: data, handlers: this.handlers}}>
                 <HashRouter>
@@ -62,7 +71,7 @@ class App extends Component {
                                 <Route exact path="/" component={HomeScreen}/>
                             </Switch>
                         </main>
-                        <div onClick={this.handleToggleMenu} className={screenOverlay}></div>
+                        <ScreenOverlayDiv onClick={this.handleToggleMenu}></ScreenOverlayDiv>
                     </div>
                 </HashRouter>
             </AppProvider>

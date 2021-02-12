@@ -42,7 +42,7 @@ export const data = {
                 ]
             }
         ],
-        "works": [
+        "projectExp": [
             {
                 "id": 1,
                 "title": "Social Proof Section",
@@ -158,6 +158,12 @@ export const data = {
                         "items": ["SQLite3"]
                     }
                 ],
+                "highlights": [
+                    "Developed a Django web application where users can create, search and participate in projects",
+                    "Leveraged Django mixins and generic views to implement user authorization of pages",
+                    "Incorporated Django ORM and Q objects to perform complex query operations",
+                    "Utilized testing tools with coverage rating of over 75% for stable development of app"
+                ],
                 "images": [
                     "https://user-images.githubusercontent.com/72232928/99108081-2bc8e480-262a-11eb-80b1-66377cd58543.png",
                     "https://user-images.githubusercontent.com/72232928/99108089-2e2b3e80-262a-11eb-841b-db23127ce945.png",
@@ -188,6 +194,7 @@ export const data = {
                         "items": ["Peewee ORM(Python)", "Unittest (Python)"]
                     }
                 ],
+                "hightlights": [],
                 "images": [
                     "https://user-images.githubusercontent.com/72232928/99126628-e3b9ba00-2649-11eb-8249-30077fe3f16a.png"
                 ]
@@ -206,11 +213,33 @@ export const data = {
                         "items": ["HTML5","CSS3","SASS","Gulp.js","Chart.js"]
                     }
                 ],
+                "highlights": [
+                    "Crafted the front-end of interactive dashboard app from mockup using HTML5, SASS and Chart.js",
+                    "Leveraged BEM methodology to ensure naming consistency of over 500 lines of style codes",
+                    "Optimized browser speed by minifying files and utilizing svg sprites using Gulp.js"
+                ],
                 "images": [
                     "https://user-images.githubusercontent.com/6856382/99920909-11011900-2d6a-11eb-970e-5ba65efee036.png",
                     "https://user-images.githubusercontent.com/6856382/99920910-1199af80-2d6a-11eb-803c-ce2a3518bb5c.png",
                     "https://user-images.githubusercontent.com/6856382/99920907-0e9ebf00-2d6a-11eb-9d05-7041163ce1b1.png"
                 ]
+            }
+        ],
+        "education": [
+            {
+                "name": "Python Web Development Techdegree",
+                "location": "Team Treehouse, Vancouver, BC",
+                "date": "January 2019 - September 2019"
+            },
+            {
+                "name": "Full-Stack Web Developer Nanodegree",
+                "location": "Udacity, Vancouver, BC",
+                "date": "October 2016 - October 2017"
+            },
+            {
+                "name": "Bachelor’s Degree in Physics (Hon. BSc)",
+                "location": "University of Toronto, Toronto, ON",
+                "date": "September 2009 - November 2014"
             }
         ]
     },

@@ -15,7 +15,7 @@ class WorkDetailScreen extends Component {
     }
 
     render() {
-        let work = this.getWork(parseInt(this.props.match.params.id), this.props.appContext.data.works);
+        let work = this.getWork(parseInt(this.props.match.params.id), this.props.appContext.data.resume.projectExp);
 
         return (
             <section className="content contentworks_detail">

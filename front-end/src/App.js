@@ -8,9 +8,14 @@ import {
 
 import { AppProvider } from './components/Context';
 
-import PrimaryHeader from './components/PrimaryHeader';
-import SecondaryHeader from './components/SecondaryHeader';
-import PrimaryHeaderMobile from './components/PrimaryHeaderMobile';
+import {
+    PrimaryHeader,
+    SecondaryHeader,
+    PrimaryHeaderMobile
+} from './components/Navigation'
+// import PrimaryHeader from './components/PrimaryHeader';
+// import SecondaryHeader from './components/SecondaryHeader';
+// import PrimaryHeaderMobile from './components/PrimaryHeaderMobile';
 
 import HomeScreen from './screens/HomeScreen';
 import AboutScreen from './screens/AboutScreen';

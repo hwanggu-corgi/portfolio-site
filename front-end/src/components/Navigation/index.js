@@ -7,10 +7,10 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-import { AppConsumer } from './Context';
-import Logo from '../media/moe.jpeg';
+import { AppConsumer } from '../Context';
+import Logo from '../../media/moe.jpeg';
 
-class PrimaryHeader extends Component {
+class PrimaryHeaderBase extends Component {
     render() {
         return (
             <header className="header--primary-desktop">
@@ -38,8 +38,8 @@ class PrimaryHeader extends Component {
     }
 };
 
-const PrimaryHeaderWithRoute = withRouter(PrimaryHeader);
-const PrimaryHeaderWithForwardRef = React.forwardRef((props, ref) => (
+const PrimaryHeaderWithRoute = withRouter(PrimaryHeaderBase);
+const PrimaryHeader = React.forwardRef((props, ref) => (
     <AppConsumer>
         { appContext =>
             <PrimaryHeaderWithRoute
@@ -52,7 +52,7 @@ const PrimaryHeaderWithForwardRef = React.forwardRef((props, ref) => (
 ));
 
 
-class PrimaryHeaderMobile extends Component {
+class PrimaryHeaderMobileBase extends Component {
     toggleMenu = () => {
         this.props.appContext.handlers.handleToggleMenu();
     }
@@ -91,8 +91,8 @@ class PrimaryHeaderMobile extends Component {
     }
 };
 
-const PrimaryHeaderMobileWithRoute = withRouter(PrimaryHeaderMobile);
-const PrimaryHeaderMobileWithForwardRef = React.forwardRef((props, ref) => (
+const PrimaryHeaderMobileWithRoute = withRouter(PrimaryHeaderMobileBase);
+const PrimaryHeaderMobile = React.forwardRef((props, ref) => (
     <AppConsumer>
         { appContext =>
             <PrimaryHeaderMobileWithRoute
@@ -105,7 +105,7 @@ const PrimaryHeaderMobileWithForwardRef = React.forwardRef((props, ref) => (
 ));
 
 
-class SecondaryHeader extends Component {
+class SecondaryHeaderBase extends Component {
     toggleMenu = () => {
         this.props.appContext.handlers.handleToggleMenu();
     }
@@ -123,8 +123,8 @@ class SecondaryHeader extends Component {
     }
 };
 
-const SecondaryHeaderWithRoute = withRouter(SecondaryHeader);
-const SecondaryHeaderWithForwardRef = React.forwardRef((props, ref) => (
+const SecondaryHeaderWithRoute = withRouter(SecondaryHeaderBase);
+const SecondaryHeader = React.forwardRef((props, ref) => (
     <AppConsumer>
         { appContext =>
             <SecondaryHeaderWithRoute
@@ -138,7 +138,7 @@ const SecondaryHeaderWithForwardRef = React.forwardRef((props, ref) => (
 
 
 export {
-    PrimaryHeaderWithForwardRef,
-    PrimaryHeaderMobileWithForwardRef,
-    SecondaryHeaderWithForwardRef
+    PrimaryHeader,
+    PrimaryHeaderMobile,
+    SecondaryHeader
 };

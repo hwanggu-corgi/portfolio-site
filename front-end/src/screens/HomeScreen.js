@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import ReactDOM from "react-dom";
 
 const measureElement = element => {
@@ -9,8 +10,24 @@ const measureElement = element => {
     };
   }
 
-class HomeScreen extends Component {
+const TypeWriterH1 = styled.h1`
+    width: 6.5rem;
 
+    & > * {
+        overflow: hidden;
+        border-right-color: white;
+        border-right-style: solid;
+        display: inline-block;
+        animation: cursorAnim .5s steps(2) infinite;
+    }
+
+    @keyframes cursorAnim{
+        0% { border-right-width: 0;}
+        100% { border-right-width: 0.25rem;}
+    }
+`;
+
+class HomeScreen extends Component {
     state = {
         text: ""
     };
@@ -48,9 +65,9 @@ class HomeScreen extends Component {
             <section className="content content-home">
                 <div className="background-img"></div>
                 <article className="article--home">
-                    <h1 ref={r => this.outerContainer = r} className="title typing">
+                    <TypeWriterH1 ref={r => this.outerContainer = r}>
                         <div ref={r => this.innerContainer = r}>{this.state.text}</div>
-                    </h1>
+                    </TypeWriterH1>
                     <h1>
                         <div>Welcome to the</div>
                         <div>portfolio site of</div>

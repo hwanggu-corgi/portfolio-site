@@ -11,6 +11,9 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { AppConsumer } from '../Context';
 import Logo from '../../media/moe.jpeg';
 
+const headerHeight = "1.4rem";
+const headerPaddingHeight = "1.3rem";
+
 class PrimaryHeaderBase extends Component {
     render() {
         return (
@@ -59,9 +62,6 @@ class PrimaryHeaderMobileBase extends Component {
     }
 
     render() {
-        const headerHeight = "1.4rem";
-        const headerPaddingHeight = "1.3rem";
-
         const Header = styled.header`
             display: ${this.props.appContext.state.toggled ? "initial" : "none"};
             position:fixed;
@@ -82,6 +82,10 @@ class PrimaryHeaderMobileBase extends Component {
                 display: flex;
                 flex-direction: column;
                 height: calc(100vh - (${headerHeight} + ${headerPaddingHeight}*2));
+            }
+
+            @media screen and (min-width: 930px) {
+                display: none;
             }
         `;
 
@@ -136,14 +140,32 @@ class SecondaryHeaderBase extends Component {
     }
 
     render() {
+        const Header = styled.header`
+            background-color: white;
+            height: ${headerHeight};
+            padding: ${headerPaddingHeight};
+            box-shadow: 0px 2px 5px grey;
+            position: fixed;
+            width: 100%;
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items:center
+            }
+
+            @media screen and (min-width: 930px) {
+                display: none;
+            }
+        `;
+
         return (
-            <header className="header--mobile">
+            <Header>
                 <nav>
                     <div onClick={this.toggleMenu}><FontAwesomeIcon icon={faBars}/></div>
                     <div className="menu"><strong><NavLink to="/">Hyungmo Gu</NavLink></strong></div>
                     <div></div>
                 </nav>
-            </header>
+            </Header>
         );
     }
 };

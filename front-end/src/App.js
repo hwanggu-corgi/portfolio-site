@@ -54,6 +54,10 @@ class App extends Component {
             bottom: 0;
             right: 0;
             z-index: 1;
+
+            @media screen and (min-width: 930px) {
+                display: none;
+            }
         `;
 
         return (

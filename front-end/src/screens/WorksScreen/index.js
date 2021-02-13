@@ -14,11 +14,9 @@ class WorksScreen extends Component {
                 <header class="header--secondary p-6">
                     <h2>Works</h2>
                 </header>
-                <div>
-                    <article>
-                        {works.map((value, index) => <WorkListItem key={index+1} work={value}/>)}
-                    </article>
-                </div>
+                <article>
+                    {works.map((value, index) => <WorkListItem key={index+1} work={value}/>)}
+                </article>
             </section>
         );
     }

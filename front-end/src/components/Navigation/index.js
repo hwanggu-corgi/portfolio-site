@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import { NavLink, withRouter } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -58,10 +59,34 @@ class PrimaryHeaderMobileBase extends Component {
     }
 
     render() {
-        let headerPrimaryMobile = this.props.appContext.state.toggled ? "header--primary-mobile opened" : "header--primary-mobile";
+        const headerHeight = "1.4rem";
+        const headerPaddingHeight = "1.3rem";
+
+        const Header = styled.header`
+            display: ${this.props.appContext.state.toggled ? "initial" : "none"};
+            position:fixed;
+            z-index: 2;
+            background-color: white;
+            top: 0;
+            bottom:0;
+
+            & > nav {
+                display: flex;
+                height: ${headerHeight};
+                padding: ${headerPaddingHeight} 1.5rem;
+                align-items: center;
+            }
+
+            & > section {
+                padding: 0 1.5rem 1.5rem 1.5rem;
+                display: flex;
+                flex-direction: column;
+                height: calc(100vh - (${headerHeight} + ${headerPaddingHeight}*2));
+            }
+        `;
 
         return (
-            <header className={headerPrimaryMobile}>
+            <Header>
                 <nav>
                     <div onClick={this.toggleMenu}><FontAwesomeIcon icon={faTimes} /></div>
                 </nav>
@@ -86,7 +111,7 @@ class PrimaryHeaderMobileBase extends Component {
                         <div className="small">Thank you for visiting!</div>
                     </nav>
                 </section>
-            </header>
+            </Header>
         );
     }
 };

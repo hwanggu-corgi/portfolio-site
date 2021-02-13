@@ -73,14 +73,22 @@ class TypeWriter extends Component {
 
 class HomeScreen extends Component {
     render() {
+        const H1Extended = styled(H1)`
+            font-size: 2.5em;
+
+            @media screen and (min-width: 930px) {
+                font-size: 2.9rem;
+            }
+        `;
+
         return (
             <Screen>
                 <TypeWriter/>
-                <h1>
+                <H1Extended>
                     <div>Welcome to the</div>
                     <div>portfolio site of</div>
                     <div>Hyungmo Gu</div>
-                </h1>
+                </H1Extended>
                 <strong>A Calgary based software developer who loves to learn, create new app, and push codes to github with his love</strong>
             </Screen>
         );

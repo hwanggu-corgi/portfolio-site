@@ -11,14 +11,25 @@ export const H3 = styled.h3`
 
 export function Screen(props) {
     const location = useLocation();
-    console.log(location);
     if (location.pathname === "/") {
+        const Article = styled.article`
+            margin: 5rem 2rem 0 2rem;
+            color: white;
+            max-width: 430px;
+
+            @media screen and (min-width: 930px) {
+                margin-top: 10rem;
+                margin-left: 5rem;
+                max-width: 430px;
+            }
+        `;
+
         return (
             <section className="content content-home">
                 <div className="background-img"></div>
-                <article className="article--home">
+                <Article>
                     {props.children}
-                </article>
+                </Article>
             </section>
         );
     } else if (location.pathname === "/works") {

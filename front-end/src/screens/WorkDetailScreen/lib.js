@@ -1,3 +1,27 @@
+import styled from 'styled-components';
+
+const Button = styled.a`
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid transparent;
+    text-align: center;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    text-decoration: none;
+`;
+
+const ButtonPrimary = styled(Button)`
+    color: #fff;
+    background-color: black;
+    border-color: black;
+`;
+
+const ButtonPrimaryOutline = styled(Button)`
+    border-color: black;
+    color: black;
+`;
+
+
 export function DemoSection(props) {
     return (
         <section class="text-center mb-8 ml-4 mr-4">

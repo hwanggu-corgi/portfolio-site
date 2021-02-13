@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 class AboutScreen extends Component {
-
     render() {
         return (
             <section className="content content-about">

@@ -8,26 +8,9 @@ const measureElement = element => {
       width: DOMNode.offsetWidth,
       height: DOMNode.offsetHeight,
     };
-  }
+}
 
-const TypeWriterH1 = styled.h1`
-    width: 6.5rem;
-
-    & > * {
-        overflow: hidden;
-        border-right-color: white;
-        border-right-style: solid;
-        display: inline-block;
-        animation: cursorAnim .5s steps(2) infinite;
-    }
-
-    @keyframes cursorAnim{
-        0% { border-right-width: 0;}
-        100% { border-right-width: 0.25rem;}
-    }
-`;
-
-class HomeScreen extends Component {
+class TypeWriter extends Component {
     state = {
         text: ""
     };
@@ -61,17 +44,43 @@ class HomeScreen extends Component {
     }
 
     render() {
+        const H1 = styled.h1`
+            width: 6.5rem;
+
+            & > * {
+                overflow: hidden;
+                border-right-color: white;
+                border-right-style: solid;
+                display: inline-block;
+                animation: cursorAnim .5s steps(2) infinite;
+            }
+
+            @keyframes cursorAnim{
+                0% { border-right-width: 0;}
+                100% { border-right-width: 0.25rem;}
+            }
+        `;
+
+        return(
+            <H1 ref={r => this.outerContainer = r}>
+                <div ref={r => this.innerContainer = r}>{this.state.text}</div>
+            </H1>
+        );
+    }
+}
+
+class HomeScreen extends Component {
+    render() {
         return (
             <section className="content content-home">
                 <div className="background-img"></div>
                 <article className="article--home">
-                    <TypeWriterH1 ref={r => this.outerContainer = r}>
-                        <div ref={r => this.innerContainer = r}>{this.state.text}</div>
-                    </TypeWriterH1>
+                    <TypeWriter/>
                     <h1>
                         <div>Welcome to the</div>
                         <div>portfolio site of</div>
-                        <div>Hyungmo Gu</div></h1>
+                        <div>Hyungmo Gu</div>
+                    </h1>
                     <strong>A Calgary based software developer who loves to learn, create new app, and push codes to github with his love</strong>
                 </article>
             </section>

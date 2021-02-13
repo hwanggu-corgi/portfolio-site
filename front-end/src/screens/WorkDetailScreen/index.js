@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { AppConsumer } from '../../components/Context';
 import { WorkSummarySection, DemoSection, ImagesSection } from './lib';
+import { Screen } from '../lib';
 
 
 class WorkDetailScreen extends Component {
@@ -19,14 +20,11 @@ class WorkDetailScreen extends Component {
             this.props.appContext.data.resume.projectExp);
 
         return (
-            <section className="content contentworks_detail">
-                <header class="header--secondary p-6">
-                    <h2>Works</h2>
-                </header>
+            <Screen title={"Works"}>
                 <WorkSummarySection data={work}/>
                 <ImagesSection data={work}/>
                 <DemoSection data={work}/>
-            </section>
+            </Screen>
         );
     }
 }

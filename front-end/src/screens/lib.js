@@ -14,15 +14,13 @@ export function Screen(props) {
         );
     } else {
         return (
-            <section className="content content-contacts">
+            <section className="content">
                 <header class="header--secondary p-6">
-                    <h2>Contact</h2>
+                    <h2>{props.title}</h2>
                 </header>
-                <div class="ml-4 mr-4">
-                    <article class="p-6">
-                        {props.children}
-                    </article>
-                </div>
+                <article className="p-6 ml-4 mr-4">
+                    {props.children}
+                </article>
             </section>
         );
     }

@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
+
 const Button = styled.a`
+    font-size: 0.8rem;
+    font-weight: 400;
     display: inline-block;
     background-color: transparent;
     border: 1px solid transparent;
@@ -21,29 +24,42 @@ const ButtonPrimaryOutline = styled(Button)`
     color: black;
 `;
 
+const JumbotronSection = styled.section`
+    min-height: 17rem;
+    text-align: center;
+
+    & > * {
+        max-width: 38.5rem;
+    }
+`;
+
 
 export function DemoSection(props) {
+    const Section = styled.section`
+        margin: 1rem 1rem 0 1rem;
+        text-align: center;
+
+        a:first-child {
+            margin: 0 0.25rem 0 0;
+        }
+    `;
     return (
-        <section class="text-center mb-8 ml-4 mr-4">
-            <div>
-            {props.data.demoURL !== "#" && <a href={props.data.demoURL} class="btn btn--primary small">See Demo</a>}
-                <a href={props.data.sourceURL} class="btn btn--primary-outline small">Source Code</a>
-            </div>
-        </section>
+        <Section>
+            {props.data.demoURL !== "#" && <ButtonPrimary href={props.data.demoURL}>See Demo</ButtonPrimary>}
+            <ButtonPrimaryOutline href={props.data.sourceURL}>Source Code</ButtonPrimaryOutline>
+        </Section>
     );
 }
 
 export function WorkSummarySection(props) {
     return (
         <>
-            <section className="jumbotron">
-                <div>
-                    <h2>{props.data.title}</h2>
-                    <p>{props.data.shortDescription}</p>
-                    <p>{props.data.date}</p>
-                </div>
+            <JumbotronSection>
+                <h2>{props.data.title}</h2>
+                <p>{props.data.shortDescription}</p>
+                <p>{props.data.date}</p>
                 <DemoSection data={props.data}/>
-            </section>
+            </JumbotronSection>
             <section class="mb-8 mt-8 ml-4 mr-4">
                 <h3>Technologies Used</h3>
                 <ul>

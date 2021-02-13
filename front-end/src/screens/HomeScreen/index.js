@@ -12,6 +12,14 @@ const measureElement = element => {
     };
 }
 
+const H1Extended = styled(H1)`
+    font-size: 2.5rem;
+
+    @media screen and (min-width: 930px) {
+        font-size: 2.9rem;
+    }
+`;
+
 class TypeWriter extends Component {
     state = {
         text: ""
@@ -46,7 +54,7 @@ class TypeWriter extends Component {
     }
 
     render() {
-        const H1Extended = styled(H1)`
+        const TypeWriterH1 = styled(H1Extended)`
             width: 6.5rem;
 
             & > * {
@@ -64,23 +72,15 @@ class TypeWriter extends Component {
         `;
 
         return(
-            <H1Extended ref={r => this.outerContainer = r}>
+            <TypeWriterH1 ref={r => this.outerContainer = r}>
                 <div ref={r => this.innerContainer = r}>{this.state.text}</div>
-            </H1Extended>
+            </TypeWriterH1>
         );
     }
 }
 
 class HomeScreen extends Component {
     render() {
-        const H1Extended = styled(H1)`
-            font-size: 2.5em;
-
-            @media screen and (min-width: 930px) {
-                font-size: 2.9rem;
-            }
-        `;
-
         return (
             <Screen>
                 <TypeWriter/>

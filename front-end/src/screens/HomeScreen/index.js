@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import ReactDOM from "react-dom";
 
-import { Screen } from '../lib';
+import { Screen, H1 } from '../lib';
 
 const measureElement = element => {
     const DOMNode = ReactDOM.findDOMNode(element);
@@ -46,7 +46,7 @@ class TypeWriter extends Component {
     }
 
     render() {
-        const H1 = styled.h1`
+        const H1Extended = styled(H1)`
             width: 6.5rem;
 
             & > * {
@@ -64,9 +64,9 @@ class TypeWriter extends Component {
         `;
 
         return(
-            <H1 ref={r => this.outerContainer = r}>
+            <H1Extended ref={r => this.outerContainer = r}>
                 <div ref={r => this.innerContainer = r}>{this.state.text}</div>
-            </H1>
+            </H1Extended>
         );
     }
 }

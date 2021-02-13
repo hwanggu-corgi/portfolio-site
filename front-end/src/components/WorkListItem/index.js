@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { NavLink, withRouter } from 'react-router-dom';
 
 const Thumbnail = styled(NavLink)`
-    margin: 1.5rem;
+    margin: 0 1.5rem 1.5rem 1.5rem;
     text-align: center;
     text-decoration: none;
     color: black;

@@ -12,12 +12,24 @@ import { AppConsumer } from '../Context';
 import Logo from '../../media/moe.jpeg';
 
 const headerHeight = "1.4rem";
+const headerWidthDesktop = "14rem";
 const headerPaddingHeight = "1.3rem";
 
 class PrimaryHeaderBase extends Component {
     render() {
+        const Header = styled.header`
+            display: none;
+            align-items: center;
+            flex-direction: column;
+
+            @media screen and (min-width: 930px) {
+                width: ${headerWidthDesktop};
+                display:flex;
+            }
+        `;
+
         return (
-            <header className="header--primary-desktop">
+            <Header>
                 <img className="logo" src={Logo} alt="Hyungmo Gu"/>
                 <nav className="menu menu--primary mb-4">
                     <h3 className="mb-9"><NavLink to="/">Hyungmo Gu</NavLink></h3>
@@ -37,7 +49,7 @@ class PrimaryHeaderBase extends Component {
                     <div>Hyungmo Gu</div>
                     <div className="small">Thank you for visiting!</div>
                 </nav>
-            </header>
+            </Header>
         );
     }
 };

@@ -53,12 +53,6 @@ main {
         width: 100vw;
         margin-top: 4.0rem;
     }
-
-    .header--primary-desktop {
-        display: none;
-        align-items: center;
-        flex-direction: column;
-    }
 }
 
 @media screen and (min-width: 930px) {
@@ -68,11 +62,6 @@ main {
         .content {
             width: calc(100vw - #{$width-header--primary-desktop});
             margin-top: 0;
-        }
-
-        .header--primary-desktop {
-            width: #{$width-header--primary-desktop};
-            display:flex;
         }
     }
 }
@@ -163,80 +152,6 @@ main {
     h2 {
         margin: 0;
     }
-}
-
-.icon {
-    width: 25px;
-    height: 25px;
-    margin: 0 0.25em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    border-radius: 50%;
-    cursor: pointer;
-    text-decoration: none !important;
-    color: inherit;
-
-    &:hover {
-        background-color: black;
-        color: white;
-    }
-
-    &:first {
-        margin-left: 0;
-    }
-
-    &:last-child {
-        margin-right: 0;
-    }
-}
-
-.logo {
-    width: 9rem;
-    height: 9rem;
-    border-radius: 50%;
-}
-
-.menu {
-    ul {
-        padding: 0;
-        margin: 0;
-    }
-    li {
-        list-style-type: none;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    &.menu--primary {
-        text-align: center;
-    }
-
-    &.menu--social {
-        text-align: center;
-        margin-top: auto;
-        ul {
-            display: flex;
-            justify-content: center;
-
-            margin-bottom: 0.5rem;
-        }
-    }
-}
-
-.screen-overlay {
-    display: none;
-    background-color: black;
-    opacity: 0.5;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
 }
 
 // ----------

@@ -20,6 +20,61 @@ const LogoImg = styled.img`
     height: 9rem;
     border-radius: 50%;
 `;
+const Nav = styled.nav`
+    margin-bottom: 1em;
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+`;
+const PrimaryNav = styled(Nav)`
+    text-align: center;
+`;
+const SocialNav = styled(Nav)`
+    text-align: center;
+    margin-top: auto;
+    ul {
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 0.5rem;
+    }
+`;
+const SocialIconA = styled.a`
+    width: 25px;
+    height: 25px;
+    margin: 0 0.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: inherit;
+
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+
+    &:first {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+`;
+
 
 class PrimaryHeaderBase extends Component {
     render() {
@@ -38,37 +93,6 @@ class PrimaryHeaderBase extends Component {
             }
         `;
 
-        const Nav = styled.nav`
-            margin-bottom: 1em;
-
-            ul {
-                padding: 0;
-                margin: 0;
-            }
-            li {
-                list-style-type: none;
-            }
-            a {
-                text-decoration: none;
-                color: black;
-            }
-        `;
-
-        const PrimaryNav = styled(Nav)`
-            text-align: center;
-        `;
-
-        const SocialNav = styled(Nav)`
-            text-align: center;
-            margin-top: auto;
-            ul {
-                display: flex;
-                justify-content: center;
-
-                margin-bottom: 0.5rem;
-            }
-        `;
-
         return (
             <Header>
                 <LogoImg src={Logo} alt="Hyungmo Gu"/>
@@ -84,8 +108,8 @@ class PrimaryHeaderBase extends Component {
                 </PrimaryNav>
                 <SocialNav>
                     <ul>
-                        <li><a className="icon" href="https://www.linkedin.com/in/hyungmo-gu/"><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
-                        <li><a className="icon" href="https://github.com/hyungmogu"><FontAwesomeIcon icon={faGithub}/></a></li>
+                        <li><SocialIconA href="https://www.linkedin.com/in/hyungmo-gu/"><FontAwesomeIcon icon={faLinkedinIn} /></SocialIconA></li>
+                        <li><SocialIconA href="https://github.com/hyungmogu"><FontAwesomeIcon icon={faGithub}/></SocialIconA></li>
                     </ul>
                     <div>Hyungmo Gu</div>
                     <div className="small">Thank you for visiting!</div>
@@ -148,8 +172,8 @@ class PrimaryHeaderMobileBase extends Component {
                     <div onClick={this.toggleMenu}><FontAwesomeIcon icon={faTimes} /></div>
                 </nav>
                 <section>
-                    <img className="logo" src={Logo} alt="Hyungmo Gu"/>
-                    <nav className="menu menu--primary mb-4">
+                    <LogoImg src={Logo} alt="Hyungmo Gu"/>
+                    <PrimaryNav>
                         <h3 className="mb-9"><NavLink onClick={this.toggleMenu} to="/">Hyungmo Gu</NavLink></h3>
                         <ul>
                             <li className="mb-2"><NavLink onClick={this.toggleMenu} to="/">Home</NavLink></li>
@@ -158,15 +182,15 @@ class PrimaryHeaderMobileBase extends Component {
                             <li className="mb-2"><NavLink to="/resume">Resume</NavLink></li>
                             <li className="mb-2"><NavLink onClick={this.toggleMenu} to="/contact">Contact</NavLink></li>
                         </ul>
-                    </nav>
-                    <nav className="menu menu--social mb-4">
+                    </PrimaryNav>
+                    <SocialNav>
                         <ul>
-                            <li><a className="icon" href="https://www.linkedin.com/in/hyungmo-gu/"><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
-                            <li><a className="icon" href="https://github.com/hyungmogu"><FontAwesomeIcon icon={faGithub}/></a></li>
+                            <li><SocialIconA href="https://www.linkedin.com/in/hyungmo-gu/"><FontAwesomeIcon icon={faLinkedinIn} /></SocialIconA></li>
+                            <li><SocialIconA href="https://github.com/hyungmogu"><FontAwesomeIcon icon={faGithub}/></SocialIconA></li>
                         </ul>
                         <div>Hyungmo Gu</div>
                         <div className="small">Thank you for visiting!</div>
-                    </nav>
+                    </SocialNav>
                 </section>
             </Header>
         );
@@ -215,7 +239,7 @@ class SecondaryHeaderBase extends Component {
             <Header>
                 <nav>
                     <div onClick={this.toggleMenu}><FontAwesomeIcon icon={faBars}/></div>
-                    <div className="menu"><strong><NavLink to="/">Hyungmo Gu</NavLink></strong></div>
+                    <Nav><strong><NavLink to="/">Hyungmo Gu</NavLink></strong></Nav>
                     <div></div>
                 </nav>
             </Header>

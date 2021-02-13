@@ -21,6 +21,7 @@ const LogoImg = styled.img`
     border-radius: 50%;
     margin: 0 0 1rem 0;
 `;
+
 const Nav = styled.nav`
     ul {
         padding: 0;
@@ -47,6 +48,7 @@ const PrimaryNav = styled(Nav)`
         margin: 0 0 0.5rem 0;
     }
 `;
+
 const SocialNav = styled(Nav)`
     text-align: center;
     margin: auto 0 1rem 0;
@@ -57,6 +59,7 @@ const SocialNav = styled(Nav)`
         margin: 0 0 0.5rem 0;
     }
 `;
+
 const SocialIconA = styled.a`
     width: 25px;
     height: 25px;

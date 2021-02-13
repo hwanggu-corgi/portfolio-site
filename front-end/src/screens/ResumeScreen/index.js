@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import { AppConsumer } from '../components/Context';
-import Resume from '../components/Resume';
-import { PrintButton } from '../components/Buttons';
+import { AppConsumer } from '../../components/Context';
+import Resume from '../../components/Resume';
+import { PrintButton } from '../../components/Buttons';
 
 
 class ResumeScreen extends Component {

@@ -1,5 +1,9 @@
+import { useLocation } from 'react-router-dom'
+
 export function Screen(props) {
-    if () {
+    const location = useLocation();
+
+    if (location.pathname === "/") {
         return (
             <section className="content content-home">
                 <div className="background-img"></div>

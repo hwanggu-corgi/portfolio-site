@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import ReactDOM from "react-dom";
 
+import { Screen } from '../lib';
+
 const measureElement = element => {
     const DOMNode = ReactDOM.findDOMNode(element);
     return {
@@ -72,18 +74,15 @@ class TypeWriter extends Component {
 class HomeScreen extends Component {
     render() {
         return (
-            <section className="content content-home">
-                <div className="background-img"></div>
-                <article className="article--home">
-                    <TypeWriter/>
-                    <h1>
-                        <div>Welcome to the</div>
-                        <div>portfolio site of</div>
-                        <div>Hyungmo Gu</div>
-                    </h1>
-                    <strong>A Calgary based software developer who loves to learn, create new app, and push codes to github with his love</strong>
-                </article>
-            </section>
+            <Screen>
+                <TypeWriter/>
+                <h1>
+                    <div>Welcome to the</div>
+                    <div>portfolio site of</div>
+                    <div>Hyungmo Gu</div>
+                </h1>
+                <strong>A Calgary based software developer who loves to learn, create new app, and push codes to github with his love</strong>
+            </Screen>
         );
     }
 }

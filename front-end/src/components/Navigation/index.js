@@ -19,10 +19,9 @@ const LogoImg = styled.img`
     width: 9rem;
     height: 9rem;
     border-radius: 50%;
+    margin: 0 0 1rem 0;
 `;
 const Nav = styled.nav`
-    margin-bottom: 1em;
-
     ul {
         padding: 0;
         margin: 0;
@@ -35,17 +34,27 @@ const Nav = styled.nav`
         color: black;
     }
 `;
+
 const PrimaryNav = styled(Nav)`
     text-align: center;
+    margin: 0 0 1rem 0;
+
+    h3 {
+        margin: 0 0 2.25rem 0;
+    }
+
+    li {
+        margin: 0 0 0.5rem 0;
+    }
 `;
 const SocialNav = styled(Nav)`
     text-align: center;
-    margin-top: auto;
+    margin: auto 0 1rem 0;
     ul {
         display: flex;
         justify-content: center;
 
-        margin-bottom: 0.5rem;
+        margin: 0 0 0.5rem 0;
     }
 `;
 const SocialIconA = styled.a`
@@ -97,13 +106,13 @@ class PrimaryHeaderBase extends Component {
             <Header>
                 <LogoImg src={Logo} alt="Hyungmo Gu"/>
                 <PrimaryNav>
-                    <h3 className="mb-9"><NavLink to="/">Hyungmo Gu</NavLink></h3>
+                    <h3><NavLink to="/">Hyungmo Gu</NavLink></h3>
                     <ul>
-                        <li className="mb-2"><NavLink to="/">Home</NavLink></li>
-                        <li className="mb-2"><NavLink to="/about">About</NavLink></li>
-                        <li className="mb-2"><NavLink to="/works">Works</NavLink></li>
-                        <li className="mb-2"><NavLink to="/resume">Resume</NavLink></li>
-                        <li className="mb-2"><NavLink to="/contact">Contact</NavLink></li>
+                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="/about">About</NavLink></li>
+                        <li><NavLink to="/works">Works</NavLink></li>
+                        <li><NavLink to="/resume">Resume</NavLink></li>
+                        <li><NavLink to="/contact">Contact</NavLink></li>
                     </ul>
                 </PrimaryNav>
                 <SocialNav>
@@ -174,13 +183,13 @@ class PrimaryHeaderMobileBase extends Component {
                 <section>
                     <LogoImg src={Logo} alt="Hyungmo Gu"/>
                     <PrimaryNav>
-                        <h3 className="mb-9"><NavLink onClick={this.toggleMenu} to="/">Hyungmo Gu</NavLink></h3>
+                        <h3><NavLink onClick={this.toggleMenu} to="/">Hyungmo Gu</NavLink></h3>
                         <ul>
-                            <li className="mb-2"><NavLink onClick={this.toggleMenu} to="/">Home</NavLink></li>
-                            <li className="mb-2"><NavLink onClick={this.toggleMenu} to="/about">About</NavLink></li>
-                            <li className="mb-2"><NavLink onClick={this.toggleMenu} to="/works">Works</NavLink></li>
-                            <li className="mb-2"><NavLink to="/resume">Resume</NavLink></li>
-                            <li className="mb-2"><NavLink onClick={this.toggleMenu} to="/contact">Contact</NavLink></li>
+                            <li><NavLink onClick={this.toggleMenu} to="/">Home</NavLink></li>
+                            <li><NavLink onClick={this.toggleMenu} to="/about">About</NavLink></li>
+                            <li><NavLink onClick={this.toggleMenu} to="/works">Works</NavLink></li>
+                            <li><NavLink to="/resume">Resume</NavLink></li>
+                            <li><NavLink onClick={this.toggleMenu} to="/contact">Contact</NavLink></li>
                         </ul>
                     </PrimaryNav>
                     <SocialNav>

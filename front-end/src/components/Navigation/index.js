@@ -15,12 +15,22 @@ const headerHeight = "1.4rem";
 const headerWidthDesktop = "14rem";
 const headerPaddingHeight = "1.3rem";
 
+const LogoImg = styled.img`
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+`;
+
 class PrimaryHeaderBase extends Component {
     render() {
         const Header = styled.header`
             display: none;
             align-items: center;
             flex-direction: column;
+            background-color: white;
+            box-shadow: 2px 0px 5px grey;
+            z-index: 2;
+            padding-top: 7.0rem;
 
             @media screen and (min-width: 930px) {
                 width: ${headerWidthDesktop};
@@ -28,10 +38,41 @@ class PrimaryHeaderBase extends Component {
             }
         `;
 
+        const Nav = styled.nav`
+            margin-bottom: 1em;
+
+            ul {
+                padding: 0;
+                margin: 0;
+            }
+            li {
+                list-style-type: none;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        `;
+
+        const PrimaryNav = styled(Nav)`
+            text-align: center;
+        `;
+
+        const SocialNav = styled(Nav)`
+            text-align: center;
+            margin-top: auto;
+            ul {
+                display: flex;
+                justify-content: center;
+
+                margin-bottom: 0.5rem;
+            }
+        `;
+
         return (
             <Header>
-                <img className="logo" src={Logo} alt="Hyungmo Gu"/>
-                <nav className="menu menu--primary mb-4">
+                <LogoImg src={Logo} alt="Hyungmo Gu"/>
+                <PrimaryNav>
                     <h3 className="mb-9"><NavLink to="/">Hyungmo Gu</NavLink></h3>
                     <ul>
                         <li className="mb-2"><NavLink to="/">Home</NavLink></li>
@@ -40,15 +81,15 @@ class PrimaryHeaderBase extends Component {
                         <li className="mb-2"><NavLink to="/resume">Resume</NavLink></li>
                         <li className="mb-2"><NavLink to="/contact">Contact</NavLink></li>
                     </ul>
-                </nav>
-                <nav className="menu menu--social mb-4">
+                </PrimaryNav>
+                <SocialNav>
                     <ul>
                         <li><a className="icon" href="https://www.linkedin.com/in/hyungmo-gu/"><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
                         <li><a className="icon" href="https://github.com/hyungmogu"><FontAwesomeIcon icon={faGithub}/></a></li>
                     </ul>
                     <div>Hyungmo Gu</div>
                     <div className="small">Thank you for visiting!</div>
-                </nav>
+                </SocialNav>
             </Header>
         );
     }

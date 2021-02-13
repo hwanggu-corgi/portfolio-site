@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { AppConsumer } from '../../components/Context';
 
+import { Screen, H3 } from '../lib';
+
 class ContactScreen extends Component {
     render() {
         let email = this.props.appContext.data.contact.email;
@@ -8,21 +10,14 @@ class ContactScreen extends Component {
         let github = this.props.appContext.data.contact.github;
 
         return (
-            <section className="content content-contacts">
-                <header class="header--secondary p-6">
-                    <h2>Contact</h2>
-                </header>
-                <div class="ml-4 mr-4">
-                    <article class="p-6">
-                        <h3>Hire Hyungmo!</h3>
-                        <ul>
-                            <li>Email: <a href={"mailto:" + email}>{email}</a></li>
-                            <li>LinkedIn: <a href={linkedIn.url}>{linkedIn.label}</a></li>
-                            <li>Github: <a href={github.url}>{github.label}</a></li>
-                        </ul>
-                    </article>
-                </div>
-            </section>
+            <Screen title={"Contact"}>
+                <H3>Hire Hyungmo!</H3>
+                <ul>
+                    <li>Email: <a href={"mailto:" + email}>{email}</a></li>
+                    <li>LinkedIn: <a href={linkedIn.url}>{linkedIn.label}</a></li>
+                    <li>Github: <a href={github.url}>{github.label}</a></li>
+                </ul>
+            </Screen>
         );
     }
 }

@@ -68,8 +68,8 @@ export function WorkSummarySection(props) {
                     <h2>{props.data.title}</h2>
                     <p>{props.data.shortDescription}</p>
                     <p>{props.data.date}</p>
+                    <DemoSection data={props.data}/>
                 </div>
-                <DemoSection data={props.data}/>
             </JumbotronSection>
             <TechUsedSection>
                 <h3>Technologies Used</h3>

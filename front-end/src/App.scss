@@ -1,55 +1,14 @@
 $height-header--mobile: 1.4rem;
 $padding-header--mobile: 1.3rem;
-$width-header--primary-desktop: 14rem;
-
-$thumbnail--width: 12.5rem;
 
 * {
     font-family: 'Lato', sans-serif;
-}
-
-article {
-    justify-content: space-evenly;
-}
-
-@media screen and (min-width: 750px) {
-    article {
-        justify-content: space-between ;
-    }
-}
-
-@media screen and (min-width: 930px) {
-    article {
-        justify-content: initial ;
-    }
 }
 
 body {
     background-color: #F2F2F2;
     height: 100vh;
     margin: 0;
-}
-
-button[type=submit] {
-    width: 100%;
-}
-
-@media screen and (min-width: 930px) {
-    button[type=submit] {
-        margin-left: auto;
-        width: initial;
-    }
-}
-
-main {
-    display: flex;
-}
-
-@media screen and (min-width: 930px) {
-    main {
-        height: 100vh;
-        overflow-y: hidden;
-    }
 }
 
 .background-img {
@@ -78,6 +37,10 @@ main {
 // Margin
 $total-margin-steps: 10;
 @for $i from 1 through $total-margin-steps {
+    .m-#{$i} {
+        margin: $i * 0.25rem;
+    }
+
     .mb-#{$i} {
         margin-bottom: $i * 0.25rem;
     }

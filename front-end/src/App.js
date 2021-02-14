@@ -52,12 +52,21 @@ class App extends Component {
             }
         `;
 
+        const Main = styled.main`
+            display: flex;
+
+            @media screen and (min-width: 930px) {
+                height: 100vh;
+                overflow-y: hidden;
+            }
+        `;
+
         return (
             <AppProvider value={{state: this.state, data: data, handlers: this.handlers}}>
                 <HashRouter>
                     <div className="App">
                         <SecondaryHeader/>
-                        <main role="main">
+                        <Main role="main">
                             <PrimaryHeader/>
                             <PrimaryHeaderMobile/>
                             <Switch>
@@ -68,7 +77,7 @@ class App extends Component {
                                 <Route path="/resume" component={ResumeScreen}/>
                                 <Route exact path="/" component={HomeScreen}/>
                             </Switch>
-                        </main>
+                        </Main>
                         <ScreenOverlayDiv onClick={this.handleToggleMenu}></ScreenOverlayDiv>
                     </div>
                 </HashRouter>

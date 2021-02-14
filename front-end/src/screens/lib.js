@@ -24,6 +24,14 @@ export function Screen(props) {
         }
     `;
 
+    const Header = styled.header`
+        margin: 1.5rem;
+    `;
+
+    const H2 = styled.h2`
+        margin: 0;
+    `;
+
     if (location.pathname === "/") {
         const Article = styled.article`
             margin: 5rem 2rem 0 2rem;
@@ -49,27 +57,42 @@ export function Screen(props) {
         const Article = styled.article`
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 1.5rem;
+            margin: 0 1rem;
+
+            @media screen and (min-width: 750px) {
+                justify-content: space-between ;
+            }
+
+            @media screen and (min-width: 930px) {
+                justify-content: initial ;
+            }
         `;
 
         return (
             <ContentSection>
-                <header className="header--secondary p-6">
-                    <h2>{props.title}</h2>
-                </header>
-                <Article className="p-6 ml-4 mr-4">
+                <Header>
+                    <H2>{props.title}</H2>
+                </Header>
+                <Article>
                     {props.children}
                 </Article>
             </ContentSection>
         );
     } else {
+        const Article = styled.article`
+            padding: 1.5rem;
+            margin: 0 1rem;
+        `;
         return (
             <ContentSection>
-                <header className="header--secondary p-6">
-                    <h2>{props.title}</h2>
-                </header>
-                <article className="p-6 ml-4 mr-4">
+                <Header>
+                    <H2>{props.title}</H2>
+                </Header>
+                <Article>
                     {props.children}
-                </article>
+                </Article>
             </ContentSection>
         );
     }

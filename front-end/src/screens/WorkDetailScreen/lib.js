@@ -51,6 +51,12 @@ export function WorkSummarySection(props) {
             max-width: 38.5rem;
             margin: 0 auto;
         }
+
+        @media screen and (min-width: 930px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     `;
 
     const TechUsedSection = styled.section`
@@ -115,7 +121,7 @@ export function ImagesSection(props) {
         <section>
             {
                 props.data.images.map((imageURL, index) => {
-                    return <Img src={imageURL} class="mb-3" alt={"Responsive image " + index} />
+                    return <Img src={imageURL} alt={"Responsive image " + index} />
                 })
             }
         </section>

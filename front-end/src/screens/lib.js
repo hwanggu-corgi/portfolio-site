@@ -80,6 +80,25 @@ export function Screen(props) {
                 </Article>
             </ContentSection>
         );
+    } else if (location.pathname === "/resume") {
+        const Article = styled.article`
+            padding: 1.5rem 0 0 0;
+            margin: 0 1rem 1rem 1rem;
+
+            @media screen and (min-width: 930px) {
+                padding: 1.5rem;
+            }
+        `;
+        return (
+            <ContentSection>
+                <Header>
+                    <H2>{props.title}</H2>
+                </Header>
+                <Article>
+                    {props.children}
+                </Article>
+            </ContentSection>
+        );
     } else {
         const Article = styled.article`
             padding: 1.5rem;

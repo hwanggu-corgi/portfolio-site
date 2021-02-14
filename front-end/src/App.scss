@@ -41,28 +41,14 @@ button[type=submit] {
     }
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
 main {
     display: flex;
-
-    .content {
-        width: 100vw;
-        margin-top: 4.0rem;
-    }
 }
 
 @media screen and (min-width: 930px) {
     main {
         height: 100vh;
         overflow-y: hidden;
-        .content {
-            width: calc(100vw - #{$width-header--primary-desktop});
-            margin-top: 0;
-        }
     }
 }
 

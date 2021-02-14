@@ -1,39 +1,6 @@
 import styled from 'styled-components';
 
 
-const Button = styled.a`
-    font-size: 0.8rem;
-    font-weight: 400;
-    display: inline-block;
-    background-color: transparent;
-    border: 1px solid transparent;
-    text-align: center;
-    padding: .375rem .75rem;
-    border-radius: .25rem;
-    text-decoration: none;
-`;
-
-const ButtonPrimary = styled(Button)`
-    color: #fff;
-    background-color: black;
-    border-color: black;
-`;
-
-const ButtonPrimaryOutline = styled(Button)`
-    border-color: black;
-    color: black;
-`;
-
-const JumbotronSection = styled.section`
-    min-height: 17rem;
-    text-align: center;
-
-    & > * {
-        max-width: 38.5rem;
-    }
-`;
-
-
 export function DemoSection(props) {
     const Section = styled.section`
         margin: 1rem 1rem 0 1rem;
@@ -43,6 +10,30 @@ export function DemoSection(props) {
             margin: 0 0.25rem 0 0;
         }
     `;
+
+    const Button = styled.a`
+        font-size: 0.8rem;
+        font-weight: 400;
+        display: inline-block;
+        background-color: transparent;
+        border: 1px solid transparent;
+        text-align: center;
+        padding: .375rem .75rem;
+        border-radius: .25rem;
+        text-decoration: none;
+    `;
+
+    const ButtonPrimary = styled(Button)`
+        color: #fff;
+        background-color: black;
+        border-color: black;
+    `;
+
+    const ButtonPrimaryOutline = styled(Button)`
+        border-color: black;
+        color: black;
+    `;
+
     return (
         <Section>
             {props.data.demoURL !== "#" && <ButtonPrimary href={props.data.demoURL}>See Demo</ButtonPrimary>}
@@ -52,15 +43,35 @@ export function DemoSection(props) {
 }
 
 export function WorkSummarySection(props) {
+    const JumbotronSection = styled.section`
+        min-height: 17rem;
+        text-align: center;
+
+        & > div {
+            max-width: 38.5rem;
+            margin: 0 auto;
+        }
+    `;
+
+    const TechUsedSection = styled.section`
+        margin: 2rem 1rem 2rem 1rem;
+    `;
+
+    const HighlightsSection = styled.section`
+        margin: 2rem 1rem 2rem 1rem;
+    `;
+
     return (
         <>
             <JumbotronSection>
-                <h2>{props.data.title}</h2>
-                <p>{props.data.shortDescription}</p>
-                <p>{props.data.date}</p>
+                <div>
+                    <h2>{props.data.title}</h2>
+                    <p>{props.data.shortDescription}</p>
+                    <p>{props.data.date}</p>
+                </div>
                 <DemoSection data={props.data}/>
             </JumbotronSection>
-            <section class="mb-8 mt-8 ml-4 mr-4">
+            <TechUsedSection>
                 <h3>Technologies Used</h3>
                 <ul>
                     {
@@ -73,10 +84,10 @@ export function WorkSummarySection(props) {
                         })
                     }
                 </ul>
-            </section>
+            </TechUsedSection>
             {
                 props.data.highlights && props.data.highlights.length > 0 && (
-                    <section class="mb-8 mt-8 ml-4 mr-4">
+                    <HighlightsSection>
                         <h3>Highlights</h3>
                         <ul>
                             {
@@ -87,7 +98,7 @@ export function WorkSummarySection(props) {
                                 })
                             }
                         </ul>
-                    </section>
+                    </HighlightsSection>
                 )
             }
         </>
@@ -95,11 +106,16 @@ export function WorkSummarySection(props) {
 }
 
 export function ImagesSection(props) {
+    const Img = styled.img`
+        width: 100%;
+        margin: 0 0 0.75rem 0;
+    `;
+
     return (
-        <section className="ml-4 mr-4 images text-center mb-8">
+        <section>
             {
                 props.data.images.map((imageURL, index) => {
-                    return <img src={imageURL} class="img-fluid mb-3" alt={"Responsive image " + index} />
+                    return <Img src={imageURL} class="mb-3" alt={"Responsive image " + index} />
                 })
             }
         </section>

@@ -1,6 +1,9 @@
 import { useLocation } from 'react-router-dom'
 import styled from 'styled-components';
 
+import HomeBackgroundImg from '../media/cover-page.jpg';
+import { headerHeight } from '../components/Navigation';
+
 export const H1 = styled.h1`
     margin-top: 0;
 `;
@@ -24,9 +27,28 @@ export function Screen(props) {
             }
         `;
 
+        // TEMP for now
+        const BackgroundImg = styled.div`
+            width: inherit;
+            padding-top: ${headerHeight};
+            height: calc(100vh - ${headerHeight});
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            background-image: url(${HomeBackgroundImg});
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            @media screen and (min-width: 930px) {
+                padding-top: 0;
+                height: 100vh;
+            }
+
+        `;
+
         return (
-            <section className="content content-home">
-                <div className="background-img"></div>
+            <section>
+                <BackgroundImg/>
                 <Article>
                     {props.children}
                 </Article>

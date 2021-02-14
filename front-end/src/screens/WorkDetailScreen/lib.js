@@ -54,11 +54,11 @@ export function WorkSummarySection(props) {
     `;
 
     const TechUsedSection = styled.section`
-        margin: 2rem 1rem 2rem 1rem;
+        margin: 0 0 2rem 0;
     `;
 
     const HighlightsSection = styled.section`
-        margin: 2rem 1rem 2rem 1rem;
+        margin: 0 0 2rem 0;
     `;
 
     return (

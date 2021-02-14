@@ -11,9 +11,9 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { AppConsumer } from '../Context';
 import Logo from '../../media/moe.jpeg';
 
-const headerHeight = "1.4rem";
-const headerWidthDesktop = "14rem";
-const headerPaddingHeight = "1.3rem";
+export const headerHeight = "1.4rem";
+export const headerWidthDesktop = "14rem";
+export const headerPaddingHeight = "1.3rem";
 
 const LogoImg = styled.img`
     width: 9rem;

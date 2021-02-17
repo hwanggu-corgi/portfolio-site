@@ -5,8 +5,9 @@ import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 export function PrintButton(props) {
   const Button = styled.button`
+    border: none;
     background-color: white;
-    padding: 1em;
+    padding: 1.5em;
     margin: 1.25em;
     width: 1em;
     height: 1em;
@@ -23,12 +24,16 @@ export function PrintButton(props) {
     color: inherit;
   `;
 
+  // ref: https://stackoverflow.com/questions/12997123/print-specific-part-of-webpage
   const print = () => {
-    window.print();
+    var WinPrint = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
+    WinPrint.document.write(props.resume);
+    WinPrint.focus();
+    WinPrint.print();
   }
 
   return (
-    <Button rel="noreferrer" target="_blank" onClick={print}>
+    <Button onClick={print}>
         <FontAwesomeIcon icon={faFilePdf} />
     </Button>
   );

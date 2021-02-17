@@ -1,3 +1,4 @@
+import React, { useRef } from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
@@ -26,7 +27,9 @@ export function PrintButton(props) {
 
   // ref: https://stackoverflow.com/questions/12997123/print-specific-part-of-webpage
   const print = () => {
-    console.log(props.children)
+    const resumeRef = useRef(null);
+    React.cloneElement(props.children, { ref: resumeRef});
+    console.log(resumeRef);
     var WinPrint = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
     WinPrint.document.write(props.children);
     WinPrint.focus();

@@ -13,7 +13,7 @@ class ResumeScreen extends Component {
         return (
             <Screen title={"Resume"}>
                 <Resume data={data}/>
-                <PrintButton href={pdfURL}>
+                <PrintButton>
                     <Resume data={data}/>
                 </PrintButton>
             </Screen>

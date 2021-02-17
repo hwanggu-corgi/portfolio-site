@@ -19,15 +19,12 @@ class ResumeScreen extends Component {
         const WinPrint = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
         const e = renderToString(<Resume data={this.data}/>);
         WinPrint.document.write(e);
-        // WinPrint.document.close();
+        WinPrint.document.close();
         WinPrint.focus();
         WinPrint.print();
-        // WinPrint.close();
     }
 
     render() {
-        const data = this.props.appContext.data;
-        const pdfURL = this.props.appContext.data.resume.pdfURL;
         return (
             <Screen title={"Resume"}>
                 <Resume data={this.data} ref={this.resumeRef}/>

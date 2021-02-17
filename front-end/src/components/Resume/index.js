@@ -1,9 +1,10 @@
+import React from 'react';
 import styled from 'styled-components';
 
 import { WorkExpItem, ProjectExpItem,
          EducationItem, ResumeHeader } from './lib';
 
-function Resume(props) {
+const Resume = React.forwardRef((props, ref) => {
   const Main = styled.section`
     font-family: Arial, Helvetica, sans-serif;
     max-width: 700px;
@@ -35,7 +36,7 @@ function Resume(props) {
   const education = props.data.resume.education;
 
   return (
-    <Main>
+    <Main ref={ref}>
         <ResumeHeader {...contact}/>
         <section className="qualification">
             <H2><u>Highlights of Qualification</u></H2>
@@ -61,6 +62,6 @@ function Resume(props) {
         </section>
     </Main>
   );
-}
+})
 
 export default Resume;

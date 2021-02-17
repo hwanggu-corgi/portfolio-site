@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
-import jsPDF from 'jspdf';
+
 
 export function PrintButton(props) {
-  const A = styled.a`
+  const Button = styled.button`
     background-color: white;
     padding: 1em;
     margin: 1.25em;
@@ -21,12 +21,15 @@ export function PrintButton(props) {
     font-size: 1.5em;
     text-decoration: none;
     color: inherit;
-}
   `;
 
+  const print = () => {
+    window.print();
+  }
+
   return (
-    <A rel="noreferrer" target="_blank" href={props.href}>
+    <Button rel="noreferrer" target="_blank" onClick={print}>
         <FontAwesomeIcon icon={faFilePdf} />
-    </A>
+    </Button>
   );
 }

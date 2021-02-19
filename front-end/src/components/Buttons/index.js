@@ -20,15 +20,15 @@ class PrintPortal extends React.PureComponent {
     this.container = this.printWindow.document.createElement('div');
     this.printWindow.document.body.appendChild(this.container);
     this.printWindow.print();
+    this.props.resetPortal();
   }
 
-  componentWillUnmount() {
-    this.printWindow.close();
-    this.props.togglePortal();
-  }
+  // componentWillUnmount() {
+  //   console.log("I am here 2");
+  //   this.props.closePortal();
+  // }
 
   render() {
-    console.log("I am here 2 ");
     // STEP 3: The first render occurs before componentDidMount (where we open the
     // new window) so container may be null, in this case render nothing.
     if (!this.container) {
@@ -74,14 +74,14 @@ export class PrintButton extends Component {
 
     return (
       <>
-        <Button onClick={this.togglePortal}>
+        <Button onClick={this.openPortal} disabled={this.state.on}>
             <div>
               <FontAwesomeIcon icon={faFilePdf} />
             </div>
         </Button>
         {
           this.state.on ?
-            <PrintPortal togglePortal={this.togglePortal}>
+            <PrintPortal resetPortal={this.resetPortal}>
               {this.props.children}
             </PrintPortal>
             : null
@@ -90,12 +90,11 @@ export class PrintButton extends Component {
     );
   }
 
-  togglePortal = () => {
-    // ReactDOM.render(<PrintPortal />, document.getElementById("portals"));
-    this.setState((state, props) => {
-      return {
-        on: !state.on
-      }
-    })
+  openPortal = () => {
+    this.setState({on: true})
+  }
+
+  resetPortal = () => {
+    this.setState({on: false})
   }
 }

@@ -24,6 +24,7 @@ class PrintPortal extends React.PureComponent {
 
   componentWillUnmount() {
     this.printWindow.close();
+    this.props.togglePortal();
   }
 
   render() {
@@ -80,7 +81,7 @@ export class PrintButton extends Component {
         </Button>
         {
           this.state.on ?
-            <PrintPortal>
+            <PrintPortal togglePortal={this.togglePortal}>
               {this.props.children}
             </PrintPortal>
             : null
@@ -90,10 +91,11 @@ export class PrintButton extends Component {
   }
 
   togglePortal = () => {
-    this.setState((state, props) => {
-      return {
-        on: !state.on
-      }
-    })
+    ReactDOM.render(<PrintPortal />, document.getElementById("root"));
+    // this.setState((state, props) => {
+    //   return {
+    //     on: !state.on
+    //   }
+    // })
   }
 }

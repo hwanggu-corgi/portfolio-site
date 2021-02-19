@@ -18,13 +18,13 @@ export function PrintButton(props) {
     color: inherit;
     padding: 1em;
     margin: 1.25em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     div {
-      width: 1em;
-      height: 1em;
+      width: 1.25em;
+      height: 1.25em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   `;
   return (

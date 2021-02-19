@@ -22,6 +22,10 @@ class PrintPortal extends React.PureComponent {
     this.printWindow.print();
   }
 
+  componentWillUnmount() {
+    this.printWindow.close();
+  }
+
   render() {
     console.log("I am here 2 ");
     // STEP 3: The first render occurs before componentDidMount (where we open the
@@ -37,6 +41,12 @@ class PrintPortal extends React.PureComponent {
 
 
 export class PrintButton extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      on: false
+    }
+  }
   render() {
     const Button = styled.button`
       border: none;
@@ -62,20 +72,28 @@ export class PrintButton extends Component {
     `;
 
     return (
-      <Button onClick={this.renderPortal}>
-          <div>
-            <FontAwesomeIcon icon={faFilePdf} />
-          </div>
-      </Button>
+      <>
+        <Button onClick={this.togglePortal}>
+            <div>
+              <FontAwesomeIcon icon={faFilePdf} />
+            </div>
+        </Button>
+        {
+          this.state.on ?
+            <PrintPortal>
+              {this.props.children}
+            </PrintPortal>
+            : null
+        }
+      </>
     );
   }
 
-  renderPortal = () => {
-    console.log("I am here")
-    return(
-      <PrintPortal>
-        {this.props.children}
-      </PrintPortal>
-    );
+  togglePortal = () => {
+    this.setState((state, props) => {
+      return {
+        on: !state.on
+      }
+    })
   }
 }

@@ -14,6 +14,7 @@ import WorksScreen from './screens/WorksScreen';
 import WorkDetailScreen from './screens/WorkDetailScreen';
 import ContactScreen from './screens/ContactScreen';
 import ResumeScreen from './screens/ResumeScreen';
+import PrintPortal from './portals/PrintPortal';
 
 import { AppProvider } from './components/Context';
 import { data } from './data.js';
@@ -74,6 +75,7 @@ class App extends Component {
                                 <Route path="/works/:id" component={WorkDetailScreen}/>
                                 <Route path="/works" component={WorksScreen}/>
                                 <Route path="/contact" component={ContactScreen}/>
+                                <Route path="/resume/print" component={PrintPortal}/>
                                 <Route path="/resume" component={ResumeScreen}/>
                                 <Route exact path="/" component={HomeScreen}/>
                             </Switch>

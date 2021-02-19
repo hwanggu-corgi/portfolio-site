@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 
-export class PrintPortal extends React.PureComponent {
+export default class PrintPortal extends React.PureComponent {
     constructor(props) {
       super(props);
       this.container = null;

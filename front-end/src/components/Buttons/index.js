@@ -13,6 +13,7 @@ class PrintPortal extends React.PureComponent {
   }
 
   componentDidMount() {
+    console.log("I am here 3");
     // STEP 1: Create a new window, a div, and append it to the window. The div
     // *MUST** be created by the window it is to be appended to (Edge only)
     this.printWindow = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
@@ -22,6 +23,7 @@ class PrintPortal extends React.PureComponent {
   }
 
   render() {
+    console.log("I am here 2 ");
     // STEP 3: The first render occurs before componentDidMount (where we open the
     // new window) so container may be null, in this case render nothing.
     if (!this.container) {
@@ -35,10 +37,6 @@ class PrintPortal extends React.PureComponent {
 
 
 export class PrintButton extends Component {
-  openPortal() {
-    ReactDOM.render(<PrintPortal/>, document.getElementById('app'));
-  }
-
   render() {
     const Button = styled.button`
       border: none;
@@ -64,11 +62,20 @@ export class PrintButton extends Component {
     `;
 
     return (
-      <Button onClick={this.openPortal}>
+      <Button onClick={this.renderPortal}>
           <div>
             <FontAwesomeIcon icon={faFilePdf} />
           </div>
       </Button>
+    );
+  }
+
+  renderPortal = () => {
+    console.log("I am here")
+    return(
+      <PrintPortal>
+        {this.props.children}
+      </PrintPortal>
     );
   }
 }

@@ -29,7 +29,9 @@ class ResumeScreen extends Component {
             <Screen title={"Resume"}>
                 <Resume data={this.data} ref={this.resumeRef}/>
                 {/* <PrintButton onClick={this.print}/> */}
-                <PrintButton/>
+                <PrintButton>
+                    <Resume data={this.data}/>
+                </PrintButton>
             </Screen>
         );
     }

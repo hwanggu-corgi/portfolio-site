@@ -14,7 +14,6 @@ import WorksScreen from './screens/WorksScreen';
 import WorkDetailScreen from './screens/WorkDetailScreen';
 import ContactScreen from './screens/ContactScreen';
 import ResumeScreen from './screens/ResumeScreen';
-import PrintPortal from './portals/PrintPortal';
 
 import { AppProvider } from './components/Context';
 import { data } from './data.js';

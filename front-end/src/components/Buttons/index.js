@@ -23,6 +23,7 @@ export function PrintButton(props) {
     font-size: 1.5em;
     text-decoration: none;
     color: inherit;
+
   `;
   return (
     <Button onClick={props.onClick}>

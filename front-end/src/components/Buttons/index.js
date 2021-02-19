@@ -20,13 +20,12 @@ class PrintPortal extends React.PureComponent {
     this.container = this.printWindow.document.createElement('div');
     this.printWindow.document.body.appendChild(this.container);
     this.printWindow.print();
-    this.props.resetPortal();
   }
 
-  // componentWillUnmount() {
-  //   console.log("I am here 2");
-  //   this.props.closePortal();
-  // }
+  componentWillUnmount() {
+    console.log("I am here 2");
+    this.props.closePortal();
+  }
 
   render() {
     // STEP 3: The first render occurs before componentDidMount (where we open the
@@ -91,7 +90,10 @@ export class PrintButton extends Component {
   }
 
   openPortal = () => {
-    this.setState({on: true})
+    const el = document.createElement("div");
+    el.setAttribute("id", "portals-print");
+    document.getElementById("portals").appendChild(el);
+    ReactDOM.render(<PrintPortal/>, document.getElementById("portals-print"))
   }
 
   resetPortal = () => {

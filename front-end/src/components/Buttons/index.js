@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -34,34 +34,41 @@ class PrintPortal extends React.PureComponent {
 }
 
 
-export function PrintButton(props) {
-  const Button = styled.button`
-    border: none;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 3px 5px 8px grey;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    font-size: 1.5em;
-    text-decoration: none;
-    color: inherit;
-    padding: 1em;
-    margin: 1.25em;
+export class PrintButton extends Component {
+  openPortal() {
+    ReactDOM.render(<PrintPortal/>, document.getElementById('app'));
+  }
 
-    div {
-      width: 1.25em;
-      height: 1.25em;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  `;
-  return (
-    <Button onClick={props.onClick}>
-        <div>
-          <FontAwesomeIcon icon={faFilePdf} />
-        </div>
-    </Button>
-  );
+  render() {
+    const Button = styled.button`
+      border: none;
+      background-color: white;
+      border-radius: 50%;
+      box-shadow: 3px 5px 8px grey;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      font-size: 1.5em;
+      text-decoration: none;
+      color: inherit;
+      padding: 1em;
+      margin: 1.25em;
+
+      div {
+        width: 1.25em;
+        height: 1.25em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    `;
+
+    return (
+      <Button onClick={this.openPortal}>
+          <div>
+            <FontAwesomeIcon icon={faFilePdf} />
+          </div>
+      </Button>
+    );
+  }
 }

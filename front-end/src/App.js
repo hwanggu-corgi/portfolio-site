@@ -75,7 +75,6 @@ class App extends Component {
                                 <Route path="/works/:id" component={WorkDetailScreen}/>
                                 <Route path="/works" component={WorksScreen}/>
                                 <Route path="/contact" component={ContactScreen}/>
-                                <Route path="/resume/print" component={PrintPortal}/>
                                 <Route path="/resume" component={ResumeScreen}/>
                                 <Route exact path="/" component={HomeScreen}/>
                             </Switch>

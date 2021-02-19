@@ -13,17 +13,12 @@ class PrintPortal extends React.PureComponent {
   }
 
   componentDidMount() {
-    console.log("I am here 3");
     // STEP 1: Create a new window, a div, and append it to the window. The div
     // *MUST** be created by the window it is to be appended to (Edge only)
     this.printWindow = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
     this.container = this.printWindow.document.createElement('div');
     this.printWindow.document.body.appendChild(this.container);
     this.printWindow.print();
-  }
-
-  componentWillUnmount() {
-    console.log("I am here 2");
     this.props.closePortal();
   }
 
@@ -73,14 +68,14 @@ export class PrintButton extends Component {
 
     return (
       <>
-        <Button onClick={this.openPortal} disabled={this.state.on}>
+        <Button onClick={this.openPortal}>
             <div>
               <FontAwesomeIcon icon={faFilePdf} />
             </div>
         </Button>
         {
           this.state.on ?
-            <PrintPortal resetPortal={this.resetPortal}>
+            <PrintPortal closePortal={this.closePortal}>
               {this.props.children}
             </PrintPortal>
             : null
@@ -90,13 +85,10 @@ export class PrintButton extends Component {
   }
 
   openPortal = () => {
-    const el = document.createElement("div");
-    el.setAttribute("id", "portals-print");
-    document.getElementById("portals").appendChild(el);
-    ReactDOM.render(<PrintPortal/>, document.getElementById("portals-print"))
+    this.setState({on: true})
   }
 
-  resetPortal = () => {
+  closePortal = () => {
     this.setState({on: false})
   }
 }

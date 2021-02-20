@@ -5,6 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 
+function copyCSS() {
+
+}
+
 class PrintPortal extends PureComponent {
   constructor(props) {
     super(props);
@@ -16,7 +20,7 @@ class PrintPortal extends PureComponent {
     this.printWindow = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
     this.printWindow.document.title = 'Print Resume';
     this.printWindow.document.body.appendChild(this.container);
-    // this.printWindow.print();
+    this.printWindow.print();
     this.printWindow.addEventListener('beforeunload', () => {
       this.props.closePortal();
     });
@@ -27,15 +31,6 @@ class PrintPortal extends PureComponent {
   }
 
   render() {
-    alert("I am here");
-    alert(this.container);
-    if (!this.container) {
-      return null;
-    }
-    alert("I am here 2");
-    console.log(this.container);
-    console.log(this.props.children);
-    console.log(this.printWindow);
     return ReactDOM.createPortal(this.props.children, this.container);
   }
 }
@@ -71,7 +66,7 @@ export class PrintButton extends Component {
         align-items: center;
       }
     `;
-
+    console.log(document);
     return (
       <>
         { !this.state.on && (

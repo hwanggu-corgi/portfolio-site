@@ -6,11 +6,17 @@ import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 
 function copyCSS(source, target) {
-  for (var i=0; i < source.styleSheets.length; i++) {
-    console.log(target.styleSheets)
+  const styleEl = targetDoc.createElement('style');
 
-    // add to target
+  for (stylesheet of source.styleSheets) {
+    console.log(stylesheet)
+
+    for (cssRule of stylesheet) {
+      styleEl.appendChild(source.createTextNode(cssRule.cssText));
+    }
   }
+
+  target.head.appendChild(styleEl);
 }
 
 class PrintPortal extends PureComponent {
@@ -70,7 +76,7 @@ export class PrintButton extends Component {
         align-items: center;
       }
     `;
-    console.log(document.styleSheets);
+    copyCSS(document);
     return (
       <>
         { !this.state.on && (

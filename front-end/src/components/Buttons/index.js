@@ -2,7 +2,7 @@ import React, { Component, PureComponent } from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import { faPrint } from '@fortawesome/free-solid-svg-icons';
 
 
 // Reference: https://stackoverflow.com/questions/47574490/open-a-component-in-new-window-on-a-click-in-react
@@ -81,7 +81,7 @@ export class PrintButton extends Component {
         { !this.state.on && (
             <Button onClick={this.openPortal}>
               <div>
-                <FontAwesomeIcon icon={faFilePdf} />
+                <FontAwesomeIcon icon={faPrint} />
               </div>
             </Button>
           )

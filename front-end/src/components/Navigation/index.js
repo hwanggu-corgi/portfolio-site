@@ -235,7 +235,7 @@ class SecondaryHeaderBase extends Component {
             padding: ${headerPaddingHeight};
             box-shadow: 0px 2px 5px grey;
             position: fixed;
-            width: 100%;
+            width: calc(100% - ${headerPaddingHeight} * 2);
             nav {
                 display: flex;
                 justify-content: space-between;

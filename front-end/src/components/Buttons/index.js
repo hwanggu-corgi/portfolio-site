@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 
+// Reference: https://stackoverflow.com/questions/47574490/open-a-component-in-new-window-on-a-click-in-react
 function copyCSS(source, target) {
   const styleEl = target.createElement('style');
 

@@ -17,6 +17,11 @@ const Resume = React.forwardRef((props, ref) => {
     @media only screen and (min-width: 930px) {
       margin: 0 auto 2em auto;
     }
+
+    @page {
+      size:210mm 297mm;
+      margin: 0;
+    }
   `;
 
   const H2 = styled.h2`

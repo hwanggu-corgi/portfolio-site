@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, PureComponent } from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 
-class PrintPortal extends React.Component {
+class PrintPortal extends PureComponent {
   constructor(props) {
     super(props);
     this.container = null;
@@ -15,8 +15,9 @@ class PrintPortal extends React.Component {
   componentDidMount() {
     this.printWindow = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
     this.container = this.printWindow.document.createElement('div');
+    this.printWindow.document.title = 'Print Resume';
     this.printWindow.document.body.appendChild(this.container);
-    this.printWindow.print();
+    // this.printWindow.print();
     this.printWindow.addEventListener('beforeunload', () => {
       this.props.closePortal();
     });
@@ -66,7 +67,7 @@ export class PrintButton extends Component {
         align-items: center;
       }
     `;
-      console.log(this.props.children)
+
     return (
       <>
         { !this.state.on && (
@@ -84,6 +85,7 @@ export class PrintButton extends Component {
               </PrintPortal>
             )
         }
+
       </>
     );
   }

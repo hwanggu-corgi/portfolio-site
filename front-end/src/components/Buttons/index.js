@@ -6,12 +6,10 @@ import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 
 function copyCSS(source, target) {
-  const styleEl = targetDoc.createElement('style');
+  const styleEl = target.createElement('style');
 
-  for (stylesheet of source.styleSheets) {
-    console.log(stylesheet)
-
-    for (cssRule of stylesheet) {
+  for (let stylesheet of source.styleSheets) {
+    for (let cssRule of stylesheet.rules) {
       styleEl.appendChild(source.createTextNode(cssRule.cssText));
     }
   }
@@ -30,6 +28,7 @@ class PrintPortal extends PureComponent {
     this.printWindow = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
     this.printWindow.document.title = 'Print Resume';
     this.printWindow.document.body.appendChild(this.container);
+    copyCSS(document, this.printWindow.document);
     this.printWindow.print();
     this.printWindow.addEventListener('beforeunload', () => {
       this.props.closePortal();
@@ -76,7 +75,6 @@ export class PrintButton extends Component {
         align-items: center;
       }
     `;
-    copyCSS(document);
     return (
       <>
         { !this.state.on && (

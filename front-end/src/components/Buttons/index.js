@@ -5,8 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 
-function copyCSS() {
+function copyCSS(source, target) {
+  for (var i=0; i < source.styleSheets.length; i++) {
+    console.log(target.styleSheets)
 
+    // add to target
+  }
 }
 
 class PrintPortal extends PureComponent {

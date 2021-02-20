@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { NavLink, withRouter } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
@@ -131,11 +131,10 @@ class PrimaryHeaderBase extends Component {
     }
 };
 
-const PrimaryHeaderWithRoute = withRouter(PrimaryHeaderBase);
 const PrimaryHeader = React.forwardRef((props, ref) => (
     <AppConsumer>
         { appContext =>
-            <PrimaryHeaderWithRoute
+            <PrimaryHeaderBase
                 {...props}
                 appContext={appContext}
                 ref={ref}
@@ -209,11 +208,10 @@ class PrimaryHeaderMobileBase extends Component {
     }
 };
 
-const PrimaryHeaderMobileWithRoute = withRouter(PrimaryHeaderMobileBase);
 const PrimaryHeaderMobile = React.forwardRef((props, ref) => (
     <AppConsumer>
         { appContext =>
-            <PrimaryHeaderMobileWithRoute
+            <PrimaryHeaderMobileBase
                 {...props}
                 appContext={appContext}
                 ref={ref}
@@ -259,11 +257,10 @@ class SecondaryHeaderBase extends Component {
     }
 };
 
-const SecondaryHeaderWithRoute = withRouter(SecondaryHeaderBase);
 const SecondaryHeader = React.forwardRef((props, ref) => (
     <AppConsumer>
         { appContext =>
-            <SecondaryHeaderWithRoute
+            <SecondaryHeaderBase
                 {...props}
                 appContext={appContext}
                 ref={ref}

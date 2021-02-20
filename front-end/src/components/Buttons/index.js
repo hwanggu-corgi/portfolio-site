@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 
-class PrintPortal extends React.PureComponent {
+class PrintPortal extends React.Component {
   constructor(props) {
     super(props);
     this.container = null;
@@ -13,23 +13,17 @@ class PrintPortal extends React.PureComponent {
   }
 
   componentDidMount() {
-    // STEP 1: Create a new window, a div, and append it to the window. The div
-    // *MUST** be created by the window it is to be appended to (Edge only)
     this.printWindow = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
     this.container = this.printWindow.document.createElement('div');
     this.printWindow.document.body.appendChild(this.container);
     this.printWindow.print();
-    this.props.closePortal();
   }
 
   render() {
-    // STEP 3: The first render occurs before componentDidMount (where we open the
-    // new window) so container may be null, in this case render nothing.
     if (!this.container) {
       return null;
     }
 
-    // STEP 4: Append props.children to the container <div> in the new window
     return ReactDOM.createPortal(this.props.children, this.container);
   }
 }
@@ -65,7 +59,7 @@ export class PrintButton extends Component {
         align-items: center;
       }
     `;
-
+      console.log(this.props.children)
     return (
       <>
         <Button onClick={this.openPortal}>
@@ -75,7 +69,7 @@ export class PrintButton extends Component {
         </Button>
         {
           this.state.on ?
-            <PrintPortal closePortal={this.closePortal}>
+            <PrintPortal onClose={this.closePortal}>
               {this.props.children}
             </PrintPortal>
             : null

@@ -8,13 +8,12 @@ import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 class PrintPortal extends PureComponent {
   constructor(props) {
     super(props);
-    this.container = null;
+    this.container = document.createElement('div');
     this.printWindow = null;
   }
 
   componentDidMount() {
     this.printWindow = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
-    this.container = this.printWindow.document.createElement('div');
     this.printWindow.document.title = 'Print Resume';
     this.printWindow.document.body.appendChild(this.container);
     // this.printWindow.print();
@@ -28,10 +27,15 @@ class PrintPortal extends PureComponent {
   }
 
   render() {
+    alert("I am here");
+    alert(this.container);
     if (!this.container) {
       return null;
     }
-
+    alert("I am here 2");
+    console.log(this.container);
+    console.log(this.props.children);
+    console.log(this.printWindow);
     return ReactDOM.createPortal(this.props.children, this.container);
   }
 }

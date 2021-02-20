@@ -18,9 +18,11 @@ const Resume = React.forwardRef((props, ref) => {
       margin: 0 auto 2em auto;
     }
 
-    @page {
-      size:210mm 297mm;
-      margin: 0;
+    @media print {
+      @page {
+        size: letter;
+        margin: 0;
+      }
     }
   `;
 

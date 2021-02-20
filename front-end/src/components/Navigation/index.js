@@ -191,7 +191,7 @@ class PrimaryHeaderMobileBase extends Component {
                             <li><NavLink onClick={this.toggleMenu} to="/">Home</NavLink></li>
                             <li><NavLink onClick={this.toggleMenu} to="/about">About</NavLink></li>
                             <li><NavLink onClick={this.toggleMenu} to="/works">Works</NavLink></li>
-                            <li><NavLink to="/resume">Resume</NavLink></li>
+                            <li><NavLink onClick={this.toggleMenu} to="/resume">Resume</NavLink></li>
                             <li><NavLink onClick={this.toggleMenu} to="/contact">Contact</NavLink></li>
                         </ul>
                     </PrimaryNav>

@@ -66,7 +66,7 @@ export class PrintButton extends Component {
         align-items: center;
       }
     `;
-    console.log(document);
+    console.log(document.styleSheets);
     return (
       <>
         { !this.state.on && (

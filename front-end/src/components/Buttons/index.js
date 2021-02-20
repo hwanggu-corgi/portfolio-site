@@ -17,6 +17,13 @@ class PrintPortal extends React.Component {
     this.container = this.printWindow.document.createElement('div');
     this.printWindow.document.body.appendChild(this.container);
     this.printWindow.print();
+    this.printWindow.addEventListener('beforeunload', () => {
+      this.props.closePortal();
+    });
+  }
+
+  componentWillUnmount() {
+    this.printWindow.close();
   }
 
   render() {
@@ -62,17 +69,20 @@ export class PrintButton extends Component {
       console.log(this.props.children)
     return (
       <>
-        <Button onClick={this.openPortal}>
-            <div>
-              <FontAwesomeIcon icon={faFilePdf} />
-            </div>
-        </Button>
+        { !this.state.on && (
+            <Button onClick={this.openPortal}>
+              <div>
+                <FontAwesomeIcon icon={faFilePdf} />
+              </div>
+            </Button>
+          )
+        }
         {
-          this.state.on ?
-            <PrintPortal onClose={this.closePortal}>
-              {this.props.children}
-            </PrintPortal>
-            : null
+          this.state.on && (
+              <PrintPortal closePortal={this.closePortal}>
+                {this.props.children}
+              </PrintPortal>
+            )
         }
       </>
     );

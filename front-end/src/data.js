@@ -45,12 +45,45 @@ export const data = {
         "projectExp": [
             {
                 "id": 1,
+                "title": "Chat Application",
+                "Date": "February 26th, 2021",
+                "headerImage": "",
+                "shortDescription": "A React based chat application created using Node.js, Apollo GraphQL and Prisma ORM",
+                "demoURL": "https://hyungmogu.github.io/chat-application/",
+                "sourceURL": "https://github.com/hyungmogu/chat-application/",
+                "techUsed": [
+                    {
+                        "name": "Frontend",
+                        "items": ["React", "Styled Components", "ES6 JavaScript"]
+                    },
+                    {
+                        "name": "Backend",
+                        "items": ["Prisma ORM", "Node.js", "Apollo Graphql"]
+                    }
+                ],
+                "highlights": [
+                    "Created a React and SASS based portfolio website from design to publishing",
+                    "Engineered typewriter effect on homepage using CSS animations, React DOM and ES6 Javascript",
+                    "Utilized media queries and flexbox properties for full responsiveness of the website ",
+                    "Built web version of this resume as a component by leveraging Styled Components"
+                ],
+                "images": [
+                    "https://user-images.githubusercontent.com/72232928/99028888-59734680-25b4-11eb-94d9-c5c8cde63c05.jpg",
+                    "https://user-images.githubusercontent.com/72232928/99028873-511b0b80-25b4-11eb-92c1-81ebbd520811.jpg",
+                    "https://user-images.githubusercontent.com/72232928/99028879-54ae9280-25b4-11eb-992a-38b9da918b29.jpg",
+                    "https://user-images.githubusercontent.com/72232928/99028882-56785600-25b4-11eb-9472-76ea22afe64e.jpg",
+                    "https://user-images.githubusercontent.com/72232928/99028886-58421980-25b4-11eb-97e4-7a1bf65a433d.jpg"
+                ],
+                "includeInResume": false
+            },
+            {
+                "id": 2,
                 "title": "Social Proof Section",
                 "date": "February 10th, 2021",
                 "headerImage": "https://user-images.githubusercontent.com/6856382/107606349-24d95e80-6c79-11eb-85f9-70fe13b9b3ce.png",
                 "shortDescription": "A short challenge from frontendmentor.io for the demonstration of Hyungmo's skill in creating a pixel-perfect template",
                 "demoURL": "https://hyungmogu.github.io/social-proof-section/",
-                "sourceURL": "https://github.com/hyungmogu/social-proof-section",
+                "sourceURL": "https://github.com/hyungmogu/social-proof-section/",
                 "techUsed": [
                     {
                         "name": "Frontend",
@@ -65,7 +98,7 @@ export const data = {
                 "includeInResume": false
             },
             {
-                "id": 2,
+                "id": 3,
                 "title": "hyungmogu.com",
                 "date": "February 3rd, 2021",
                 "headerImage": "https://user-images.githubusercontent.com/72232928/99110490-cd056a00-262d-11eb-99b8-e9284e79b39b.png",
@@ -95,7 +128,7 @@ export const data = {
                 "includeInResume": true
             },
             {
-                "id": 3,
+                "id": 4,
                 "title": "Photo Application",
                 "date": "January 8th, 2020",
                 "headerImage": "https://user-images.githubusercontent.com/72232928/99029105-f46c2080-25b4-11eb-88fe-a6471bf07721.png",
@@ -119,7 +152,7 @@ export const data = {
                 "includeInResume": false
             },
             {
-                "id": 4,
+                "id": 5,
                 "title": "Calculator",
                 "date": "January 5th, 2020",
                 "headerImage": "https://user-images.githubusercontent.com/72232928/99099040-329d2a80-261d-11eb-8488-f5d9537c9e92.png",

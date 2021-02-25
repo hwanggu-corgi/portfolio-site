@@ -46,9 +46,9 @@ export const data = {
             {
                 "id": 1,
                 "title": "Chat Application",
-                "Date": "February 26th, 2021",
-                "headerImage": "",
-                "shortDescription": "A React based chat application created using Node.js, Apollo GraphQL and Prisma ORM",
+                "date": "February 26th, 2021",
+                "headerImage": "https://user-images.githubusercontent.com/6856382/107606349-24d95e80-6c79-11eb-85f9-70fe13b9b3ce.png",
+                "shortDescription": "A React and GraphQL based full-stack web chat application for the demonstrated learning in backend development",
                 "demoURL": "https://hyungmogu.github.io/chat-application/",
                 "sourceURL": "https://github.com/hyungmogu/chat-application/",
                 "techUsed": [
@@ -62,10 +62,12 @@ export const data = {
                     }
                 ],
                 "highlights": [
-                    "Created a React and SASS based portfolio website from design to publishing",
-                    "Engineered typewriter effect on homepage using CSS animations, React DOM and ES6 Javascript",
-                    "Utilized media queries and flexbox properties for full responsiveness of the website ",
-                    "Built web version of this resume as a component by leveraging Styled Components"
+                    "Created a React and GraphQL based chat application from inception to publishing",
+                    "Utilized Node.js and Apollo GraphQL to reduce data transmission size",
+                    "Leveraged Apollo GraphQL's subscription library to display changes in real time",
+                    "Built system that stores and retrieves data using Prisma ORM",
+                    "Published GraphQL server to Heroku for it's API to be consumed by clients",
+                    "Separated ReactJS application and the backend to reduce load on server"
                 ],
                 "images": [
                     "https://user-images.githubusercontent.com/72232928/99028888-59734680-25b4-11eb-94d9-c5c8cde63c05.jpg",
@@ -112,10 +114,10 @@ export const data = {
                     }
                 ],
                 "highlights": [
-                    "Created a React and SASS based portfolio website from design to publishing",
+                    "Created a React and Styled Component based portfolio website from design to publishing",
                     "Engineered typewriter effect on homepage using CSS animations, React DOM and ES6 Javascript",
                     "Utilized media queries and flexbox properties for full responsiveness of the website ",
-                    "Built web version of this resume as a component by leveraging Styled Components"
+                    "Implemented the web version of this resume as a component by leveraging Styled Components"
                 ],
                 "images": [
                     "https://user-images.githubusercontent.com/6856382/106803602-b8be8f80-66a7-11eb-86a6-9cb80a2ab675.png",

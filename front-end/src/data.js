@@ -63,17 +63,16 @@ export const data = {
                 ],
                 "highlights": [
                     "Created a ReactJS and GraphQL based chat application from inception to publishing",
-                    "Utilized Node.js and Apollo GraphQL to reduce data transmission size",
                     "Leveraged Apollo GraphQL's subscription library to display changes in real time",
                     "Built system that stores and retrieves data using Prisma ORM",
                     "Published GraphQL server to Heroku for it's API to be consumed by clients",
                     "Separated ReactJS application and the backend to reduce load on server"
                 ],
                 "images": [
-                    "https://user-images.githubusercontent.com/6856382/109256275-065a9200-7839-11eb-897a-358fcb536157.png",
-                    "https://user-images.githubusercontent.com/6856382/109256271-05c1fb80-7839-11eb-8c22-d899ab54419a.png",
-                    "https://user-images.githubusercontent.com/6856382/109256267-05296500-7839-11eb-9d5c-05733a83fcf3.png",
-                    "https://user-images.githubusercontent.com/6856382/109256266-035fa180-7839-11eb-9aaa-0051270d0092.png"
+                    "https://user-images.githubusercontent.com/6856382/109257107-c09ec900-783a-11eb-90dd-7a499e3cc831.png",
+                    "https://user-images.githubusercontent.com/6856382/109257102-c0063280-783a-11eb-8d26-b76353045116.png",
+                    "https://user-images.githubusercontent.com/6856382/109256876-45d5ae00-783a-11eb-8c39-76c43c5e8fca.png",
+                    "https://user-images.githubusercontent.com/6856382/109256877-466e4480-783a-11eb-9667-85be55f4624c.png"
                 ],
                 "includeInResume": false
             },

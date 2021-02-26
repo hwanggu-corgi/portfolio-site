@@ -47,7 +47,7 @@ export const data = {
                 "id": 1,
                 "title": "Chat Application",
                 "date": "February 26th, 2021",
-                "headerImage": "https://user-images.githubusercontent.com/6856382/107606349-24d95e80-6c79-11eb-85f9-70fe13b9b3ce.png",
+                "headerImage": "https://user-images.githubusercontent.com/6856382/109254920-5b48d900-7836-11eb-864b-26b22e124d61.png",
                 "shortDescription": "A React and GraphQL based full-stack web chat application for the demonstrated learning in backend development",
                 "demoURL": "https://hyungmogu.github.io/chat-application/",
                 "sourceURL": "https://github.com/hyungmogu/chat-application/",

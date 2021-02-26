@@ -48,13 +48,13 @@ export const data = {
                 "title": "Chat Application",
                 "date": "February 26th, 2021",
                 "headerImage": "https://user-images.githubusercontent.com/6856382/109254920-5b48d900-7836-11eb-864b-26b22e124d61.png",
-                "shortDescription": "A React and GraphQL based full-stack web chat application for the demonstrated learning in backend development",
+                "shortDescription": "A ReactJS and GraphQL based full-stack web chat application for the demonstrated learning in backend development",
                 "demoURL": "https://hyungmogu.github.io/chat-application/",
                 "sourceURL": "https://github.com/hyungmogu/chat-application/",
                 "techUsed": [
                     {
                         "name": "Frontend",
-                        "items": ["React", "Styled Components", "ES6 JavaScript"]
+                        "items": ["ReactJS", "Styled Components", "ES6 JavaScript"]
                     },
                     {
                         "name": "Backend",
@@ -62,7 +62,7 @@ export const data = {
                     }
                 ],
                 "highlights": [
-                    "Created a React and GraphQL based chat application from inception to publishing",
+                    "Created a ReactJS and GraphQL based chat application from inception to publishing",
                     "Utilized Node.js and Apollo GraphQL to reduce data transmission size",
                     "Leveraged Apollo GraphQL's subscription library to display changes in real time",
                     "Built system that stores and retrieves data using Prisma ORM",
@@ -70,11 +70,10 @@ export const data = {
                     "Separated ReactJS application and the backend to reduce load on server"
                 ],
                 "images": [
-                    "https://user-images.githubusercontent.com/72232928/99028888-59734680-25b4-11eb-94d9-c5c8cde63c05.jpg",
-                    "https://user-images.githubusercontent.com/72232928/99028873-511b0b80-25b4-11eb-92c1-81ebbd520811.jpg",
-                    "https://user-images.githubusercontent.com/72232928/99028879-54ae9280-25b4-11eb-992a-38b9da918b29.jpg",
-                    "https://user-images.githubusercontent.com/72232928/99028882-56785600-25b4-11eb-9472-76ea22afe64e.jpg",
-                    "https://user-images.githubusercontent.com/72232928/99028886-58421980-25b4-11eb-97e4-7a1bf65a433d.jpg"
+                    "https://user-images.githubusercontent.com/6856382/109256275-065a9200-7839-11eb-897a-358fcb536157.png",
+                    "https://user-images.githubusercontent.com/6856382/109256271-05c1fb80-7839-11eb-8c22-d899ab54419a.png",
+                    "https://user-images.githubusercontent.com/6856382/109256267-05296500-7839-11eb-9d5c-05733a83fcf3.png",
+                    "https://user-images.githubusercontent.com/6856382/109256266-035fa180-7839-11eb-9aaa-0051270d0092.png"
                 ],
                 "includeInResume": false
             },
